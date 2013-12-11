@@ -1,6 +1,7 @@
 <?php
 
 /**
+test
  * The base MySQL settings of Osclass
  */
 define('MULTISITE', 0);
