@@ -28,9 +28,9 @@
 	 <?php $i = 0;  ?>
 	  <?php while ( osc_has_web_enabled_locales() ) {
 if($i=="0"){	  ?>
-	 <a class="rusiian-btn" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><img src="<?php echo osc_current_web_theme_url('images/russian-flag.png');?>" alt=" "></a>
-	 <?php }elseif($i=='1'){?>
 	 <a class="english-btn" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><img src="<?php echo osc_current_web_theme_url('images/english-flag.png');?>" alt=" "></a>
+	 <?php }elseif($i=='1'){?>
+	 <a class="rusiian-btn" href="<?php echo osc_change_language_url ( osc_locale_code() ); ?>"><img src="<?php echo osc_current_web_theme_url('images/russian-flag.png');?>" alt=" "></a>
 	 <?php } ?>
 	 <?php $i++; ?>
 	 <?php }}?>
