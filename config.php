@@ -1,7 +1,7 @@
 <?php
 
 /**
-test
+test test2 ribr
  * The base MySQL settings of Osclass
  */
 define('MULTISITE', 0);
