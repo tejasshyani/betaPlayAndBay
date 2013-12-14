@@ -118,7 +118,7 @@ jQuery(window).scroll(function() {
         }
     }
 }); */
-</script>
+</script> 
     </head>
 <body>
 
