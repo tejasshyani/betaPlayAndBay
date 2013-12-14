@@ -600,7 +600,6 @@ function bender_print_sidebar_category_search($aCategories, $current_category = 
 <?php
     }
 }
-
 ?>
 <?php  
 if(!function_exists('product_listing')){
