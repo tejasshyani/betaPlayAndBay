@@ -9,7 +9,7 @@
     <?php } ?>
 <div class="listing_text">
                     	 <h2><a href="<?php echo osc_item_url() ; ?>" title="<?php echo osc_item_title() ; ?>"><?php echo osc_item_title() ; ?></a></h2>
-                        <p><a href="<?php echo osc_item_url() ; ?>"><?php echo osc_item_category() ; ?> - <?php echo osc_item_city(); ?> (<?php echo osc_item_region(); ?>) - <?php echo osc_format_date(osc_item_pub_date()); ?> <?php echo osc_item_formated_price(); ?>
+                        <p><a href="<?php echo osc_item_url() ; ?>"><?php echo osc_item_category() ; ?> - <?php echo osc_item_city(); ?> (<?php echo osc_item_region(); ?>) - <?php echo osc_format_date(osc_item_pub_date()); ?>
 						<?php if( osc_price_enabled_at_items() ) { echo osc_format_price(osc_item_price()); } ?></a><br><br>
 						<a href="<?php echo osc_item_url() ; ?>"><?php echo osc_highlight( strip_tags( osc_item_description()) ,250) ; ?></a></p>
                     </div>
