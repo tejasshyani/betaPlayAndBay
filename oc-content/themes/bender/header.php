@@ -132,7 +132,8 @@ jQuery(window).scroll(function() {
                     <strong><a href="<?php echo osc_user_dashboard_url(); ?>"><?php _e('My account', 'bender'); ?></a></strong> &middot;
                     <a href="<?php echo osc_user_logout_url(); ?>"><?php _e('Logout', 'bender'); ?></a>
                 </div>
-	    <?php } ?>
+	    <?php } 
+		if(osc_is_home_page()){?>
         <nav class="navigation">
         	<ul class="nav" >
             	<li class="current" ><a href="#home" ><img src="<?php echo osc_current_web_theme_url('images/home_icon.png'); ?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/home_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Home</p></a></li>
@@ -151,7 +152,7 @@ jQuery(window).scroll(function() {
             <?php //} ?>
             </ul> 
         </nav>
-      
+        <?php }else{?> 
        
         <nav class="navigation3">
         	<ul class="nav" >
@@ -168,7 +169,7 @@ jQuery(window).scroll(function() {
             <?php } ?>
             </ul>
         </nav>
-         
+         <?php }?>
     </section>
 
 </header>
