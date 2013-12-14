@@ -51,6 +51,7 @@ jQuery(document).ready(function(){
 	        }, 'slow');
 	        return this; // for chaining...
        }
+	   
 	jQuery("nav.navigation ul.nav > li > a").click(function(e){
 		e.preventDefault();
 		var $this = jQuery(this);
