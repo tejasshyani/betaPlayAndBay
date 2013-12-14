@@ -24,6 +24,18 @@
 DEFINES
 
 */
+if($_GET['action']=="items"){?>
+<style>
+body{background:none repeat scroll 0 0 #EEECE7;}
+</style>
+<?php 
+}else{?>
+<style>
+body{background:none repeat scroll 0 0 #FFFFFF;}
+</style>
+<?php } ?>
+
+ <?php
     define('BENDER_THEME_VERSION', '1.0');
     if( !osc_get_preference('keyword_placeholder', 'bender_theme') ) {
         osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender_theme');
@@ -700,6 +712,38 @@ $(document).ready(function(){
 		}
 	
 	});
+	
+		// Contact 
+	   $("#contact_form").submit(function(){   
+	   var error="0";
+        $('#contact_form input').each(function(){
+			    $(this).next('.error').hide();
+			               if($(this).val()==""){
+						   
+						      if($(this).attr('name')=='yourEmail'){
+								$('#yourEmail').next('.error').text('Enter your Email Address.');
+							  }
+								$(this).next('.error').show();
+								$('#yourEmail').next('.error').show();
+								error++;
+							}else if($(this).attr('name')=='s_email'){
+								 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+								 var valid =regex.test($(this).val());
+	                            if(!valid){
+								  $(this).next('.error').text('Enter valid Email Address.');
+								  $(this).next('.error').show();
+								error++;
+								}
+							}
+	    });
+		if(error>'0'){
+		return false;
+		}else{
+		return true;
+		}
+	
+	});
+	
 });
 </script>
 <script type="text/javascript"  src="<?php echo osc_current_web_theme_url('js/jquery.validate.min.js'); ?>"></script>
@@ -808,19 +852,32 @@ function contact_content(){?>
                     </ul>
                 </center> 
         		<h1 class="latest"><?php _e('Contact us', 'bender'); ?></h1>
-				<form name="contact_form" action="<?php echo osc_base_url(true); ?>" method="post" >
+				<form id="contact_form" name="contact_form" action="<?php echo osc_base_url(true); ?>" method="post" >
+				<input type="hidden" value="contact" name="page">
+<input type="hidden" value="contact_post" name="action">
 					<aside class="map_back">
 						 <?php ContactForm::your_name(); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your name", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_email(); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your valid Email", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_phone_number(); ?> 
+						 <p  class="error" style="display:none; color: #FF0000;">
+						  <?php _e("Enter your phone no.", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_message(); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your message", 'bender'); ?>
+                    </p>
 						
 						<input type="submit" class="submit" value="Submit"/>
 					</aside>
 					<?php osc_run_hook('contact_form'); ?>
 					<?php osc_run_hook('admin_contact_form'); ?>
 				</form>
-				<?php //ContactForm::js_validation(); ?>
                 <aside class="contact_text">
                 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. <br /><br />
 

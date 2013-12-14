@@ -24,6 +24,18 @@
 DEFINES
 
 */
+if($_GET['action']=="items"){?>
+<style>
+body{background:none repeat scroll 0 0 #EEECE7;}
+</style>
+<?php 
+}else{?>
+<style>
+body{background:none repeat scroll 0 0 #FFFFFF;}
+</style>
+<?php } ?>
+
+ <?php
     define('BENDER_THEME_VERSION', '1.0');
     if( !osc_get_preference('keyword_placeholder', 'bender_theme') ) {
         osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender_theme');
@@ -159,7 +171,7 @@ FUNCTIONS
     }
     if( !function_exists('bender_draw_categories_list') ) {
         function bender_draw_categories_list(){ ?>
-        <?php echo '<div id="home" class="div-cont">	<article class="service_area">';  ?>
+        <?php echo '<article class="service_area"><section class="service_midbox wrapper">';  ?>
          <?php
          //cell_3
         $total_categories   = osc_count_categories();
@@ -167,25 +179,17 @@ FUNCTIONS
 
          osc_goto_first_category();
          $i      = 0;
-
          while ( osc_has_categories() ) {
          ?>
-        <?php
-            if($i%$col1_max_cat == 0){
-                if($i > 0) { echo '</div>'; }
-                if($i == 0) {
-                   echo '<div class="cell_3 first_cel">';
-                } else {
-                    echo '<div class="cell_3">';
-                }
-            }
-        ?>
-    <div class="instrument device">
+        
 	<?php if($i=='0'){?>
+	<div class="instrument">
             <img src="<?php echo osc_current_web_theme_url('images/instrument.png')?>" alt="image Here" />
 			<?php } elseif($i=='1'){?>
+			    <div class="instrument device">
             <img src="<?php echo osc_current_web_theme_url('images/devices.png')?>" alt="image Here" />
 			<?php } if($i=='2'){?>
+			    <div class="instrument service">
             <img src="<?php echo osc_current_web_theme_url('images/services.png')?>" alt="image Here" />
 			<?php }?>
             <h2><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></h2>
@@ -203,7 +207,7 @@ FUNCTIONS
         <?php
                 $i++;
             } 
-            echo '</div></article>';
+            echo '</section></article>';
         ?>
         
         <?php
@@ -630,10 +634,11 @@ function product_listing(){ ?>
 			<?php if(osc_count_list_regions() > 0 ) { ?>
             <aside class="location">
             	<h1><?php _e("Location", 'bender') ; ?></h1>
+				<ul>
 					<?php while(osc_has_list_regions() ) { ?>
 					<li><a href="<?php echo osc_list_region_url(); ?>"><?php echo osc_list_region_name() ; ?>(<?php echo osc_list_region_items() ; ?>)</a></li>
 					<?php } ?>
-               
+               </ul>
                 <div class="clear"></div>
             </aside>
             <?php } ?>
@@ -641,58 +646,190 @@ function product_listing(){ ?>
         </section>
 </article>
 </div>
-<?php } 
+<?php }  
 }
  if(!function_exists('login_content')){
 function login_content(){?>
+<script>
+var base_url = "<?php echo osc_current_web_theme_url('ajax_code.php'); ?>";
+$(document).ready(function(){
+   $("#login_submit").submit(function(){ 
+   var error="0";
+        $('#login_submit input').each(function(){
+			    $(this).parent('li').next('.error').hide();
+			               if($(this).val()==""){
+						      if($(this).attr('name')=='email'){
+								$(this).parent('li').next('.error').text('Enter your Email Address.');
+							  }
+					         $(this).parent('li').next('.error').show();
+							error++;
+							}else if($(this).attr('name')=='email'){
+								 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+								 var valid =regex.test($(this).val());
+	                            if(!valid){
+								  $(this).parent('li').next('.error').text('Enter valid Email Address.');
+								  $(this).parent('li').next('.error').show();
+								error++;
+								}
+							}
+	    });
+		if(error>'0'){
+		return false;
+		}else{
+		return true;
+		}
+	});
+	
+	// register
+	   $("#register_ajax").submit(function(){ 
+	   var error="0";
+        $('#register_ajax input').each(function(){
+			    $(this).parent('li').next('.error').hide();
+				$(this).parent('li').next('.error2').hide();
+			               if($(this).val()==""){
+						      if($(this).attr('name')=='s_email'){
+								$(this).parent('li').next('.error').text('Enter your Email Address.');
+							  }
+					         $(this).parent('li').next('.error').show();
+							error++;
+							}else if($(this).attr('name')=='s_email'){
+								 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+								 var valid =regex.test($(this).val());
+	                            if(!valid){
+								  $(this).parent('li').next('.error').text('Enter valid Email Address.');
+								  $(this).parent('li').next('.error').show();
+								error++;
+								}
+							}else if($('#s_password2').val()!=""&&($('#s_password').val()!=$('#s_password2').val())){
+							$('#s_password2').parent('li').next('.error2').show();
+							error++;
+							}
+	    });
+		if(error>'0'){
+		return false;
+		}else{
+		return true;
+		}
+	
+	});
+	
+		// Contact 
+	   $("#contact_form").submit(function(){   
+	   var error="0";
+        $('#contact_form input').each(function(){
+			    $(this).next('.error').hide();
+			               if($(this).val()==""){
+						   
+						      if($(this).attr('name')=='yourEmail'){
+								$('#yourEmail').next('.error').text('Enter your Email Address.');
+							  }
+								$(this).next('.error').show();
+								$('#yourEmail').next('.error').show();
+								error++;
+							}else if($(this).attr('name')=='s_email'){
+								 var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+								 var valid =regex.test($(this).val());
+	                            if(!valid){
+								  $(this).next('.error').text('Enter valid Email Address.');
+								  $(this).next('.error').show();
+								error++;
+								}
+							}
+	    });
+		if(error>'0'){
+		return false;
+		}else{
+		return true;
+		}
+	
+	});
+	
+});
+</script>
+<script type="text/javascript"  src="<?php echo osc_current_web_theme_url('js/jquery.validate.min.js'); ?>"></script>
 <div id="login_register" class="div-cont"  >
-<article class="login_are">
-	<section class="login_midbox wrapper">
-    	<h1 class="login_text">Login & Sign Up</h1>
-        <aside class="login_areabox">
-        	<h1>Log in to Play and Bay</h1>
+<article class="login_area">
+	<section class="login_midbox wrapper"> 
+    	<h1 class="login_text"><?php _e('Login & Signup', 'bender'); ?></h1>
+            
+		   <aside class="login_areabox">
+		   <form action="<?php echo osc_base_url(true); ?>" method="post" id="login_submit">
+            <input type="hidden" name="page" value="login" />
+            <input type="hidden" name="action" value="login_post" id="hidden_login"/>
+        	<h1><?php _e('Log in to Play and Bay', 'bender'); ?></h1>
             <ul>
             	<li>
                 	<label>User Name/Email</label>
-                    <input type="text" placeholder="" value="" />
+                     <?php UserForm::email_login_text(); ?>
                 </li>
+					<p class="error" id="emaillogin-error" style="display:none;color: #FF0000;">
+                        <?php _e("Enter your Email address", 'bender'); ?>
+                    </p>
             	<li>
                 	<label>Enter Password Here</label>
-                    <input type="text" placeholder="" value="" />
+                    <?php UserForm::password_login_text(); ?>
                 </li>
+				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your password", 'bender'); ?>
+                    </p>
             	<li>
                 	<a href="#">forgot password ?</a>
-                    <input type="button" value="Login" />
+                    <input type="submit" value="Login" />
                 </li>
             </ul>
+			</form>
         </aside>
         <aside class="login_areabox login_areabox2">
+		 <ul id="error_list"></ul>
         	<h1>Register for Play and Bay</h1>
+			 <form id="register_ajax" name="register" action="<?php echo osc_base_url(true); ?>" method="post" >
+            <input type="hidden" name="page" value="register" />
+            <input type="hidden" name="action" value="register_post" />
             <ul>
-            	<li>
+            	<!--<li>
                 	<label>First Name</label>
-                    <input type="text" placeholder="" value="" />
+                     <?php UserForm::name_text(); ?>
                 </li>
             	<li>
                 	<label>Last Name</label>
                     <input type="text" placeholder="" value="" />
+                </li>-->
+				<li>
+                	<label>User Name</label>
+                   <?php UserForm::name_text(); ?>
                 </li>
+				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter User Name", 'bender'); ?>
+                    </p>
             	<li>
                 	<label>Email</label>
-                    <input type="text" placeholder="" value="" />
+                    <?php UserForm::email_text(); ?>
+                    <?php osc_show_recaptcha('register'); ?>
                 </li>
+					<p  class="error" id="email-error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter valid Email Address", 'bender'); ?>
+                    </p>
             	<li>
                 	<label>Password</label>
-                    <input type="text" placeholder="" value="" />
+                      <?php UserForm::password_text(); ?>
                 </li>
+				<p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter Password", 'bender'); ?>
+                    </p>
             	<li>
                 	<label>Re-Enter Password</label>
-                    <input type="text" placeholder="" value="" />
+                   <?php UserForm::check_password_text(); ?>
                 </li>
+				<p class="error2" id="password-error" style="display:none; color: #FF0000;">
+                        <?php _e("Passwords don't match", 'bender'); ?>
+                    </p>
+					<?php osc_run_hook('user_register_form'); ?>
             	<li>
-                    <input type="button" value="Submit" />
+                    <input type="submit" value="Submit" />
                 </li>
             </ul>
+			<?php //UserForm::js_validation(); ?>
+			</form>
         </aside>
         <div class="clear"></div>
     </section>
@@ -707,30 +844,40 @@ function contact_content(){?>
 		<section class="contact_midbox wrapper">
         		<center>
                     <ul class="social-links clearfix">
-                        <li class="flx-facebook-icon"><a href="#"></a></li>
-                        <li class="flx-skype-icon"><a href="#"></a></li>
-                        <li class="flx-youtube-icon"><a href="#"></a></li>
-                        <li class="flx-linkdin-icon"><a href="#"></a></li>
-                        <li class="flx-vk-icon"><a href="#"></a></li>
+                        <li class="flx-facebook-icon"><a href="#" target="_blank"></a></li>
+                        <li class="flx-skype-icon"><a href="#" target="_blank"></a></li>
+                        <li class="flx-youtube-icon"><a href="#" target="_blank"></a></li>
+                        <li class="flx-linkdin-icon"><a href="#" target="_blank"></a></li>
+                        <li class="flx-vk-icon"><a href="#" target="_blank"></a></li>
                     </ul>
-                </center>
+                </center> 
         		<h1 class="latest"><?php _e('Contact us', 'bender'); ?></h1>
-				<ul id="error_list"></ul>
-				<form name="contact_form" action="<?php echo osc_base_url(true); ?>" method="post" >
-				<input type="hidden" name="page" value="contact" />
-				<input type="hidden" name="action" value="contact_post" />
+				<form id="contact_form" name="contact_form" action="<?php echo osc_base_url(true); ?>" method="post" >
+				<input type="hidden" value="contact" name="page">
+<input type="hidden" value="contact_post" name="action">
 					<aside class="map_back">
 						 <?php ContactForm::your_name(); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your name", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_email(); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your valid Email", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_phone_number(); ?> 
+						 <p  class="error" style="display:none; color: #FF0000;">
+						  <?php _e("Enter your phone no.", 'bender'); ?>
+                    </p>
 						 <?php ContactForm::your_message(); ?>
-						<?php osc_run_hook('contact_form'); ?>
-                    <?php osc_show_recaptcha(); ?>
-						 <button type="submit" class="submit ui-button ui-button-middle ui-button-main"><?php _e("Send", 'bender');?></button>
-						<?php osc_run_hook('admin_contact_form'); ?>
+						 <p  class="error" style="display:none; color: #FF0000;">
+                        <?php _e("Enter your message", 'bender'); ?>
+                    </p>
+						
+						<input type="submit" class="submit" value="Submit"/>
 					</aside>
+					<?php osc_run_hook('contact_form'); ?>
+					<?php osc_run_hook('admin_contact_form'); ?>
 				</form>
-				<?php ContactForm::js_validation(); ?>
                 <aside class="contact_text">
                 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. <br /><br />
 
@@ -746,7 +893,33 @@ function contact_content(){?>
 </article>
 </div>
 <?php }
-}?>
+}
+    if( !function_exists('bender_draw_item_search') ) {
+        function bender_draw_item_search($class = false,$admin = false, $premium = false) {
+            $premiumSlug = '';
+            if($premium){
+                $premiumSlug = '-premium';
+            }
+			
+            require WebThemes::newInstance()->getCurrentThemePath().'loop-single-search'.$premiumSlug.'.php';
+        }
+    }
+	if( !function_exists('bender_draw_dropdown') ) {
+        function bender_draw_dropdown() {
+             echo '<a href="#" class="rate">'.osc_item_formated_price().'</a>
+                        <a href="#" class="other">Other currencies
+                            	<ul>
+                                	<li>378 EUR</li>
+                                	<li>320 GBP</li>
+                                	<li>4231 UAH</li>
+                                	<li>516 USD</li>
+                                </ul>
+                       </a>';
+        }
+    }
+	?>
+
+
 <?php
 
 
