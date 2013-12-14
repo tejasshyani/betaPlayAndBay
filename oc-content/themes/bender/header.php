@@ -43,6 +43,82 @@ jQuery('#yourName').attr('placeholder','Name');
 	jQuery('a.list-first').html('[ << Previous ]');
 });
 </script>
+<script type="text/javascript" >
+jQuery(document).ready(function(){
+	jQuery.fn.goTo = function( $thiss ) {
+        jQuery('html, body').animate({
+	            scrollTop: parseInt(jQuery(this).offset().top-jQuery("header").height()) + 'px' //
+	        }, 'slow');
+	        return this; // for chaining...
+       }
+	jQuery("nav.navigation ul.nav > li > a").click(function(e){
+		e.preventDefault();
+		var $this = jQuery(this);
+		 jQuery("nav.navigation ul.nav > li").removeClass("current");
+		 $this.closest("li").addClass("current");
+		 /* setTimeout( function(){
+			var current_menu = jQuery('nav.navigation ul.nav > li.current');
+			var old_menu_index = current_menu.index();
+			current_menu.removeClass("current");
+			var new_menu_index = $this.parent("li").index();
+			 alert(old_menu_index);
+			 alert(new_menu_index);
+			var time = new Array();
+			var out_time = new Array();
+			if(old_menu_index < new_menu_index){
+				for(var k=old_menu_index; k < new_menu_index; k++){
+					 time[k] = setTimeout(function(){
+						jQuery('nav.navigation ul.nav > li').eq( k ).addClass("current");
+					 },1000);
+					 if(new_menu_index!=k){
+						out_time[k] = setTimeout(function(){  
+							jQuery('nav.navigation ul.nav > li').eq( k ).removeClass("current");
+						},1500);
+					}
+				}
+			}else{
+				
+			}
+			
+		 }, 100 ); */
+		var link_to = jQuery(this).attr("href");
+		var $thiss = jQuery(this);
+		if(link_to=='#no'){
+			jQuery("#home").goTo( $thiss );
+		}else{
+			jQuery(link_to).goTo( $thiss );
+		}
+		
+	});
+	jQuery("nav.navigation2 ul.nav > li > a").click(function(e){
+		e.preventDefault();
+		jQuery("nav.navigation ul.nav > li").removeClass("current");
+		jQuery(this).closest("li").addClass("current");
+		var link_to = jQuery(this).attr("href");
+		var $thiss = jQuery(this);
+		if(link_to=='#no'){
+			jQuery("#home").goTo( $thiss );
+		}else{
+			jQuery(link_to).goTo( $thiss );
+		}
+	});
+});
+/* var fixed = false;
+
+jQuery(window).scroll(function() {
+    if( jQuery(this).scrollTop() > jQuery("header").height() ) {
+        if( !fixed ) {
+            fixed = true;
+            jQuery('header').css({'position':'fixed','top':'0','z-index': '999'});
+        }
+    } else {
+        if( fixed ) {
+            fixed = false;
+            jQuery('header').css({position:'relative'});
+        }
+    }
+}); */
+</script>
     </head>
 <body>
 
