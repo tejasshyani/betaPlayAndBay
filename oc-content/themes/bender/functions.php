@@ -26,12 +26,12 @@ DEFINES
 */
 if($_GET['action']=="items"){?>
 <style>
-body{background:none repeat scroll 0 0 #EEECE7;}
+body{background:none repeat scroll 0 0 #EEECE7 !important;}
 </style>
 <?php 
 }else{?>
 <style>
-body{background:none repeat scroll 0 0 #FFFFFF;}
+body{background:none repeat scroll 0 0 #FFFFFF !important;}
 </style>
 <?php } ?>
 
