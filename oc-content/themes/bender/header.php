@@ -127,7 +127,7 @@ jQuery(window).scroll(function() {
 	<section class="header_midbox wrapper">
     	<a href="<?php echo osc_base_url(); ?>"><img width="226" src="<?php echo osc_current_web_theme_url('images/logo.png')?>" alt="Logo Here" class="logo"/></a> 
 		<?php if(osc_is_web_user_logged_in() ) { ?>
-		<div style="float:right">
+		<div class="dash">
                     <span><?php echo sprintf(__('Hi %s', 'bender'), osc_logged_user_name() . '!'); ?>  &middot;</span>
                     <strong><a href="<?php echo osc_user_dashboard_url(); ?>"><?php _e('My account', 'bender'); ?></a></strong> &middot;
                     <a href="<?php echo osc_user_logout_url(); ?>"><?php _e('Logout', 'bender'); ?></a>
