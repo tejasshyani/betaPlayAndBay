@@ -93,7 +93,7 @@
                   }
               }
               ?>
-			  <label></label>
+			  <label>Newly listed</label>
                 <ul>
                 	  <?php
                   foreach($orders as $label => $params) {
