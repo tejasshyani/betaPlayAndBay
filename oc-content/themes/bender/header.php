@@ -119,6 +119,42 @@ jQuery(window).scroll(function() {
         }
     }
 }); */
+/*** Code to scroll and select menu starts here ***/
+
+jQuery(window).scroll(function() {	
+			jQuery('.div-cont').each(function(){
+			 if(appeardd(jQuery(this))){
+			  var $headers = $("header");
+				var b =  jQuery(this).data("index");
+				$headers.each(function(f, g){
+					if( $(this).length > 0 ){
+						var h = $(this).find("nav ul").children( "li" );
+						h.removeClass("current");
+						h.eq( b ).addClass("current");
+					}
+				});
+				 
+			 }
+		   });
+        });
+		function appeardd($element){
+		   var $window = jQuery(window);
+			var window_left = $window.scrollLeft();
+			var window_top = $window.scrollTop();
+			var offset = $element.offset();
+			var left = offset.left;
+			var top = offset.top;
+
+			if (top + $element.height() >= window_top &&
+				top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
+				left + $element.width() >= window_left &&
+				left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+			  return true;
+			} else {
+			  return false;
+			}
+		}
+/*** Code to scroll and select menu end here ***/
 </script> 
     </head>
 <body>
@@ -148,10 +184,10 @@ jQuery(window).scroll(function() {
             	<li><a href="#listing"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="#contact"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
 				<?php //if(  () || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
-				  <?php if( !osc_users_enabled() ) { ?>
-            <?php if( osc_is_web_user_logged_in() ) { ?>
+				  <?php //if( !osc_users_enabled() ) { ?>
+            <?php // if( osc_is_web_user_logged_in() ) { ?>
             <li><a href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php }} ?>
+            <?php //}} ?>
             </ul> 
         </nav>
         <?php }else{?> 
@@ -167,10 +203,10 @@ jQuery(window).scroll(function() {
 				<?php } }?>
             	<li><a href="#listing"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="#contact"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
-               <?php if( !osc_users_enabled() ) { ?>
-            <?php if( osc_is_web_user_logged_in() ) { ?>
+               <?php //if( !osc_users_enabled() ) { ?>
+            <?php //if( osc_is_web_user_logged_in() ) { ?>
             <li><a href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php }} ?>
+            <?php //}} ?>
             </ul>
         </nav>
          <?php }?>
