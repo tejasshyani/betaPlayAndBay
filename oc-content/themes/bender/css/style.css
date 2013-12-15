@@ -2098,6 +2098,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     padding: 5px;
     position: relative;
     text-decoration: none;
+	 margin-top: 7px;
 }
 .listing_text p a.MCtooltip span, .product_detail_text a.MCtooltip span, .list_result figure a.MCtooltip span
 {
