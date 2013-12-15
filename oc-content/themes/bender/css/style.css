@@ -2090,10 +2090,14 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 }
 .listing_text p a.MCtooltip, .product_detail_text a.MCtooltip, .list_result figure a.MCtooltip
 {
-	position:relative;
-	background:#74AFC5;
+	background: none repeat scroll 0 0 #74AFC5;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: arial;
+    font-size: 12px;
     padding: 5px;
-	display:inline-block;
+    position: relative;
+    text-decoration: none;
 }
 .listing_text p a.MCtooltip span, .product_detail_text a.MCtooltip span, .list_result figure a.MCtooltip span
 {
