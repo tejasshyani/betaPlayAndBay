@@ -82,7 +82,7 @@
 				echo '</p>';
 			?>
             <div class="sort">
-            	<?php _e('Sort by', 'bender'); ?>:
+            <span>	<?php _e('Sort by', 'bender'); ?>:</span>
 				 <?php
               $orders = osc_list_orders();
               $current = '';
@@ -93,6 +93,7 @@
                   }
               }
               ?>
+			  <label></label>
                 <ul>
                 	  <?php
                   foreach($orders as $label => $params) {
