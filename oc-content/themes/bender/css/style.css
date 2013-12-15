@@ -1412,6 +1412,7 @@ ul.result_slide li a:hover, ul.result_slide li.active
 	-webkit-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	-o-box-sizing:border-box;
+	margin-bottom: 5px;
 }
 .list_result figure img:hover
 {
