@@ -119,14 +119,14 @@
                             Session::newInstance()->_keepForm('meta_'.$key);
                         }
                     }
-
-                    if(osc_recaptcha_items_enabled() && osc_recaptcha_private_key() != '') {
+echo '<pre>'; print_r($meta); die;
+                   /* if(osc_recaptcha_items_enabled() && osc_recaptcha_private_key() != '') {
                         if(!osc_check_recaptcha()) {
                             osc_add_flash_error_message( _m('The Recaptcha code is wrong') );
                             $this->redirectTo( osc_item_post_url() );
                             return false; // BREAK THE PROCESS, THE RECAPTCHA IS WRONG
                         }
-                    }
+                    }*/
 
                     if(!osc_is_web_user_logged_in()) {
                         $user = User::newInstance()->findByEmail($mItems->data['contactEmail']);
@@ -152,7 +152,7 @@
 
                     // POST ITEM ( ADD ITEM )
                     $success = $mItems->add();
-echo '<pre>'; print_r($success);
+
                     if($success!=1 && $success!=2) {
                         osc_add_flash_error_message( $success);
                         $this->redirectTo( osc_item_post_url() );
@@ -169,7 +169,7 @@ echo '<pre>'; print_r($success);
                         }
 
                         $itemId         = Params::getParam('itemId');
-echo '<pre>'; echo $category; die;
+
                         $category = Category::newInstance()->findByPrimaryKey(Params::getParam('catId'));
                         View::newInstance()->_exportVariableToView('category', $category);
                         $this->redirectTo(osc_search_category_url());
