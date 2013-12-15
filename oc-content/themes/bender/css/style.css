@@ -144,7 +144,7 @@ nav.navigation ul li a:hover, nav.navigation ul li a.active, nav.navigation ul l
 	background:#0382B1;
 	color:#fff;
 }
-nav.navigation ul li:last-child a:hover, nav.navigation ul li:last-child a.active, nav.navigation ul li.current:last-child a
+nav.navigation ul li.publish_ad a:hover, nav.navigation ul li.publish_ad a.active, nav.navigation ul li.current.publish_ad a
 {
 	background:#F54444;
 	color:#fff;
