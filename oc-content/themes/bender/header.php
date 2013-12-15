@@ -148,8 +148,10 @@ jQuery(window).scroll(function() {
             	<li><a href="#listing"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="#contact"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
 				<?php //if(  () || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
+				  <?php if( !osc_users_enabled() ) { ?>
+            <?php if( osc_is_web_user_logged_in() ) { ?>
             <li><a href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php //} ?>
+            <?php }} ?>
             </ul> 
         </nav>
         <?php }else{?> 
@@ -165,9 +167,10 @@ jQuery(window).scroll(function() {
 				<?php } }?>
             	<li><a href="#listing"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="#contact"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
-               <?php if( osc_users_enabled() || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
+               <?php if( !osc_users_enabled() ) { ?>
+            <?php if( osc_is_web_user_logged_in() ) { ?>
             <li><a href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php } ?>
+            <?php }} ?>
             </ul>
         </nav>
          <?php }?>
