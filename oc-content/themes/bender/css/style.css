@@ -2147,7 +2147,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 .sort label
 {
 	float:left;
-	padding:0 5px;
+	padding:0 17px 0 5px;
 }
 .sort ul
 {
@@ -2157,6 +2157,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     top: 26px;
     width: 100%;
 	background:#f5f5f5;
+	display:none;
 }
 .sort ul li
 {
@@ -2184,4 +2185,8 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 	position: absolute;
     right: 6px;
     top: 11px;
+}
+.sort label:hover ul
+{
+	display:block;
 }
