@@ -2087,13 +2087,13 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 {
 	display:none;
 }
-.listing_text p a.MCtooltip
+.listing_text p a.MCtooltip, .product_detail_text a.MCtooltip
 {
 	position:relative;
 	background:#74AFC5;
     padding: 5px;
 }
-.listing_text p a.MCtooltip span
+.listing_text p a.MCtooltip span, .product_detail_text a.MCtooltip span
 {
 	background:#F5F5F5;
     color: #000000;
@@ -2104,7 +2104,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     width: 100%;
 	display:none;
 }
-.listing_text p a.MCtooltip:hover span
+.listing_text p a.MCtooltip:hover span, .product_detail_text a.MCtooltip:hover span
 {
     display:block;
 }
