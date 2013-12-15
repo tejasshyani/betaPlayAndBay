@@ -141,6 +141,7 @@
                     }
 
                     $banned = osc_is_banned($mItems->data['contactEmail']);
+					echo $banned;
                     if($banned==1) {
                         osc_add_flash_error_message( _m('Your current email is not allowed'));
                         $this->redirectTo( osc_item_post_url() );
@@ -151,7 +152,7 @@
 
                     // POST ITEM ( ADD ITEM )
                     $success = $mItems->add();
-
+echo '<pre>'; print_r($success);
                     if($success!=1 && $success!=2) {
                         osc_add_flash_error_message( $success);
                         $this->redirectTo( osc_item_post_url() );
@@ -168,7 +169,7 @@
                         }
 
                         $itemId         = Params::getParam('itemId');
-
+echo '<pre>'; echo $category; die;
                         $category = Category::newInstance()->findByPrimaryKey(Params::getParam('catId'));
                         View::newInstance()->_exportVariableToView('category', $category);
                         $this->redirectTo(osc_search_category_url());
