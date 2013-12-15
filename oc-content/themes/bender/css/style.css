@@ -1561,10 +1561,11 @@ padding:0px;
 	color:#EA121F;
 	cursor:pointer;
 }
-.list_textbox h3:hover, .list_textbox p:hover
+.list_textbox h3:hover, .list_textbox p:hover,.list_textbox h1 a:hover, .list_textbox h3 a:hover
 {
 	color:#fb9500;
 	cursor:pointer;
+	
 }
 .wishlist h1
 {
