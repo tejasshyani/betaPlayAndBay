@@ -2062,12 +2062,20 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 .listing_text p a.MCtooltip
 {
 	position:relative;
+	background:#74AFC5;
+    padding: 5px;
 }
 .listing_text p a.MCtooltip span
 {
-	background:#FFFFFF;
+	background:#F5F5F5;
+    color: #000000;
     left: 0;
     position: absolute;
-    top: 20px;
+    text-align: center;
+    top: 26px;
     width: 100%;
+}
+.listing_text p a.MCtooltip:hover span
+{
+    display:block;
 }
