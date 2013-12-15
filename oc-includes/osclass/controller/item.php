@@ -130,7 +130,6 @@
 
                     if(!osc_is_web_user_logged_in()) {
                         $user = User::newInstance()->findByEmail($mItems->data['contactEmail']);
-			echo 'hhhh';	echo '<pre>';		print_r($user);
                         // The user exists but it's not logged
                         if(isset($user['pk_i_id'])) {
                             foreach( $mItems->data as $key => $value ) {
@@ -142,7 +141,7 @@
                     }
 
                     $banned = osc_is_banned($mItems->data['contactEmail']);
-					echo 'jjjjjj';echo '<pre>'; echo $banned; die;
+					
                     if($banned==1) {
                         osc_add_flash_error_message( _m('Your current email is not allowed'));
                         $this->redirectTo( osc_item_post_url() );
@@ -153,7 +152,7 @@
 
                     // POST ITEM ( ADD ITEM )
                     $success = $mItems->add();
-
+echo 'eeeeeeee'; print_r(  $success); die;
                     if($success!=1 && $success!=2) {
                         osc_add_flash_error_message( $success);
                         $this->redirectTo( osc_item_post_url() );
