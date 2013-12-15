@@ -1383,6 +1383,7 @@ ul.result_slide li a:hover, ul.result_slide li.active
 	font:13px Arial, Helvetica, sans-serif;
 	color:#000;
 	padding:5px 3px 5px 7px;
+	position:relative;
 }
 .sort select
 {
@@ -2146,13 +2147,14 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 .sort label
 {
 	float:left;
+	padding:0 5px;
 }
 .sort ul
 {
 	left: 0;
     list-style: none outside none;
     position: absolute;
-    top: 28px;
+    top: 26px;
     width: 100%;
 	background:#f5f5f5;
 }
@@ -2165,7 +2167,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 	text-decoration:none;
 	color:#000;
 	display:block;
-	padding:5px 0;
+	padding:5px;
 }
 .sort ul li a:hover
 {
