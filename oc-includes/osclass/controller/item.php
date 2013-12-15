@@ -106,6 +106,7 @@
                     $mItems = new ItemActions(false);
                     // prepare data for ADD ITEM
                     $mItems->prepareData(true);
+					PRINT_R($mItems->data); DIE;
                     // set all parameters into session
                     foreach( $mItems->data as $key => $value ) {
                         Session::newInstance()->_setForm($key,$value);

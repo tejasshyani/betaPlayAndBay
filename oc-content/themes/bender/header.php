@@ -91,7 +91,7 @@ jQuery(document).ready(function(){
 		}
 		
 	});
-	jQuery("nav.navigation2 ul.nav > li > a").click(function(e){
+	jQuery("nav.navigation3 ul.nav > li > a:not(.not-link)").click(function(e){
 		e.preventDefault();
 		jQuery("nav.navigation ul.nav > li").removeClass("current");
 		jQuery(this).closest("li").addClass("current");
