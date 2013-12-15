@@ -2059,3 +2059,15 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 {
 	display:none;
 }
+.listing_text p a.MCtooltip
+{
+	position:relative;
+}
+.listing_text p a.MCtooltip span
+{
+	background:#FFFFFF;
+    left: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
