@@ -213,7 +213,10 @@ jQuery(window).scroll(function() {
 	</div>
 	<?php osc_run_hook('product');?>
 	
-	<?php osc_run_hook('login-content');?>
+			  <?php if( osc_users_enabled() ) { ?>
+            <?php if( !osc_is_web_user_logged_in() ) { ?>
+	<?php osc_run_hook('login-content');
+	}}?>
 	
 	<?php osc_run_hook('contact-content');?>
 	
