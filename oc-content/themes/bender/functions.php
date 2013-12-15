@@ -905,7 +905,7 @@ function contact_content(){?>
     }
 	if( !function_exists('bender_draw_dropdown') ) {
         function bender_draw_dropdown() {
-            /* echo '<a href="#" class="rate">'.osc_item_formated_price().'</a>
+             echo '<a href="#" class="rate">'.osc_item_formated_price().'</a>
                         <a href="#" class="other">Other currencies
                             	<ul>
                                 	<li>378 EUR</li>
@@ -913,7 +913,7 @@ function contact_content(){?>
                                 	<li>4231 UAH</li>
                                 	<li>516 USD</li>
                                 </ul>
-                       </a>';*/
+                       </a>';
         }
     }
 	?>
