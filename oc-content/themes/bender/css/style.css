@@ -2074,6 +2074,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     text-align: center;
     top: 26px;
     width: 100%;
+	display:none;
 }
 .listing_text p a.MCtooltip:hover span
 {
