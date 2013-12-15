@@ -843,11 +843,11 @@ function contact_content(){?>
 		<section class="contact_midbox wrapper">
         		<center>
                     <ul class="social-links clearfix">
-                        <li class="flx-facebook-icon"><a href="#" target="_blank"></a></li>
-                        <li class="flx-skype-icon"><a href="#" target="_blank"></a></li>
-                        <li class="flx-youtube-icon"><a href="#" target="_blank"></a></li>
-                        <li class="flx-linkdin-icon"><a href="#" target="_blank"></a></li>
-                        <li class="flx-vk-icon"><a href="#" target="_blank"></a></li>
+                        <li class="flx-facebook-icon"><a href="https://www.facebook.com/russell.ruslan.94" target="_blank"></a></li>
+                        <li class="flx-skype-icon"><a href="skype:ruslanibr1" target="_blank"></a></li>
+                        <li class="flx-youtube-icon"><a href="http://www.youtube.com/user/AngrySoWhat" target="_blank"></a></li>
+                        <li class="flx-linkdin-icon"><a href="http://www.linkedin.com/profile/view?id=141145637&trk=nav_responsive_tab_profile" target="_blank"></a></li>
+                        <li class="flx-vk-icon"><a href="http://vk.com/lovemarishaprecious" target="_blank"></a></li>
                     </ul>
                 </center> 
         		<h1 class="latest"><?php _e('Contact us', 'bender'); ?></h1>
