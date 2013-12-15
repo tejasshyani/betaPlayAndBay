@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 	        return this; // for chaining...
        }
 	   
-	jQuery("nav.navigation ul.nav > li > a").click(function(e){
+	jQuery("nav.navigation ul.nav > li > a:not(.not-link)").click(function(e){
 		e.preventDefault();
 		var $this = jQuery(this);
 		 jQuery("nav.navigation ul.nav > li").removeClass("current");
@@ -120,20 +120,21 @@ jQuery(window).scroll(function() {
     }
 }); */
 /*** Code to scroll and select menu starts here ***/
-
+jQuery(document).ready(function(){
+	var a = jQuery( ".navigation ul.nav" ).children( "li" );
+	a.each(function( b, c) {
+			// $( this ).children("a").data( "index", b );
+			jQuery( '.div-cont' ).eq( b ).attr( "data-index", b );
+	});
+	
+});
 jQuery(window).scroll(function() {	
-			jQuery('.div-cont').each(function(){
+		jQuery('.div-cont').each(function(){
 			 if(appeardd(jQuery(this))){
-			  var $headers = $("header");
-				var b =  jQuery(this).data("index");
-				$headers.each(function(f, g){
-					if( $(this).length > 0 ){
-						var h = $(this).find("nav ul").children( "li" );
-						h.removeClass("current");
-						h.eq( b ).addClass("current");
-					}
-				});
-				 
+				var b =  jQuery(this).attr("data-index");
+				var h = $("header").find("nav ul").children( "li" );
+				h.removeClass("current");
+				h.eq( b ).addClass("current");
 			 }
 		   });
         });
@@ -149,6 +150,7 @@ jQuery(window).scroll(function() {
 				top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
 				left + $element.width() >= window_left &&
 				left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
+				// alert("asfd");
 			  return true;
 			} else {
 			  return false;
@@ -158,7 +160,6 @@ jQuery(window).scroll(function() {
 </script> 
     </head>
 <body>
-
 <header>
 	<section class="header_midbox wrapper">
     	<a href="<?php echo osc_base_url(); ?>"><img width="226" src="<?php echo osc_current_web_theme_url('images/logo.png')?>" alt="Logo Here" class="logo"/></a> 
@@ -186,7 +187,7 @@ jQuery(window).scroll(function() {
 				<?php //if(  () || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
 				  <?php //if( !osc_users_enabled() ) { ?>
             <?php // if( osc_is_web_user_logged_in() ) { ?>
-            <li><a href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
+            <li><a class="no-link" href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
             <?php //}} ?>
             </ul> 
         </nav>
