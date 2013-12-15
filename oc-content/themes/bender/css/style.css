@@ -2197,3 +2197,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 {
 	display:block;
 }
+.list_textbox h1 a, .list_textbox h3 a{
+text-decoration:none;
+}
+
