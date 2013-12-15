@@ -119,44 +119,7 @@ jQuery(window).scroll(function() {
         }
     }
 }); */
-/*** Code to scroll and select menu starts here ***/
-jQuery(document).ready(function(){
-	var a = jQuery( ".navigation ul.nav" ).children( "li" );
-	a.each(function( b, c) {
-			// $( this ).children("a").data( "index", b );
-			jQuery( '.div-cont' ).eq( b ).attr( "data-index", b );
-	});
-	
-});
-jQuery(window).scroll(function() {	
-		jQuery('.div-cont').each(function(){
-			 if(appeardd(jQuery(this))){
-				var b =  jQuery(this).attr("data-index");
-				var h = $("header").find("nav ul").children( "li" );
-				h.removeClass("current");
-				h.eq( b ).addClass("current");
-			 }
-		   });
-        });
-		function appeardd($element){
-		   var $window = jQuery(window);
-			var window_left = $window.scrollLeft();
-			var window_top = $window.scrollTop();
-			var offset = $element.offset();
-			var left = offset.left;
-			var top = offset.top;
 
-			if (top + $element.height() >= window_top &&
-				top - ($element.data('appear-top-offset') || 0) <= window_top + $window.height() &&
-				left + $element.width() >= window_left &&
-				left - ($element.data('appear-left-offset') || 0) <= window_left + $window.width()) {
-				// alert("asfd");
-			  return true;
-			} else {
-			  return false;
-			}
-		}
-/*** Code to scroll and select menu end here ***/
 </script> 
     </head>
 <body>
