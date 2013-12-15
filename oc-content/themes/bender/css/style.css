@@ -618,6 +618,7 @@ color:#FF9973;
 {
 	background:url(../images/latest_back.png);
 	padding-bottom:4em;
+	border-top: 4px solid #FFFFFF;
 }
 
 .social-links 
