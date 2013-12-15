@@ -156,7 +156,7 @@
                         osc_add_flash_error_message( $success);
                         $this->redirectTo( osc_item_post_url() );
                     } else {
-					echo '<pre>'; print_r($meta);
+					
                         if(is_array($meta)) {
                             foreach( $meta as $key => $value ) {
                                 Session::newInstance()->_dropkeepForm('meta_'.$key);
