@@ -12,8 +12,8 @@
                         
                 </figure>
                 <div class="list_textbox">
-                		<h1><?php echo osc_premium_title() ; ?>(<?php echo osc_premium_category() ; ?>)</h1>
-                        <h3><?php echo osc_item_city(); //osc_item()['s_city'];?> - (<?php echo osc_premium_region(); ?>) - <?php echo osc_format_date(osc_premium_pub_date()); ?>.</h3>
+                		<h1><a href="<?php echo osc_premium_url() ; ?>" ><?php echo osc_premium_title() ; ?>(<?php echo osc_premium_category() ; ?>)</a></h1>
+                        <h3><a href="<?php echo osc_premium_url() ; ?>" ><?php echo osc_item_city(); //osc_item()['s_city'];?> - (<?php echo osc_premium_region(); ?>) - <?php echo osc_format_date(osc_premium_pub_date()); ?>.</a></h3>
                         <p><?php echo osc_highlight( strip_tags( osc_premium_description()) ,250) ; ?></p>
                 </div>
                 <div class="clear"></div>
