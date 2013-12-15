@@ -94,7 +94,7 @@
               }
               ?>
 			  <label>Newly listed <b class="arrow-down"></b></label>
-                <ul>
+                <ul class="price_drop">
                 	  <?php
                   foreach($orders as $label => $params) {
                       $orderType = ($params['iOrderType'] == 'asc') ? '0' : '1'; ?>

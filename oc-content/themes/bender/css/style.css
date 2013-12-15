@@ -2186,7 +2186,7 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     right: 6px;
     top: 11px;
 }
-.sort label:hover ul
+.sort label:hover ul.price_drop
 {
 	display:block;
 }
