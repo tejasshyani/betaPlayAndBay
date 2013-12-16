@@ -146,17 +146,17 @@
                             <input type="hidden" name="action" value="add_comment" />
                             <input type="hidden" name="page" value="item" />
                             <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
-                           <?php if(osc_is_web_user_logged_in()) { ?>
+                           <?php if(osc_is_web_user_logged_in()) { echo 'dxsx'; die;?>
                                 <input type="hidden" name="authorName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
                                 <input type="hidden" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
-                            <?php } else { ?>
+                            <?php } else { echo 'yyyy'; die; ?>
                                
                                         <?php CommentForm::author_input_text(); ?>
                                    
                                         <?php CommentForm::email_input_text(); ?>
                                    
                             <?php }; ?>
-                              <input type="text" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
+                              
                                     <?php CommentForm::body_input_textarea(); ?>
                                 
                             <div class="clear"></div>
