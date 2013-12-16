@@ -2202,3 +2202,56 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
 text-decoration:none;
 }
 
+.form-container-box {
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 700px;
+}
+.form-container-box .header {
+    background-color: #F7F7F7;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+.form-horizontal .control-group, .form-horizontal .meta_list .meta {
+    clear: both;
+    margin-bottom: 10px;
+}
+.form-horizontal label {
+    float: left;
+    font-size: 0.85em;
+    padding-top: 7px;
+    text-align: right;
+    width: 160px;
+}
+.form-horizontal .controls {
+    line-height: 32px;
+    margin-left: 180px;
+}
+.form-container .controls {
+    font-size: 1em;
+}
+.form-container .controls input, .form-container .meta input {
+    background-color: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 0 #DFD8D8 inset;
+    color: #646464;
+    display: inline-block;
+    font-size: 1em;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 280px;
+}
+.header h1{
+color: #FFFFFF;
+    font-family: 'abelregular';
+    font-size: 65px;
+    font-weight: normal;
+    text-align: center;
+}
+.form-container label{font:12px/24px Verdana,Geneva,sans-serif;}
+.form-container .ui-button{ padding: 6px 15px;}
