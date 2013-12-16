@@ -101,30 +101,6 @@
                 </h3>
             <?php } ?>
 			
-                <ul class="view">
-                	<li>
-                    	<label>Vote</label>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                    </li>
-                </ul>
-                <ul class="view">
-                	<li>
-                    	<label>Result</label>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                        <a href="#"><img alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/star.png"></a>
-                    </li>
-                </ul><ul class="view">
-                	<li>
-                    	<label>0 Votes</label>
-                    </li>
-                </ul>
 				        <?php osc_run_hook('item_detail', osc_item() ); ?>
         <p class="contact_button">
             <?php   if( !osc_item_is_expired () ) { ?>
