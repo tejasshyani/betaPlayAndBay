@@ -156,7 +156,7 @@
                                         <?php CommentForm::email_input_text(); ?>
                                    
                             <?php }; ?>
-                              <input type="hidden" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
+                              <input type="text" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
                                     <?php CommentForm::body_input_textarea(); ?>
                                 
                             <div class="clear"></div>
