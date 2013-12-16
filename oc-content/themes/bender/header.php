@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 	        return this; // for chaining...
        }
 	   
-	jQuery("nav.navigation ul.nav > li > a [class!='no-link']").click(function(e){
+	jQuery("nav.navigation ul.nav > li > a").click(function(e){
 		e.preventDefault();
 		var $this = jQuery(this);
 		 jQuery("nav.navigation ul.nav > li").removeClass("current");
