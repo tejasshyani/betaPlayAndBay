@@ -1148,7 +1148,8 @@ input.share[type=button]:hover
 /**** list page code start here ****/
 .result_outer
 {
-	padding-top:125px;
+	/*padding-top:125px;*/
+	 padding-top: 77px;
 }
 .refine
 {
