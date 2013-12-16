@@ -52,7 +52,7 @@ jQuery(document).ready(function(){
 	        return this; // for chaining...
        }
 	   
-	jQuery("nav.navigation ul.nav > li > a:not([class='no-link'])").click(function(e){
+	jQuery("nav.navigation ul.nav > li > a").click(function(e){
 		e.preventDefault();
 		var $this = jQuery(this);
 		 jQuery("nav.navigation ul.nav > li").removeClass("current");
@@ -134,6 +134,13 @@ jQuery(window).scroll(function() {
                 </div>
 	    <?php } 
 		if(osc_is_home_page()){?>
+		<nav class="navigation3">
+		<ul>
+		<?php  if( osc_is_web_user_logged_in() ) { ?>
+            <li class="publish_ad"><a class="no-link " href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
+            <?php } ?>
+		</ul>
+		</nav>
         <nav class="navigation">
         	<ul class="nav" >
             	<li class="current" ><a href="#home" ><img src="<?php echo osc_current_web_theme_url('images/home_icon.png'); ?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/home_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Home</p></a></li>
@@ -147,14 +154,21 @@ jQuery(window).scroll(function() {
             <?php }?>
             	<li><a href="#listing"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="#contact"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
-				<?php //if(  () || ( !osc_users_enabled() && !osc_reg_user_post() )) { ?>
-				 <?php  if( osc_is_web_user_logged_in() ) { ?>
-            <li class="publish_ad"><a class="no-link " href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php } ?>
+				
+				 
             </ul> 
         </nav>
-        <?php }else{?> 
-         <nav class="navigation3">
+		
+        <?php }else{?>
+		<nav class="navigation3">
+		<ul>
+		<?php  if( osc_is_web_user_logged_in() ) { ?>
+            <li class="publish_ad"><a class="no-link" href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
+            <?php }  ?>
+		</ul>
+		</nav>
+		
+         <nav class="navigation">
         	<ul class="nav" >
             	<li class="current" ><a href="<?php echo osc_base_url().'#home'; ?>" >
 				<img src="<?php echo osc_current_web_theme_url('images/home_icon.png'); ?>" alt="Home_icon" class="active_icon" />
@@ -168,9 +182,7 @@ jQuery(window).scroll(function() {
 				<?php } }?>
             	<li><a href="<?php echo osc_base_url().'#listing'; ?>"><img src="<?php echo osc_current_web_theme_url('images/list_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/list_icon_normal.png')?>" alt="Home_icon" class="normal_icon" /><p>Listing</p></a></li>
             	<li><a href="<?php echo osc_base_url().'#contact'; ?>"><img src="<?php echo osc_current_web_theme_url('images/contact_icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/contact_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Contact Us</p></a></li>
-                <?php  if( osc_is_web_user_logged_in() ) { ?>
-            <li class="publish_ad"><a class="no-link" href="<?php echo osc_item_post_url_in_category() ; ?>"><img src="<?php echo osc_current_web_theme_url('images/publish-icon.png')?>" alt="Home_icon" class="active_icon" /><img src="<?php echo osc_current_web_theme_url('images/publish-icon-normal.png')?>" alt="Home_icon" class="normal_icon" /><p><?php _e("Publish your ad", 'bender');?></p></a></li>
-            <?php }  ?>
+                
             </ul>
         </nav>
          <?php }?>
