@@ -2203,9 +2203,9 @@ text-decoration:none;
 }
 
 .form-container-box {
-    border: 1px solid #EAEAEA;
+      border: 1px solid #EAEAEA;
     border-radius: 4px;
-    margin: 0 auto;
+    margin: 54px auto 0;
     width: 700px;
 }
 .form-container-box .header {
@@ -2246,10 +2246,8 @@ text-decoration:none;
     vertical-align: middle;
     width: 280px;
 }
-.header h1{
-color: #FFFFFF;
-    font-family: 'abelregular';
-    font-size: 65px;
+.form-container .header h1{
+
     font-weight: normal;
     text-align: center;
 }
