@@ -2203,9 +2203,9 @@ text-decoration:none;
 }
 
 .form-container-box {
-      border: 1px solid #EAEAEA;
+    border: 1px solid #EAEAEA;
     border-radius: 4px;
-    margin: 54px auto 8em;
+    margin: 54px auto 6em;
     width: 700px;
 }
 .form-container-box .header {
