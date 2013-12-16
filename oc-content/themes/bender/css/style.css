@@ -2005,6 +2005,7 @@ h6{font-size:14px}
     top: 109px;
     width: 100%;
     z-index: 999;
+	background: #FB956F;
 }
 .flashmessage .ico-close {
     color: white;
