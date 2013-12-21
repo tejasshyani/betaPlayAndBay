@@ -1351,12 +1351,16 @@ ul.result_slide li
 	color:#3a3f43;
 	padding-left:10px;
 }
-ul.result_slide li a
+/*ul.result_slide li a
 {
 	text-decoration:none;
 	color:#3a3f43;
 }
 ul.result_slide li a:hover, ul.result_slide li.active
+{
+	color:#0382b1;
+}*/
+ul.result_slide li.active
 {
 	color:#0382b1;
 }
@@ -2255,3 +2259,21 @@ text-decoration:none;
 .form-container label{font:12px/24px Verdana,Geneva,sans-serif;}
 .form-container .ui-button{ padding: 6px 15px;}
 .product_detail_text a.MCtooltip{margin-left:10px}
+ul.result_slide li {
+    background: none repeat scroll 0 0 #0382B1;
+    color: #FFFFFF;
+    float: left;
+    font: 13px Arial,Helvetica,sans-serif;
+    margin-left: 5px;
+    padding: 3px 7px;
+}
+ul.result_slide li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul.result_slide li a:hover, ul.result_slide li.active {
+    color: #FFFFFF;
+}
+ul.result_slide li:hover, ul.result_slide li:active {
+    background: none repeat scroll 0 0 #2C2C2C;
+}
