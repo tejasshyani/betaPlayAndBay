@@ -393,6 +393,6 @@ $i_userId = osc_logged_user_id();
                 </div>
             </li> 
         </ul>
-    </section>
+    </section> 
     </section>
 <?php osc_current_web_theme_path('footer.php') ; ?>
