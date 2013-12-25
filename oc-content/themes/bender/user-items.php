@@ -307,7 +307,8 @@ $i_userId = osc_logged_user_id();
                     	<li><label>Address</label><?php UserForm::address_text(osc_user()); ?></li>
                     	<li><label>Website</label><?php UserForm::website_text(osc_user()); ?></li>
                     	<li><label>Description</label> <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?></li>
-                        <li><input type="button" value="Update" class="Update apply"></li>
+                        <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button>
+						
 						 <?php osc_run_hook('user_form'); ?>
                     </ul>
 					</form>
