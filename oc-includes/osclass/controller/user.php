@@ -130,10 +130,12 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
 
                                                         $validation_url = osc_change_user_email_confirm_url( Session::newInstance()->_get('userId'), $code );
                                                         osc_run_hook('hook_email_new_email', Params::getParam('new_email'), $validation_url);
-                                                        $this->redirectTo( osc_user_profile_url() );
+$this->redirectTo( osc_base_url().'??page=user&action=items' );
+														//$this->redirectTo( osc_user_profile_url() );
                                                     } else {
                                                         osc_add_flash_error_message( _m('The specified e-mail is already in use'));
-                                                        $this->redirectTo( osc_change_user_email_url() );
+														$this->redirectTo( osc_base_url().'??page=user&action=items' );
+                                                        //$this->redirectTo( osc_change_user_email_url() );
                                                     }
                                                 }
                 break;
@@ -154,7 +156,8 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
                                                                     ,array('pk_i_id' => Session::newInstance()->_get('userId')));
                                                             osc_add_flash_ok_message(_m('The username was updated'));
                                                             osc_run_hook('after_username_change', Session::newInstance()->_get('userId'), Params::getParam('s_username'));
-                                                            $this->redirectTo(osc_user_profile_url());
+                                                            $this->redirectTo( osc_base_url().'??page=user&action=items' );
+															//$this->redirectTo(osc_user_profile_url());
                                                         } else {
                                                             osc_add_flash_error_message(_m('The specified username is not valid, it contains some invalid words'));
                                                         }
@@ -162,7 +165,8 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
                                                 } else {
                                                     osc_add_flash_error_message(_m('The specified username could not be empty'));
                                                 }
-                                                $this->redirectTo( osc_change_user_username_url() );
+                                                $this->redirectTo( osc_base_url().'??page=user&action=items' );
+												//$this->redirectTo( osc_change_user_username_url() );
                 break;
                 case('change_password'):        //change password
                                                 $this->doView('user-change_password.php');
@@ -173,29 +177,32 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
 
                                                 if( (Params::getParam('password', false, false) == '') || (Params::getParam('new_password', false, false) == '') || (Params::getParam('new_password2', false, false) == '') ) {
                                                     osc_add_flash_warning_message( _m('Password cannot be blank') );
-                                                    $this->redirectTo( osc_change_user_password_url() );
+                                                    $this->redirectTo( osc_base_url().'??page=user&action=items' );//$this->redirectTo( osc_change_user_password_url() );
                                                 }
 
                                                 if( $user['s_password'] != sha1( Params::getParam('password', false, false) ) ) {
                                                     osc_add_flash_error_message( _m("Current password doesn't match") );
-                                                    $this->redirectTo( osc_change_user_password_url() );
+                                                    $this->redirectTo( osc_base_url().'??page=user&action=items' );
+													//$this->redirectTo( osc_change_user_password_url() );
                                                 }
 
                                                 if( !Params::getParam('new_password', false, false) ) {
                                                     osc_add_flash_error_message( _m("Passwords can't be empty") );
-                                                    $this->redirectTo( osc_change_user_password_url() );
+                                                    $this->redirectTo( osc_base_url().'??page=user&action=items' );//$this->redirectTo( osc_change_user_password_url() );
                                                 }
 
                                                 if( Params::getParam('new_password', false, false) != Params::getParam('new_password2', false, false) ) {
                                                     osc_add_flash_error_message( _m("Passwords don't match") );
-                                                    $this->redirectTo( osc_change_user_password_url() );
+                                                    $this->redirectTo( osc_base_url().'??page=user&action=items' );
+													//$this->redirectTo( osc_change_user_password_url() );
                                                 }
 
                                                 User::newInstance()->update(array( 's_password' => sha1( Params::getParam ('new_password', false, false) ) )
                                                                            ,array( 'pk_i_id' => Session::newInstance()->_get('userId') ) );
 
                                                 osc_add_flash_ok_message( _m('Password has been changed') );
-                                                $this->redirectTo( osc_user_profile_url() );
+                                                $this->redirectTo( osc_base_url().'??page=user&action=items' );
+												//$this->redirectTo( osc_user_profile_url() );
                 break;
                 case 'items':                   // view items user
                                                 $itemsPerPage = (Params::getParam('itemsPerPage')!='')?Params::getParam('itemsPerPage'):10;
@@ -249,8 +256,8 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
                     }else{
                         osc_add_flash_error_message(_m('Oops! There was a problem trying to unsubscribe you. Please contact an administrator'));
                     }
-
-                    $this->redirectTo(osc_user_alerts_url());
+$this->redirectTo( osc_base_url().'??page=user&action=items' );
+                   // $this->redirectTo(osc_user_alerts_url());
                 break;
                 case 'deleteResource':
                     $id   = Params::getParam('id');
@@ -299,7 +306,7 @@ $this->redirectTo( osc_base_url().'??page=user&action=items' );
                             $this->redirectTo( osc_base_url() );
                         } else {
                             osc_add_flash_error_message(_m("Oops! you can not do that"));
-                            $this->redirectTo(osc_user_dashboard_url() );
+                            $this->redirectTo( osc_base_url().'??page=user&action=items' );//$this->redirectTo(osc_user_dashboard_url() );
                         }
                     } else {
                         osc_add_flash_error_message(_m("Oops! you can not do that"));
