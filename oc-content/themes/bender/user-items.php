@@ -307,7 +307,7 @@ $i_userId = osc_logged_user_id();
                     	<li><label>Address</label><?php UserForm::address_text(osc_user()); ?></li>
                     	<li><label>Website</label><?php UserForm::website_text(osc_user()); ?></li>
                     	<li><label>Description</label> <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?></li>
-                        <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button>
+                        <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
 						
 						 <?php osc_run_hook('user_form'); ?>
                     </ul>
@@ -349,7 +349,8 @@ $i_userId = osc_logged_user_id();
                </select>
                         </li>
 						 <?php } ?>
-                        <li><input type="button" value="Save Settings" class="settings apply"></li>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Save Settings", 'bender');?></button>
+						</li>
                     </ul>
 					 </form>
 					<?php } ?>
@@ -370,7 +371,7 @@ $i_userId = osc_logged_user_id();
                     	<li><label>Current Email</label><?php echo osc_logged_user_email(); ?></li>
                     	<li><label>New Email*</label><input type="text" name="new_email" id="new_email" value="" /></li>
                     	
-                        <li><input type="button" value="Update" class="Update apply"></li>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
                     </ul>
 					</form>
 					<h1>Change your Password</h1>
@@ -381,7 +382,7 @@ $i_userId = osc_logged_user_id();
 					    <li><label>Current Password*</label><input type="password" name="password" id="password" value="" /></li>
                     	<li><label>New Password*</label><input type="password" name="new_password" id="new_password" value="" /></li>
                     	<li><label>Repeat New Password*</label><input type="password" name="new_password2" id="new_password2" value="" /></li>
-                        <li><input type="button" value="Update" class="Update apply"></li>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
                     </ul>
 					</form>
                     <h1><?php _e('Delete Account', 'bender') ; ?></h1>
