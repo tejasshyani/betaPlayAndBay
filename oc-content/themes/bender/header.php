@@ -149,7 +149,7 @@ jQuery(window).scroll(function() {
 			<?php }?>
            
             </ul> 
-        </nav>
+        </nav> 
       <?php }else{?> 
         <nav class="navigation3">
         	<ul class="nav1" >
