@@ -2277,7 +2277,7 @@ ul.result_slide li a:hover, ul.result_slide li.active {
 ul.result_slide li:hover, ul.result_slide li:active {
     background: none repeat scroll 0 0 #2C2C2C;
 }
-input[type="submit"] {
+.update{
     background: -moz-linear-gradient(center top , #FB9500, #EB2B0C) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #EC2200;
     border-radius: 5px;
