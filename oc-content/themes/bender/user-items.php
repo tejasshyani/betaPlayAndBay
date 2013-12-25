@@ -294,7 +294,7 @@ $i_userId = osc_logged_user_id();
 					?>
 					<form action="<?php echo osc_base_url(true); ?>" method="post">
 					           <input type="hidden" name="page" value="user" />
-            <input type="hidden" name="action" value="profile_post" />
+                               <input type="hidden" name="action" value="profile_post" />
                 	<ul>
                     	<li><label>Name</label><?php UserForm::name_text(osc_logged_user_name()); ?></li>
                     	<li><label>User Type</label> <?php UserForm::is_company_select(osc_user()); ?></li>
@@ -309,7 +309,8 @@ $i_userId = osc_logged_user_id();
                     	<li><label>Description</label> <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?></li>
                         <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
 						
-						 <?php osc_run_hook('user_form'); ?>
+						 <?php //osc_run_hook('user_form'); ?>
+						 <?php osc_run_hook('user_form', osc_user()); ?>
                     </ul>
 					</form>
 					<?php 
