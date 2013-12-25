@@ -152,7 +152,7 @@ jQuery(window).scroll(function() {
         </nav>
       <?php }else{?> 
         <nav class="navigation3">
-        	<ul class="nav" >
+        	<ul class="nav1" >
             	<li class="current" ><a href="<?php echo osc_base_url().'#home'; ?>" >
 				<img src="<?php echo osc_current_web_theme_url('images/home_icon.png'); ?>" alt="Home_icon" class="active_icon" />
 				<img src="<?php echo osc_current_web_theme_url('images/home_icon_normal.png');?>" alt="Home_icon" class="normal_icon" /><p>Home</p></a>
