@@ -1654,7 +1654,7 @@ color:#fff;
 	padding-top:6px;
 	padding-right:2%;
 }
-.account ul li input[type=text]
+.account ul li input[type=text],.account ul li input[type=password]
 {
 	border:1px solid #999;
 	background:#fff;
