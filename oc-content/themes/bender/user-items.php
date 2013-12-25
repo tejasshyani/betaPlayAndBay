@@ -320,7 +320,7 @@ $i_userId = osc_logged_user_id();
                     <h1>PM Settings</h1>
 					 <form action="<?php echo osc_base_url() . 'oc-content/plugins/osclass_pm/user-proc.php'; ?>" method="POST">
 					  <input type="hidden" name="page" value="custom" />
-      <!--<input type="hidden" name="file" value="osclass_pm/user-proc.php" />-->
+      <input type="hidden" name="file" value="osclass_pm/user-proc.php" />
       <input type="hidden" name="option" value="userSettings" />
       <input type="hidden" name="user_id" value="<?php echo osc_logged_user_id(); ?>" />
                 	<ul class="pm">
