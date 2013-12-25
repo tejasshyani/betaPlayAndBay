@@ -2288,3 +2288,19 @@ ul.result_slide li:hover, ul.result_slide li:active {
     padding: 5px 23px;
     text-transform: uppercase;
 }
+.delete_account{
+ font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+}
+.delete_account:hover
+{
+	background:#015473;
+	background:linear-gradient(top, #015473, #008ec2);
+	background:-moz-linear-gradient(top, #015473, #008ec2);
+	background:-webkit-linear-gradient(top, #015473, #008ec2);
+	background:-ms-linear-gradient(top, #015473, #008ec2);
+	background:-o-linear-gradient(top, #015473, #008ec2);
+	cursor:pointer;
+	box-shadow:-1px -1px 0px #85CAE3 inset, 0px 1px 0px #34758d inset;
+}

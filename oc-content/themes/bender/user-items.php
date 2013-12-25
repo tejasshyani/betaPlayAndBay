@@ -380,20 +380,21 @@ $i_userId = osc_logged_user_id();
 					  <input type="hidden" name="page" value="user" />
             <input type="hidden" name="action" value="change_password_post" />
                 	<ul>
-					    <li><label>Current Password*</label><input type="password" name="password" id="password" value="" /></li>
-                    	<li><label>New Password*</label><input type="password" name="new_password" id="new_password" value="" /></li>
-                    	<li><label>Repeat New Password*</label><input type="password" name="new_password2" id="new_password2" value="" /></li>
+					    <li><label class="control-label" for="password"><?php _e('Current password', 'bender'); ?> *</label>
+                <input type="password" name="password" id="password" value="" /></li>
+                    	<li> <label class="control-label" for="new_password"><?php _e('New password', 'bender'); ?> *</label><input type="password" name="new_password" id="new_password" value="" /></li>
+                    	<li> <label class="control-label" for="new_password2"><?php _e('Repeat new password', 'bender'); ?> *</label><input type="password" name="new_password2" id="new_password2" value="" /></li>
                         <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
                     </ul>
 					</form>
                     <h1><?php _e('Delete Account', 'bender') ; ?></h1>
-                    <?php $options = array();
+                    <?php /*$options = array();
       $options[] = array('name'  => __('Delete account', 'bender'),
                          'url'   => '#',
                          'class' => 'opt_delete_account');
       $options = osc_apply_filter('user_menu_filter', $options);
-      echo '<ul><li class="' . $options[0]['class'] . '" ><a href="' . $options[0]['url'] . '" >' . $options[0]['name'] . '</a></li></ul>';                            
-?>
+      echo '<ul><li class="' . $options[0]['class'] . '" ><a href="' . $options[0]['url'] . '" >' . $options[0]['name'] . '</a></li></ul>';   */                         
+?><input type="button" value="Delete Account" class="delete_account subscribe">
                     <div class="clear"></div>
                 </div>
             </li> 
