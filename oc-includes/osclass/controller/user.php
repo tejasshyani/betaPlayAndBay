@@ -79,8 +79,8 @@
                                                 osc_add_flash_ok_message( _m('Your profile has been updated successfully') );
                                                 break;
                                         }
-
-                                        $this->redirectTo( osc_user_profile_url() );
+$this->redirectTo( osc_base_url().'??page=user&action=items' );
+                                       // $this->redirectTo( osc_user_profile_url() );
                 break;
                 case('alerts'):         //alerts
                                         $aAlerts = Alerts::newInstance()->findByUser( Session::newInstance()->_get('userId'), false );
