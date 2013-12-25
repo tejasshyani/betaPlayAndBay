@@ -293,6 +293,8 @@ $i_userId = osc_logged_user_id();
 					$osc_user = osc_user();
 					?>
 					<form action="<?php echo osc_base_url(true); ?>" method="post">
+					           <input type="hidden" name="page" value="user" />
+            <input type="hidden" name="action" value="profile_post" />
                 	<ul>
                     	<li><label>Name</label><?php UserForm::name_text(osc_logged_user_name()); ?></li>
                     	<li><label>User Type</label> <?php UserForm::is_company_select(osc_user()); ?></li>
