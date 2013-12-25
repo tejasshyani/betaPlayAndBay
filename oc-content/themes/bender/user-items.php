@@ -395,8 +395,8 @@ $i_userId = osc_logged_user_id();
       $options = osc_apply_filter('user_menu_filter', $options);
       echo '<ul><li class="' . $options[0]['class'] . '" ><a href="' . $options[0]['url'] . '" >' . $options[0]['name'] . '</a></li></ul>';   */                         
 ?>
-<div id="dialog-delete-account" class="delete_account subscribe" title="<?php echo osc_esc_html(__('Delete account', 'bender')); ?>">
-<?php _e('Are you sure you want to delete your account?', 'bender'); ?>
+<div id="dialog-delete-account" class="delete_account subscribe" title="<?php echo osc_esc_html(__('Delete account', 'bender')); ?>" onclick="return confirm('Are you sure you want to delete your account?');">
+<?php _e('Delete account', 'bender'); ?>
 </div>
                     <div class="clear"></div>
                 </div>
