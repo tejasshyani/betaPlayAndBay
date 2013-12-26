@@ -88,7 +88,7 @@
                     	<label>Message:</label>
                         <?php ContactForm::your_message(); ?>
                     </li>
-                    <li> <button type="submit" class="ui-button ui-button-middle ui-button-main"><?php _e("Send", 'bender');?></button></li>
+                    <li> <button type="submit" class="share ui-button ui-button-middle ui-button-main"><?php _e("Send", 'bender');?></button></li>
 				</form>
                 </ul>
 				<?php 
