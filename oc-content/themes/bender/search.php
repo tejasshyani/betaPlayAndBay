@@ -69,9 +69,7 @@
     <section class="result_box">
     	<h1 class="result"><?php _e('Search Results for :- ','bender'); ?><?php echo search_title(); ?></h1>
 		<?php osc_run_hook('search_ads_listing_top'); ?>
-		<div id="my_page">
-    	<?php echo osc_search_pagination(); ?>
-		</div>
+		
         <div class="clear"></div>
 		<?php if(osc_count_items() == 0) { ?>
                  <div class="refine_result"><p><?php printf(__('There are no results matching "%s"', 'bender'), osc_search_pattern()) ; ?></p></div>
@@ -139,6 +137,9 @@
                  }
                  bender_draw_item_search($class); ?>
           <?php } ?>
+		  <div id="my_page">
+    	<?php echo osc_search_pagination(); ?>
+		</div>
      <div class="clear"></div>
       <?php
       if(osc_rewrite_enabled()){
