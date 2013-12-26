@@ -137,7 +137,7 @@
                  }
                  bender_draw_item_search($class); ?>
           <?php } ?>
-		  <div id="my_page">
+		  <div id="my_page" style="margin-top:10px">
     	<?php echo osc_search_pagination(); ?>
 		</div> 
      <div class="clear"></div>
