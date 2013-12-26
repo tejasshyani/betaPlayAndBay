@@ -187,7 +187,7 @@
 			<?php osc_current_web_theme_path('item-sidebar.php');?>
                 <div class="clear"></div>
         </section>
-    
+   
     <div class="clear"></div>
 </section>
 
