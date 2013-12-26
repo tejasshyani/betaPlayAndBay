@@ -145,9 +145,7 @@
                 </div>
             <?php } ?>
             <h2><?php _e('Leave your comment (spam and offensive messages will be removed)', 'bender'); ?></h2>
-              
                     <form action="<?php echo osc_base_url(true); ?>" method="post" name="comment_form" id="comment_form">
-                       
                             <input type="hidden" name="action" value="add_comment" />
                             <input type="hidden" name="page" value="item" />
                             <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
