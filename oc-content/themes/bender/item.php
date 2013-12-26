@@ -188,7 +188,7 @@
                     	<option>Mark as</option>
                         <option>Mark as spam</option>
                         <option>Mark as misclassified</option>
-                       <option>Mark as duplicated</option>
+                        <option>Mark as duplicated</option>
                         <option>Mark as expired</option>
                         <option>Mark as offensive</option>
             	</select>
