@@ -2,7 +2,7 @@
     /*
      *      Osclass – software for creating and publishing online classified
      *                           advertising platforms
-     *erfwerferwf
+     *
      *                        Copyright (C) 2012 OSCLASS
      *
      *       This program is free software: you can redistribute it and/or
