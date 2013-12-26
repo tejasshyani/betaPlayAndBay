@@ -1330,13 +1330,13 @@ input.apply[type=button]:hover
 	width:77%;
 	padding-bottom:4em;
 }
-h1.result
-{
-	font-family: 'oswaldlight';
-	font-size:30px;
-	color:#2c2c2c;
-	font-weight:normal;
-	line-height:30px;
+h1.result {
+    color: #2C2C2C;
+    font-family: 'oswaldlight';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    margin-bottom: 10px;
 }
 ul.result_slide
 {
