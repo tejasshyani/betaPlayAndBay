@@ -89,7 +89,7 @@
                 <div class="clear"></div>
                 <p class="description"><?php echo osc_item_description(); ?></p>
                 
-				
+				<?php show_qrcode(); ?>
 				    <?php if( osc_count_item_meta() >= 1 ) { ?>
                 <br />
                 <h3>
