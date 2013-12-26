@@ -150,8 +150,8 @@
                             <input type="hidden" name="page" value="item" />
                             <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
                            <?php if(osc_is_web_user_logged_in()) { ?>
-                                <input type="hidden" name="authorName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
-                                <input type="hidden" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
+                        <input type="hidden" name="authorName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
+                        <input type="hidden" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
                             <?php } else {?>
                                         <?php CommentForm::author_input_text(); ?>
                                         <?php CommentForm::email_input_text(); ?>
@@ -165,6 +165,58 @@
     <?php } ?>
 
 	</section>
+	<?php related_listings(); ?>
+
+	<section class="related_box">
+	        <?php if( osc_count_items() > 0 ) { ?>
+        		<aside class="related_list">
+                	<h1><?php _e('Related listings', 'bender'); ?></h1>
+                    <?php
+          $i = 0;
+          while(osc_has_items()) { $i++; ?>
+                 <?php
+                 $class = false;
+                 if($i%4 == 0){
+                    $class = 'last';
+                 }
+                 bender_draw_item_search($class); ?>
+          <?php } ?>
+                </aside>
+				<?php } ?>
+                <aside class="contact_pub">
+                	<select>
+                    	<option>Mark as</option>
+                        <option>Mark as spam</option>
+                        <option>Mark as misclassified</option>
+                        <option>Mark as duplicated</option>
+                        <option>Mark as expired</option>
+                        <option>Mark as offensive</option>
+            	</select>
+                <h1>Contact Publisher</h1>
+                <ul>
+                	<li>
+                    	<label>Your name:</label>
+                        <input type="text" value="" placeholder="" />
+                    </li>
+                	<li>
+                    	<label>Your e-mail address:</label>
+                        <input type="text" value="" placeholder="" />
+                    </li>
+                	<li>
+                    	<label>Phone number (optional):</label>
+                        <input type="text" value="" placeholder="" />
+                    </li>
+                	<li>
+                    	<label>Message:</label>
+                        <textarea placeholder=""></textarea>
+                    </li>
+                    <li> <input type="button" class="share" value="Submit" /></li>
+                </ul>
+                </aside>
+                <div class="clear"></div>
+        </section>
+    
+    <div class="clear"></div>
 </section>
 
 <div class="clear"></div>
