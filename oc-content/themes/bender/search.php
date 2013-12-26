@@ -139,7 +139,7 @@
           <?php } ?>
 		  <div id="my_page">
     	<?php echo osc_search_pagination(); ?>
-		</div>
+		</div> 
      <div class="clear"></div>
       <?php
       if(osc_rewrite_enabled()){
