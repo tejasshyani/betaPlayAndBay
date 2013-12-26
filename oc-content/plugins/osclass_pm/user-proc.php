@@ -227,8 +227,8 @@ switch(Params::getParam('option')){
 		}
       osc_add_flash_ok_message(__('Your Settings have been saved!','osclass_pm'));
       // HACK TO DO A REDIRECT ?>
-    	  <!--<script>location.href="<?php //echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-pm-settings.php'; ?>"</script>-->
-		 <script>location.href="<?php echo $this->redirectTo( osc_base_url().'?page=user&action=items' ); ?>"</script>
+    	  <!--<script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-pm-settings.php'; ?>"</script>-->
+   <script>location.href="<?php echo $this->redirectTo( osc_base_url().'?page=user&action=items' ); ?>"</script>
     	<?php
    break;   
 }
