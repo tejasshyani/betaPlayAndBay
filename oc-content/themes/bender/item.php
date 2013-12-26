@@ -89,7 +89,8 @@
                 <div class="clear"></div>
                 <p class="description"><?php echo osc_item_description(); ?></p>
                 
-				<?php show_qrcode(); ?>
+				   <?php show_qrcode(); ?>
+				   
 				    <?php if( osc_count_item_meta() >= 1 ) { ?>
                 <br />
                 <h3>
@@ -102,16 +103,20 @@
             <?php } ?>
 			
 				        <?php osc_run_hook('item_detail', osc_item() ); ?>
+ 	<?php echo osc_item_views() ; ?> <?php _e('views', 'bender'); ?>
         <p class="contact_button">
-            <?php   if( !osc_item_is_expired () ) { ?>
+            <?php if( !osc_item_is_expired () ) { ?>
             <?php if( !( ( osc_logged_user_id() == osc_item_user_id() ) && osc_logged_user_id() != 0 ) ) { ?>
-                <?php    if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
-                    <a href="#contact" class="wishlist_btn ui-button ui-button-middle ui-button-main resp-toogle"><?php _e('Contact seller', 'bender'); ?></a>
+                <?php     if(osc_reg_user_can_contact() && osc_is_web_user_logged_in() || !osc_reg_user_can_contact() ) { ?>
+                    <a href="#contact" class="ui-button ui-button-middle ui-button-main resp-toogle"><?php _e('Contact seller', 'bender'); ?></a>
                 <?php     } ?>
             <?php     } ?>
             <?php } ?>
-           <a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow" class="share shareui-button ui-button-middle"><?php _e('Share', 'bender'); ?></a>
+           <?php watchlist(); ?>
+           <?php osclass_pm_link(); ?>
+           <a href="<?php echo osc_item_send_friend_url(); ?>" rel="nofollow" class="ui-button ui-button-middle"><?php _e('Share', 'bender'); ?></a>
         </p>
+        <?php osc_run_hook('location'); ?>
                
              </article>
 			<div class="clear"></div>
@@ -150,19 +155,12 @@
                                 <input type="hidden" name="authorName" value="<?php echo osc_esc_html( osc_logged_user_name() ); ?>" />
                                 <input type="hidden" name="authorEmail" value="<?php echo osc_logged_user_email();?>" />
                             <?php } else {?>
-                               
                                         <?php CommentForm::author_input_text(); ?>
-                                   
                                         <?php CommentForm::email_input_text(); ?>
-                                   
                             <?php }; ?>
-                              
-                                    <?php CommentForm::body_input_textarea(); ?>
-                                
+                                       <?php CommentForm::body_input_textarea(); ?>
                             <div class="clear"></div>
                                 <button class="share" type="submit"><?php _e('Submit', 'bender'); ?></button>
-                           
-                      
                     </form>
         </div>
         <?php } ?>
