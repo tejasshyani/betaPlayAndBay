@@ -91,4 +91,6 @@
                     <li> <button type="submit" class="ui-button ui-button-middle ui-button-main"><?php _e("Send", 'bender');?></button></li>
 				</form>
                 </ul>
+				<?php 
+				}?>
                 </aside>
