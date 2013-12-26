@@ -89,8 +89,7 @@
                 <div class="clear"></div>
                 <p class="description"><?php echo osc_item_description(); ?></p>
                 
-				<?php kinzaqrcodes_show_item_url(); ?>
-
+				
 				    <?php if( osc_count_item_meta() >= 1 ) { ?>
                 <br />
                 <h3>
