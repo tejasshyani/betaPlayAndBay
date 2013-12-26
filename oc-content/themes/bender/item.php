@@ -183,45 +183,8 @@
           <?php } ?>
                 </aside>
 				<?php } ?>
-				    <?php if(!osc_is_web_user_logged_in() || osc_logged_user_id()!=osc_item_user_id()) { ?>
-        <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
-                <aside class="contact_pub">
-				 <input type="hidden" name="id" value="<?php echo osc_item_id(); ?>" />
-            <input type="hidden" name="as" value="spam" />
-            <input type="hidden" name="action" value="mark" />
-            <input type="hidden" name="page" value="item" />
-                <select name="as" id="as" class="mark_as">
-                    <option><?php _e("Mark as...", 'bender'); ?></option>
-                    <option value="spam"><?php _e("Mark as spam", 'bender'); ?></option>
-                    <option value="badcat"><?php _e("Mark as misclassified", 'bender'); ?></option>
-                    <option value="repeated"><?php _e("Mark as duplicated", 'bender'); ?></option>
-                    <option value="expired"><?php _e("Mark as expired", 'bender'); ?></option>
-                    <option value="offensive"><?php _e("Mark as offensive", 'bender'); ?></option>
-            </select>
-        </form>
-		<?php }?>
-                <h1>Contact Publisher</h1>
-                <ul>
-                	<li>
-                    	<label>Your name:</label>
-                        <input type="text" value="" placeholder="" />
-                    </li>
-                	<li>
-                    	<label>Your e-mail address:</label>
-                        <input type="text" value="" placeholder="" />
-                    </li>
-                	<li>
-                    	<label>Phone number (optional):</label>
-                        <input type="text" value="" placeholder="" />
-                    </li>
-                	<li>
-                    	<label>Message:</label>
-                        <textarea placeholder=""></textarea>
-                    </li>
-                    <li> <input type="button" class="share" value="Submit" /></li>
-                </ul>
-                </aside>
 			
+			<?php osc_current_web_theme_path('item-sidebar.php');?>
                 <div class="clear"></div>
         </section>
     
