@@ -361,7 +361,7 @@ $i_userId = osc_logged_user_id();
             <input type="hidden" name="action" value="change_username_post" />
                 	<ul>
                     	<li><label>User Name</label><input type="text" name="s_username" id="s_username" value="" /></li>
-						<li><<button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
+						<li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
                       </ul>
 					</form>
 					<h1>Change your Email</h1>
