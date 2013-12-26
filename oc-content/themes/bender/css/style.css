@@ -1017,8 +1017,8 @@ input.share[type=button]
 	box-shadow:0px 1px 0px #fed18c inset, -1px -1px 0px #ef5c4a inset;
 	
 }
-input.share[type=button]:hover
-{
+input.share[type=submit]:hover
+{ 
 	background:#015473;
 	background:linear-gradient(top, #eb2b0c, #fb9500);
 	background:-moz-linear-gradient(top, #eb2b0c, #fb9500);
@@ -2277,7 +2277,7 @@ ul.result_slide li a:hover, ul.result_slide li.active {
 ul.result_slide li:hover, ul.result_slide li:active {
     background: none repeat scroll 0 0 #2C2C2C;
 }
-.update{
+.update, .share{
     background: -moz-linear-gradient(center top , #FB9500, #EB2B0C) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 1px solid #EC2200;
     border-radius: 5px;
