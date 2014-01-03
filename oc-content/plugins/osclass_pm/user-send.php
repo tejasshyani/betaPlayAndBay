@@ -1,4 +1,4 @@
-<?php 
+<?php // echo 'innn';die;
    $userId = Params::getParam('userId');
    $itemId = Params::getParam('itemId');
    $mType  = Params::getParam('mType');
@@ -12,7 +12,7 @@ if($userId != 0){
 }
 
 if($messCount < maxPMs()){   
-   
+  ;
    $pm = ModelPM::newInstance()->getByPrimaryKey($messId, 0);
    
    if($userId == 0 && $userId !='') {
@@ -25,17 +25,22 @@ if($messCount < maxPMs()){
    }
 if($pm['recip_id'] != osc_logged_user_id() && ($mType == 'reply' || $mType == 'quote')){
    // send user back to the inbox page since they where trying to access another users messages. ?>
-   <script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php'; ?>"</script>
+   <script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
    <?php
 } else {
 ?>
 
-<div class="content user_account">
+<section class="wrapper result_outer account_outer">
+    
+<section class="account_box">
+<div class="form-container form-horizontal form-container-box">
+<div class="header">
     <h1>
         <strong><?php echo __('New message', 'osclass_pm'); ?></strong>
     </h1>
+	</div>
     <div id="pluginsidebar">
-        <?php echo osc_private_user_menu(get_user_menu()); ?>
+        <?php //echo osc_private_user_menu(get_user_menu()); ?>
     </div>
     <div id="main">
     <form id="newMessage-form" action="<?php echo osc_base_url() . 'oc-content/plugins/osclass_pm/user-proc.php'; ?>" method="POST">
@@ -51,11 +56,14 @@ if($pm['recip_id'] != osc_logged_user_id() && ($mType == 'reply' || $mType == 'q
          <div class="pm_message">
             <div class="pm_tools">
                <table>
+			 
                   <tr>
                      <td><?php _e('To: ','osclass_pm'); ?></td>
                      <td>
+					 <div class="controls">
                         <input tabindex="1" id="pmNames" readonly="readonly" type="text" <?php if(isset($user)){echo 'value="' . $user['s_name'] . '"';} ?> />
                         <input name="recipId" type="hidden" value="<?php echo $userId;?>" />
+						</div>
                         <?php /*<select id="combobox">
                            <option value="">Select one...</option>
                            <?php $users = ModelPM::newInstance()->getUsers(); ?>
@@ -65,25 +73,38 @@ if($pm['recip_id'] != osc_logged_user_id() && ($mType == 'reply' || $mType == 'q
                         </select> */ ?>
                      </td>
                   </tr>
-                  <tr><td>&nbsp;</td><td></td></tr>
+				  
+				  <tr><td>&nbsp;</td><td></td></tr>
+				  
                   <tr class="subject">
                      <td><?php _e('Subject: ','osclass_pm'); ?>&nbsp;</td>
-                     <td><input tabindex="2" type="textbox" maxlength="60" size="60" name="subject" id="subject" value="<?php if(@$item != ''){echo 'Item: ' . @$item['s_title'];}elseif($mType == 'reply' || $mType == 'quote'){echo $pm['pm_subject'];}else{ _e('[No subject]','osclass_pm');} ?>" /></td>
+                     <td>
+					  <div class="controls">
+					 <input tabindex="2" type="textbox" maxlength="60" size="60" name="subject" id="subject" value="<?php if(@$item != ''){echo 'Item: ' . @$item['s_title'];}elseif($mType == 'reply' || $mType == 'quote'){echo $pm['pm_subject'];}else{ _e('[No subject]','osclass_pm');} ?>" />
+					  </div>
+					 </td>
                   </tr>
+				 
                </table>
             </div>
+			<div class="control-group">
             <div class="pm_mess">
-               <textarea tabindex="3" rows="12" name="message" id="message"><?php if($mType == 'quote') {echo '[quote][quoteAuthor]' . __('Quote from:','osclass_pm') . ' ' . $user['s_name'] . ' ' . __('on: ','osclass_pm') . osc_format_date($pm['message_date']) . ', ' . osclass_pm_format_time($pm['message_date']) . "[/quoteAuthor]\n" . $pm['pm_message'] . "\n[/quote]";} ?></textarea>
+			<?php _e('Message: ','osclass_pm'); ?>&nbsp;
+			 <div class="controls" id="max_controls">
+               <textarea tabindex="3" rows="8" name="message" id="message"><?php if($mType == 'quote') {echo '[quote][quoteAuthor]' . __('Quote from:','osclass_pm') . ' ' . $user['s_name'] . ' ' . __('on: ','osclass_pm') . osc_format_date($pm['message_date']) . ', ' . osclass_pm_format_time($pm['message_date']) . "[/quoteAuthor]\n" . $pm['pm_message'] . "\n[/quote]";} ?></textarea>
+			   </div>
                <br />
                <?php if(pmSent()) { ?>
-               <p>
+               <p class="check_outbox">
                <label for="outbox"><input <?php if(pmSaveSent() == 1){echo 'checked';} ?> tabindex="4" type="checkbox" class="input_check"  tabindex="5" value="1" id="outbox" name="outbox"><?php _e(' Save a copy in my outbox','osclass_pm'); ?></label>
                </p>
                <?php } ?>
+			   
                <p id="sendMessage">
 					    <input tabindex="5" type="submit" class="button_submit" accesskey="s"  tabindex="6" value="<?php _e('Send message','osclass_pm'); ?>">
 				   </p>
             </div>
+			  </div>
             <?php if($mType == 'reply' || $mType == 'quote') {?>
             <?php 
                $words[] = array('[quote]','[/quote]', '[quoteAuthor]','[/quoteAuthor]');
@@ -102,11 +123,13 @@ if($pm['recip_id'] != osc_logged_user_id() && ($mType == 'reply' || $mType == 'q
       </div>
     </form>
     </div>
-</div>
+	 </div>
+</section>
+</section>
 <?php } ?>
 <?php } else { ?>
       <?php // send user back to the inbox page and alert them that the users inbox is full. ?>
-      <script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php&f=1'; ?>"</script>
+      <script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
 <?php } ?>
 <?php } else { 
 Session::newInstance()->_setReferer(osc_user_login_url() . '&http_referer=' . osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php?userId=' . $userId . '&mType=' . $mType . '&messId=' . $messId);

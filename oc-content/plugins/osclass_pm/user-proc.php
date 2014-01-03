@@ -17,7 +17,7 @@ switch(Params::getParam('option')){
          }
          osc_add_flash_ok_message(__('Messages deleted!','osclass_pm'));
          // HACK TO DO A REDIRECT ?>
-    	<script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php'; ?>"</script>
+    	<script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
     	<?php
          //header("Location: " . osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php');
       
@@ -100,7 +100,7 @@ switch(Params::getParam('option')){
             
             osc_add_flash_ok_message(__('Your Message has been Sent!','osclass_pm'));
             // HACK TO DO A REDIRECT ?>
-    	       <script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php'; ?>"</script>
+    	       <script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
     	      <?php
          break;
          case 'quote':
@@ -124,7 +124,7 @@ switch(Params::getParam('option')){
                
             osc_add_flash_ok_message(__('Your Message has been Sent!','osclass_pm'));
             // HACK TO DO A REDIRECT ?>
-    	       <script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php'; ?>"</script>
+    	       <script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
     	      <?php
          break;
          case 'new':
@@ -142,7 +142,7 @@ switch(Params::getParam('option')){
                
             osc_add_flash_ok_message(__('Your Message has been Sent!','osclass_pm'));
             // HACK TO DO A REDIRECT ?>
-    	       <script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-inbox.php'; ?>"</script>
+    	       <script>location.href="<?php echo osc_base_url(true) . '?page=user&action=items'; ?>"</script>
     	      <?php
          break;
          case 'adminReply':
@@ -227,8 +227,8 @@ switch(Params::getParam('option')){
 		}
       osc_add_flash_ok_message(__('Your Settings have been saved!','osclass_pm'));
       // HACK TO DO A REDIRECT ?>
-    	  <!--<script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-pm-settings.php'; ?>"</script>-->
-   <script>location.href="<?php echo $this->redirectTo( osc_base_url().'?page=user&action=items' ); ?>"</script>
+    	 <!--<script>location.href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-pm-settings.php'; ?>"</script>-->
+		 <script>location.href="<?php echo $this->redirectTo( osc_base_url().'?page=user&action=items' ); ?>"</script>
     	<?php
    break;   
 }

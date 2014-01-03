@@ -2118,7 +2118,8 @@ nav.navigation3 ul li a.active img.normal_icon, nav.navigation3 ul li.current a 
     top: 24px;
     width: 100%;
 	display:none;
-}
+	width:92px; 
+}  
 .listing_text p a.MCtooltip:hover span, .product_detail_text a.MCtooltip:hover span, .list_result figure a.MCtooltip:hover span
 {
     display:block;
@@ -2255,6 +2256,16 @@ text-decoration:none;
 
     font-weight: normal;
     text-align: center;
+}
+#max_controls{
+margin-left: 264px;
+}
+.form-container .button_submit {
+    padding: 6px 15px;
+}
+.check_outbox label{
+width:200px;
+margin-right:62px;
 }
 .form-container label{font:12px/24px Verdana,Geneva,sans-serif;}
 .form-container .ui-button{ padding: 6px 15px;}

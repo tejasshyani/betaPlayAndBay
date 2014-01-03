@@ -39,12 +39,11 @@
 ?>
 <script type="text/javascript" >
 $(document).ready(function(){
-$( ".account_box ul li a" ).click(function() {
-  $( ".wishlist" ).slideUp( "slow" );
-  $( this ).siblings( "div.wishlist" ).slideToggle( "slow", function() {
-    // Animation complete.
-  });
-});
+$( ".account_box ul li" ).click(function() {
+				  $(this).children(".wishlist").slideToggle( "slow", function() {
+					// Animation complete.
+				  });
+				});
 });
 </script>
     <?php osc_run_hook('search_ads_listing_top'); ?>
@@ -175,8 +174,8 @@ $( ".account_box ul li a" ).click(function() {
 					<?php }
 					} ?>
                     </tbody></table>
-                    <input type="button" onclick="if (!confirm('<?php _e('Are you sure you want to delete all selected personal messages?','osclass_pm'); ?>')) return false;" class="delete apply pmDeleteButton" value="Delete Selected">
-					<button class="admin subscribe"> <a href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&userId=0&mType=new';?>"><?php echo __('Send PM to the admin','osclass_pm') . ' ' . pmAdmin(); ?></a></button>
+                   <input type="button" onclick="if (!confirm('<?php _e('Are you sure you want to delete all selected personal messages?','osclass_pm'); ?>')) return false;" class="delete apply pmDeleteButton" value="Delete Selected">
+					<div class="admin subscribe"> <a  href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&userId=0&mType=new';?>"><?php echo __('Send PM to the ','osclass_pm') . ' ' . pmAdmin(); ?></a></div>
                 </div>
             </li>
             <li>
