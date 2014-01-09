@@ -35,6 +35,30 @@
     }
 	$osc_user = osc_user();
 	
+	if(osc_is_web_user_logged_in() ) {
+   $pm_id = Params::getParam('message');  
+   switch(Params::getParam('box')) {
+      case 'inbox': 
+         $pm = ModelPM::newInstance()->getRecipientMessage(osc_logged_user_id(), 1, 0, $pm_id );
+		echo "danish"; print_r($pm); die;
+         if($pm['recipNew'] == 1) {
+            ModelPM::newInstance()->updateMessageAsRead($pm['pm_id']);
+         }
+      break;
+      case 'outbox':
+         $pm = ModelPM::newInstance()->getSenderMessage(osc_logged_user_id(), 1, $pm_id );
+      break;
+   }
+   $words[] = array('[quote]','[/quote]', '[quoteAuthor]','[/quoteAuthor]');
+   $words[] = array('<div class="messQuote">','</div>', '<div class="quoteAuthor">','</div>');
+   $message  = osc_mailBeauty($pm['pm_message'], $words) ;
+   
+ if($pm['sender_id'] != 0){
+                     $user = User::newInstance()->findByPrimaryKey($pm['sender_id']); 
+                  } else { $user['s_name'] = pmAdmin();} 
+   
+   }
+$i_userId = osc_logged_user_id();
 	
 ?>
 <script type="text/javascript" >
@@ -155,6 +179,7 @@ $( ".account_box ul li" ).click(function() {
                             <th>Date</th>
                             <th>Subject</th>
                             <th>From</th>
+							<th>Action</th>
                         </tr>
 						 <?php if($recipCount == 0) { ?>
                   <tr class="odd">
@@ -164,12 +189,16 @@ $( ".account_box ul li" ).click(function() {
                      <td></td>
                   </tr>
                   <?php }else{ 
-				  foreach($recipPMs as $recipPM){ ?>
+				  foreach($recipPMs as $recipPM){?>
                         <tr>
                         	<td><input type="checkbox"></td>
                             <td><?php echo osc_format_date($recipPM['message_date']) . ', ' . osclass_pm_format_time($recipPM['message_date']); ?></td>
-                            <td><a class="mesLink" href="<?php echo osc_render_file_url(osc_plugin_folder(__FILE__) . 'user-messages.php?message=' . $recipPM['pm_id'] . '&box=inbox'); ?>"><?php echo $recipPM['pm_subject']; ?></a></td>
+                            <td><!--<a class="mesLink" href="<?php echo osc_render_file_url('osclass_pm/' . 'user-messages.php?message=' . $recipPM['pm_id'] . '&box=inbox'); ?>">--><?php echo $recipPM['pm_subject']; ?><!--</a>--></td>
                             <td><?php echo $user['s_name']; ?></td>
+							<td><li class="reply">
+							
+							<a href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&mType=reply&messId=' . $recipPM['pm_id'] . '&userId=' . $i_userId ; ?>" ><?php _e('Reply','osclass_pm'); ?></a></li>
+                  <li class="quote"><a href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&mType=quote&messId=' . $recipPM['pm_id'] . '&userId=' . $i_userId; ?>" ><?php _e('Quote','osclass_pm'); ?></a></li></td>
                         </tr>
 					<?php }
 					} ?>
@@ -187,6 +216,7 @@ $( ".account_box ul li" ).click(function() {
                             <th>Date</th>
                             <th>Subject</th>
                             <th>Sent To</th>
+							<th>Action</th>
                         </tr>
 						<?php $recipPMs = ModelPM::newInstance()->getSenderMessages(osc_logged_user_id(), 1, 'pm_id', 'DESC');
                         $recipCount = count($recipPMs);
@@ -201,8 +231,12 @@ $( ".account_box ul li" ).click(function() {
                         <tr>
                         	<td><input type="checkbox"></td>
                             <td><?php echo osc_format_date($recipPM['message_date']) . ', ' . osclass_pm_format_time($recipPM['message_date']); ?></td>
-                            <td><a class="mesLink" href="<?php echo osc_render_file_url(osc_plugin_folder(__FILE__) . 'user-messages.php?message=' . $recipPM['pm_id'] . '&box=outbox'); ?>"><?php echo $recipPM['pm_subject']; ?></a></td>
+                            <td><!--<a class="mesLink" href="<?php echo osc_render_file_url('osclass_pm/' . 'user-messages.php?message=' . $recipPM['pm_id'] . '&box=outbox'); ?>">--><?php echo $recipPM['pm_subject']; ?><!--</a>--></td>
                             <td><?php echo $user['s_name']; ?></td>
+							<td><li class="reply">
+							
+							<a href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&mType=reply&messId=' . $recipPM['pm_id'] . '&userId=' . $i_userId ; ?>" ><?php _e('Reply','osclass_pm'); ?></a></li>
+                  <li class="quote"><a href="<?php echo osc_base_url(true) . '?page=custom&file=osclass_pm/user-send.php&mType=quote&messId=' . $recipPM['pm_id'] . '&userId=' . $i_userId; ?>" ><?php _e('Quote','osclass_pm'); ?></a></li></td>
                         </tr>
 						<?php } ?>
                     </tbody></table>
@@ -212,7 +246,7 @@ $( ".account_box ul li" ).click(function() {
             </li>
             <li>
 			<?php 
-$i_userId = osc_logged_user_id();
+
 	if(Params::getParam('delete') != '' && osc_is_web_user_logged_in()){
 		delete_item(Params::getParam('delete'), $i_userId);
 	}
