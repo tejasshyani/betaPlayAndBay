@@ -48,6 +48,7 @@
 
     osc_current_web_theme_path('header.php');
 ?>
+<script type="text/javascript"  src="<?php //echo osc_current_web_theme_url('watchlist.js'); ?>"></script>
 <div class="page">
 <section class="wrapper result_outer">
 	<section class="product_box">
