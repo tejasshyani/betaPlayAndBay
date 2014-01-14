@@ -19,18 +19,6 @@
      * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
      */
 ?>
-<script type="text/javascript"  src="<?php echo osc_current_web_theme_url('js/jquery.validate.min.js'); ?>"></script>
-
-<script>
-$=jQuery.noConflict();
-$( document ).ready(function() {
-  $('#mask_as_form select').on('change',function(){
-        $('#mask_as_form').submit();
-        $('#mask_as_form').submit();
-    });
-});
-
-	</script>
 <aside class="contact_pub">
     <?php if(!osc_is_web_user_logged_in() || osc_logged_user_id()!=osc_item_user_id()) { ?>
         <form action="<?php echo osc_base_url(true); ?>" method="post" name="mask_as_form" id="mask_as_form">
