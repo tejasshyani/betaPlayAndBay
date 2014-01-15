@@ -61,6 +61,7 @@
 $i_userId = osc_logged_user_id();
 	
 ?>
+
 <script type="text/javascript" >
 $(document).ready(function(){
 $( ".account_box ul li" ).click(function() {
@@ -77,7 +78,7 @@ $( ".account_box ul li" ).click(function() {
     	<h1 class="result"><?php _e('My Account', 'bender') ; ?></h1>
         <ul>
         	<li>
-                <a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/listing_icon.png')?>">
+                <a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/listing_icon.png')?>">
 			    <h2>Listings<span>Your Selected Listings</span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist" style="display: none;">
@@ -132,7 +133,7 @@ $( ".account_box ul li" ).click(function() {
             </li>
 			
             <li>
-            	<a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/alert.png')?>">
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/alert.png')?>">
 				<h2>Alert<span>Your Important Alerts</span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                  <div class="wishlist" style="display: none;">
@@ -169,7 +170,7 @@ $( ".account_box ul li" ).click(function() {
 			 $recipPMs = ModelPM::newInstance()->getRecipientMessages(osc_logged_user_id(), 1, 0, 'pm_id', 'DESC');
              $recipCount = count($recipPMs);
 			?>
-            	<a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/inbox.png')?>">
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/inbox.png')?>">
 				<h2>Inbox (<?php echo $recipCount;?>)<span>Your Incoming Messages</span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist inbox" style="display: none;">
@@ -208,7 +209,7 @@ $( ".account_box ul li" ).click(function() {
                 </div>
             </li>
             <li>
-            	<a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/outbox.png')?>"><h2>Outbox<span>Your Outgoing Messages</span></h2> <img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/outbox.png')?>"><h2>Outbox<span>Your Outgoing Messages</span></h2> <img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist inbox" style="display: none;">
                 	<table cellspacing="0" cellpadding="0">
                     	<tbody><tr>
@@ -274,7 +275,7 @@ $( ".account_box ul li" ).click(function() {
 	}
         
 ?>
-            	<a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/wishlist.png')?>">
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/wishlist.png')?>">
 				<h2>Watchlist<span>Your Selected Watchlist</span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 
@@ -317,7 +318,7 @@ $( ".account_box ul li" ).click(function() {
                 </div>
             </li>
             <li>
-            	<a href="#"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/account.png')?>">
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/account.png')?>">
 				<h2>Account<span>View Full Account</span></h2>
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist account" style="display: block;">
