@@ -2342,3 +2342,8 @@ background: -moz-linear-gradient(top , #FB9500, #EB2B0C) repeat scroll 0 0 rgba(
     color: #FFFFFF;
     font-size: 14px;
     padding: 4px 10px;}
+ .searchPaginationSelected {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
