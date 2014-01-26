@@ -139,6 +139,7 @@ jQuery('#yourName').attr('placeholder','Name');
 	</script> 
     </head>
 <body>
+<?php include_once("analyticstracking.php") ?>
 <header>
 	<section class="header_midbox wrapper">
     	<a href="<?php echo osc_base_url(); ?>"><img width="226" src="<?php echo osc_current_web_theme_url('images/logo.png')?>" alt="Logo Here" class="logo"/></a> 
