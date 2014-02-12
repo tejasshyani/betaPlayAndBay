@@ -222,8 +222,8 @@ FUNCTIONS
 		</article>
 	 <article class="welcome_area">
 	<section class="welcome_mid_box wrapper">
-    	<h1>Welcome</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    	<h1><?php _e("Welcome", 'bender') ; ?></h1>
+        <p><?php _e("Today, we find ourselves in a world where your customers are truly hyperconnected, demanding revolutionary commerce experiences while becoming more and more challenging to reach. They require everything to be a click away. Physical store visits must include an interactive component. Purchases arrive from around the world as fast as they can fly. And so do ideas, innovations, winners and losers. Competing in this environment requires a commerce partner that coordinates all methods available into a connected consumer experience. And no one delivers the entire process – from engagement to conversion to delivery to retention – like eBay Enterprise. Our comprehensive approach uncovers unique insights and cross benefits for clients – whether they utilize one or all our services. Either way, the process is more seamless. And more profitable. We live in a world where your customers demand more. We are here to help you deliver.", 'bender') ; ?></p>
    <img src="<?php echo osc_current_web_theme_url('images/man_image.png');?>" alt="" />
      </section>
 </article>
