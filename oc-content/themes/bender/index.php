@@ -34,6 +34,7 @@ Theme update URI:
              'name'        => 'bender'
             ,'version'     => '1.0'
 <<<<<<< HEAD
+<<<<<<< HEAD
             ,'description' => 'main theme'
 <<<<<<< HEAD
             ,'author_name' => 'playandbay team'
@@ -43,10 +44,15 @@ Theme update URI:
             ,'author_url'  => 'http://playandbay.com'
             ,'locations'   => array('header', 'footer')
 =======
+=======
+>>>>>>> parent of 50b7191... theme name
             ,'description' => 'bender'
             ,'author_name' => 'Osclass Team'
             ,'author_url'  => 'http://osclass.org'
             ,'locations'   => array()
+<<<<<<< HEAD
+>>>>>>> parent of 50b7191... theme name
+=======
 >>>>>>> parent of 50b7191... theme name
         );
     }
