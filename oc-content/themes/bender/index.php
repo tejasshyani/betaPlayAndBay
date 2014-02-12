@@ -1,20 +1,39 @@
 <?php
-
+    /*
+     *      Osclass – software for creating and publishing online classified
+     *                           advertising platforms
+     *
+     *                        Copyright (C) 2013 OSCLASS
+     *
+     *       This program is free software: you can redistribute it and/or
+     *     modify it under the terms of the GNU Affero General Public License
+     *     as published by the Free Software Foundation, either version 3 of
+     *            the License, or (at your option) any later version.
+     *
+     *     This program is distributed in the hope that it will be useful, but
+     *         WITHOUT ANY WARRANTY; without even the implied warranty of
+     *        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+     *             GNU Affero General Public License for more details.
+     *
+     *      You should have received a copy of the GNU Affero General Public
+     * License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+     */
 /*
-Theme Name: Isha
-Theme URI: http://osclass.org
-Description: main theme
+Theme Name: bender
+Theme URI: http://www.osclass.org/
+Description: bender
 Version: 1.0
-Author: playandbay team
-Author URI: http://playandbay.com
-Widgets: header,footer
-Theme update URI: -
+Author: Osclass team
+Author URI: http://www.osclass.org/
+Widgets:
+Theme update URI:
 */
 
-    function twitter_theme_info() {
+    function bender_theme_info() {
         return array(
-             'name'        => 'Isha'
+             'name'        => 'bender'
             ,'version'     => '1.0'
+<<<<<<< HEAD
             ,'description' => 'main theme'
 <<<<<<< HEAD
             ,'author_name' => 'playandbay team'
@@ -23,6 +42,12 @@ Theme update URI: -
 >>>>>>> 50b7191e4c87ce9eb420b0743fdf9d881c9c47cf
             ,'author_url'  => 'http://playandbay.com'
             ,'locations'   => array('header', 'footer')
+=======
+            ,'description' => 'bender'
+            ,'author_name' => 'Osclass Team'
+            ,'author_url'  => 'http://osclass.org'
+            ,'locations'   => array()
+>>>>>>> parent of 50b7191... theme name
         );
     }
 
