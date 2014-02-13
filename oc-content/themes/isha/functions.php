@@ -197,7 +197,7 @@ FUNCTIONS
                <ul>
                          <?php while ( osc_has_subcategories() ) { ?>
                              <li>
-                             <?php if( osc_category_total_items() > 0 ) { ?><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
+                             <?php if( osc_category_total_items() > 0 ) { ?><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?> (<?php echo osc_category_total_items() ; ?>)</a>
                              <?php } else { ?><span><?php echo osc_category_name() ; ?></li>
                              <?php } ?>
                          <?php } ?>

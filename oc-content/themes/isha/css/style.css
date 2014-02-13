@@ -278,7 +278,7 @@ input[type=submit].search_btn:hover
 .instrument
 {
 	float:left;
-	width:23%;
+	width:25%;
 	text-align:center;
 }
 .instrument h1
@@ -330,7 +330,7 @@ input[type=submit].search_btn:hover
 }
 .device
 {
-	margin-left:16%;
+	margin-left:12%;
 }
 .service
 {
