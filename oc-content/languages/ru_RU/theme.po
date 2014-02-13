@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bender Theme\n"
-"POT-Creation-Date: 2013-09-19 21:11+0400\n"
-"PO-Revision-Date: 2013-09-19 21:23+0400\n"
+"POT-Creation-Date: 2014-02-12 21:47+0400\n"
+"PO-Revision-Date: 2014-02-12 21:48+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,38 +17,63 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: C:\\PlayAndBay\\oc-content\\themes\\bender\n"
+"X-Poedit-SearchPath-1: C:\\PlayAndBay\\betaPlayandBay\\oc-content\\themes"
+"\\isha\n"
+"X-Poedit-SearchPath-2: C:\\PlayAndBay\\oc-content\\themes\\isha\n"
 
 #: C:\PlayAndBay\oc-content\themes\bender/404.php:8
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/404.php:8
+#: C:\PlayAndBay\oc-content\themes\isha/404.php:8
 msgid "Sorry but I can't find the page you're looking for"
 msgstr "Извините, страница не найдена"
 
 #: C:\PlayAndBay\oc-content\themes\bender/404.php:10
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/404.php:10
+#: C:\PlayAndBay\oc-content\themes\isha/404.php:10
 msgid "Let us help you, we have got a few tips for you to find it."
 msgstr "Позвольте нам помочь Вам, у нас есть для Вас несколько подсказок"
 
 #: C:\PlayAndBay\oc-content\themes\bender/404.php:13
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/404.php:13
+#: C:\PlayAndBay\oc-content\themes\isha/404.php:13
 msgid "<strong>Search</strong> for it:"
 msgstr "<strong>Поиск</strong> for it:"
 
 #: C:\PlayAndBay\oc-content\themes\bender/404.php:18
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:73
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/404.php:18
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/inc.search.php:56
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:38
+#: C:\PlayAndBay\oc-content\themes\isha/404.php:18
+#: C:\PlayAndBay\oc-content\themes\isha/inc.search.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:38
 msgid "Search"
 msgstr "Поиск"
 
 #: C:\PlayAndBay\oc-content\themes\bender/404.php:22
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/404.php:22
+#: C:\PlayAndBay\oc-content\themes\isha/404.php:22
 msgid "<strong>Look</strong> for it in the most popular categories."
 msgstr "<strong>Ищите</strong> это в самых популярных категориях."
 
 #: C:\PlayAndBay\oc-content\themes\bender/alert-form.php:27
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/alert-form.php:27
+#: C:\PlayAndBay\oc-content\themes\isha/alert-form.php:27
 msgid "You have sucessfully subscribed to the alert"
 msgstr "Вы успешно подписались на оповещение"
 
 #: C:\PlayAndBay\oc-content\themes\bender/alert-form.php:28
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:77
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/alert-form.php:28
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:77
+#: C:\PlayAndBay\oc-content\themes\isha/alert-form.php:28
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:77
 msgid "Invalid email address"
 msgstr "Недопустимый адрес электронной почты"
 
 #: C:\PlayAndBay\oc-content\themes\bender/alert-form.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/alert-form.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/alert-form.php:29
 msgid "There was a problem with the alert"
 msgstr "Была проблемы с оповещением"
 
@@ -61,14 +86,28 @@ msgid "Subscribe now"
 msgstr "Попишитесь сейчас"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:31
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:31
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:853
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:717
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:31
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:853
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:717
 msgid "Contact us"
 msgstr "Свяжитесь с нами"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:40
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:44
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:76
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:193
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:178
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:33
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:40
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:49
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:44
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:33
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:40
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:49
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:44
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:33
 msgid "Your name"
 msgstr "Ваше имя"
 
@@ -76,15 +115,29 @@ msgstr "Ваше имя"
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:54
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:84
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:52
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:54
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:41
 msgid "optional"
 msgstr "Опциональный"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:47
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:47
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:47
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:37
 msgid "Your email address"
 msgstr "Ваш адрес электронной почты"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:53
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:53
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:53
 msgid "Subject"
 msgstr "Тема"
 
@@ -92,30 +145,54 @@ msgstr "Тема"
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:78
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:89
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:60
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:53
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:78
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:60
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:53
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:78
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:46
 msgid "Message"
 msgstr "Сообщение"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:68
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:87
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:112
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:218
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:203
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:69
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:68
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:728
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:87
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:103
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:69
+#: C:\PlayAndBay\oc-content\themes\isha/contact.php:68
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:728
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:87
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:103
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:69
 msgid "Send"
 msgstr "Послать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/footer.php:33
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:44
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:148
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:148
 #, php-format
 msgid "Hi %s"
 msgstr "Привет %s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/footer.php:34
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:149
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:149
 msgid "My account"
 msgstr "Мой аккаунт"
 
 #: C:\PlayAndBay\oc-content\themes\bender/footer.php:35
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:150
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:150
 msgid "Logout"
 msgstr "Выйти"
 
@@ -123,6 +200,12 @@ msgstr "Выйти"
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:319
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:49
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:348
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:344
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:66
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:348
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:344
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:66
 msgid "Login"
 msgstr "Войти"
 
@@ -130,6 +213,10 @@ msgstr "Войти"
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:51
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:55
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:58
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:67
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:58
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:67
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:58
 msgid "Register for a free account"
 msgstr "Зарегистрироваться"
 
@@ -141,6 +228,12 @@ msgstr "Опубликовать объявление"
 #: C:\PlayAndBay\oc-content\themes\bender/footer.php:60
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:323
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:352
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:348
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:352
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:348
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:26
 msgid "Contact"
 msgstr "Контакт"
 
@@ -149,54 +242,116 @@ msgid "Language:"
 msgstr "Язык:"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:29
 msgid "ie. PHP Programmer"
 msgstr "например, программист PHP"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:304
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:40
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:333
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:329
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:40
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:333
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:329
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:40
 msgid "Publish a listing"
 msgstr "Опубликовать объявление"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:305
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:334
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:330
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:334
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:330
 msgid "Edit your listing"
 msgstr "Редактировать объявление"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:306
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:31
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:335
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:331
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:31
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:335
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:331
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:31
 msgid "Send to a friend"
 msgstr "Отправить другу"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:307
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:40
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:336
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:332
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:51
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:336
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:332
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:51
 msgid "Contact publisher"
 msgstr "Связаться с автором"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:308
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:337
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:333
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:337
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:333
 msgid "Search results"
 msgstr "Результаты поиска"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:309
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:338
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:334
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:338
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:334
 #, php-format
 msgid "Search results: %s"
 msgstr "Результаты поиска: %s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:310
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:339
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:335
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:339
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:335
 msgid "Dashboard"
 msgstr "Панель управления"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:311
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:340
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:336
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:340
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:336
 #, php-format
 msgid "%s's profile"
 msgstr "%s's профиль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:312
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:356
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:341
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:385
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:337
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:381
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:341
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:385
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:337
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:381
 msgid "Account"
 msgstr "Аккаунт"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:313
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:346
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:53
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:342
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:375
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:338
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:371
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:53
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:156
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:342
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:375
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:338
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:371
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:53
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:156
 msgid "Listings"
 msgstr "Объявления"
 
@@ -204,22 +359,68 @@ msgstr "Объявления"
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:351
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:32
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:343
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:380
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:339
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:376
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:34
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:140
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:343
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:380
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:339
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:376
+#: C:\PlayAndBay\oc-content\themes\isha/page-dashboard.php:32
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:32
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:34
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:140
 msgid "Alerts"
 msgstr "Оповещения"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:315
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:32
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:37
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:39
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:344
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:340
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:344
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:340
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:32
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:37
 msgid "Update account"
 msgstr "Обновить учетную запись"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:316
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:345
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:390
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:341
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:386
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:345
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:390
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:341
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:386
 msgid "Change email"
 msgstr "Изменить электронную почту"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:317
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:34
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:39
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:346
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:395
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:342
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:391
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:34
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:39
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:346
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:395
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:342
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:391
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:34
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:39
 msgid "Change username"
 msgstr "Изменить имя пользователя"
 
@@ -228,127 +429,253 @@ msgstr "Изменить имя пользователя"
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:32
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:37
 #: C:\PlayAndBay\oc-content\themes\bender/user-forgot_password.php:52
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:347
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:350
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:400
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:343
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:346
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:396
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-forgot_password.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:347
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:350
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:400
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:343
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:346
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:396
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:32
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/user-forgot_password.php:52
 msgid "Change password"
 msgstr "Сменить пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:320
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:349
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:345
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:349
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:345
 msgid "Recover password"
 msgstr "Восстановить пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:322
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:351
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:347
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:351
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:347
 msgid "Create a new account"
 msgstr "Создать новую учетную запись"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:434
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:463
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:459
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:463
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:459
 msgid "Theme settings updated correctly"
 msgstr "Параметры темы успешно обновлены"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:441
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:470
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:466
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:470
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:466
 msgid "The logo image has been uploaded correctly"
 msgstr "Изображение логотипа успешно загружено"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:443
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:446
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:472
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:475
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:468
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:471
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:472
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:475
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:468
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:471
 msgid "An error has occurred, please try again"
 msgstr "Произошла ошибка, пожалуйста попробуйте снова"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:453
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:482
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:478
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:482
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:478
 msgid "The logo image has been removed"
 msgstr "Изображение логотипа было удалено"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:455
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:484
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:480
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:484
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:480
 msgid "Image not found"
 msgstr "Изображение не найдено"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:471
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:7
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:500
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:496
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:7
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:500
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:496
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:7
 msgid "Header logo"
 msgstr "Логотип верхней части страницы"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:472
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:24
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:501
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:497
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:24
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:501
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:497
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:24
 msgid "Theme settings"
 msgstr "Параметры темы"
 
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:530
 #: C:\PlayAndBay\oc-content\themes\bender/functions.php:552
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:566
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:588
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:562
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:584
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:566
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:588
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:562
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:584
 msgid "All categories"
 msgstr "Все категории"
 
 #: C:\PlayAndBay\oc-content\themes\bender/header.php:67
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:55
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:202
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/inc.search.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:53
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:202
+#: C:\PlayAndBay\oc-content\themes\isha/inc.search.php:54
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:53
 msgid "Select a category"
 msgstr "Выбрать категорию"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:51
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:48
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:48
 msgid "General Information"
 msgstr "Общая информация"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:53
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:52
 msgid "Category"
 msgstr "Категория"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:59
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:206
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:191
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:56
 msgid "Title"
 msgstr "Заголовок"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:65
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:106
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:108
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:60
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:106
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:60
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:106
 msgid "Description"
 msgstr "Описание"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:72
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:61
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:65
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:65
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:56
 msgid "Price"
 msgstr "Цена"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:81
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:83
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:78
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:78
 msgid "Photos"
 msgstr "Фотографии"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:90
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:84
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:84
 msgid "Add new photo"
 msgstr "Добавить новую фотографию"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:96
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:92
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:92
 msgid "Listing Location"
 msgstr "Местоположение"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:99
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:70
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:72
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:96
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:70
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:96
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:70
 msgid "Country"
 msgstr "Страна"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:105
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:76
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:78
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:100
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:76
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:100
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:76
 msgid "Region"
 msgstr "Регион"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:111
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:44
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:82
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:84
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:104
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:42
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:82
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:104
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:42
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:82
 msgid "City"
 msgstr "Город"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:117
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:108
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:108
 msgid "City Area"
 msgstr "Район города"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:123
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:94
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:96
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:112
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:94
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:112
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:94
 msgid "Address"
 msgstr "Адрес"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:132
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:119
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:119
 msgid "Seller's information"
 msgstr "Информация продавца"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:134
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:59
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:46
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:48
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:39
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:124
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:71
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:39
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:124
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:71
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:39
 msgid "Name"
 msgstr "Имя"
 
@@ -356,10 +683,20 @@ msgstr "Имя"
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:38
 #: C:\PlayAndBay\oc-content\themes\bender/user-recover.php:37
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:128
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:38
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-recover.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:128
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:38
+#: C:\PlayAndBay\oc-content\themes\isha/user-recover.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:45
 msgid "E-mail"
 msgstr "Электронная почта"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:147
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:133
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:133
 msgid "Show e-mail on the listing page"
 msgstr "Показать электронную почту в объявлении"
 
@@ -367,262 +704,405 @@ msgstr "Показать электронную почту в объявлени
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:59
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:64
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:102
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:113
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:194
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:222
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:256
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:115
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:197
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:225
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:259
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:149
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:59
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:64
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:102
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:344
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:398
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:409
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:421
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:113
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:149
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:59
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:64
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:102
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:344
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:398
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:409
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:421
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:113
 msgid "Update"
 msgstr "Обновить"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-post.php:166
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:150
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:150
 msgid "Publish"
 msgstr "Опубликовать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:50
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:199
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:184
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:50
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:50
 msgid "Your e-mail"
 msgstr "Ваша электронная почта"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:57
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:57
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:57
 msgid "Your friend's name"
 msgstr "Имя вашего друга"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:63
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:63
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:63
 msgid "Your friend's e-mail address"
 msgstr "Электронная почта вашего друга"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:70
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-send-friend.php:70
+#: C:\PlayAndBay\oc-content\themes\isha/item-send-friend.php:70
 msgid "Subject (optional)"
 msgstr "Предмет (опционально)"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:42
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:42
 msgid "Mark as..."
 msgstr "Пометить как..."
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:31
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:43
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:43
 msgid "Mark as spam"
 msgstr "Пометить как спам"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:44
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:44
 msgid "Mark as misclassified"
 msgstr "Пометить как неверно классифицированное"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:33
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:45
 msgid "Mark as duplicated"
 msgstr "Пометить как продублированное"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:34
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:46
 msgid "Mark as expired"
 msgstr "Пометить как просроченное"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:35
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:47
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:47
 msgid "Mark as offensive"
 msgstr "Пометить как оскорбительное"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:43
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:55
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:55
 msgid "The listing is expired. You can't contact the publisher."
 msgstr ""
 "Срок публикации этого объяления закончился. Вы не можете связаться с автором."
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:47
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:59
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:59
 msgid "It's your own listing, you can't contact the publisher."
 msgstr "Это ваше собственное объявление, и вы не можете связаться с автором."
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:51
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:63
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:63
 msgid ""
 "You must log in or register a new account in order to contact the advertiser"
 msgstr ""
 "Вы должны войти или зарегистрироваться чтобы связаться с автором объявления"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:61
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:73
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:73
 #, php-format
 msgid "Name: %s"
 msgstr "Имя: %s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:64
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:76
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:76
 #, php-format
 msgid "E-mail: %s"
 msgstr "Электронная почта: %s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:67
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:79
+#: C:\PlayAndBay\oc-content\themes\isha/item-sidebar.php:79
 #, php-format
 msgid "Phone: %s"
 msgstr "Телефон: %s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:80
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:50
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:50
 msgid "Your e-mail address"
 msgstr "Адрес вашей электронной почты"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:84
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:52
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:41
 msgid "Phone number"
 msgstr "Номер телефона"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:106
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:63
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:63
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:63
 msgid "Enter the words above"
 msgstr "Введите слова, указанные выше"
 
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:108
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-sidebar.php:65
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-sidebar.php:65
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-sidebar.php:65
 msgid "Help"
 msgstr "Помощь"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:55
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:56
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:76
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:76
 #, php-format
 msgid "<strong class=\"publish\">Published date</strong>: %1$s"
 msgstr "<strong class=\"publish\">Дата публикации</strong>: %1$s"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:58
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:59
 #, php-format
 msgid "<strong class=\"update\">Modified date:</strong> %1$s"
 msgstr "<strong class=\"update\">Дата изменения:</strong> %1$s"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:61
-#: C:\PlayAndBay\oc-content\themes\bender/main.php:75
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:62
+#: C:\PlayAndBay\oc-content\themes\bender/main.php:76
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:635
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:632
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:77
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/main.php:43
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:635
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:632
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:77
+#: C:\PlayAndBay\oc-content\themes\isha/main.php:43
 msgid "Location"
 msgstr "Расположение"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:67
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:68
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single-premium.php:24
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single.php:24
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:85
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-premium.php:24
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search.php:24
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single.php:19
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:119
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:85
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-premium.php:24
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search.php:24
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single.php:19
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:119
 msgid "Edit item"
 msgstr "Редактировать "
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:79
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:84
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:80
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:85
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:60
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:66
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:60
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:66
 msgid "Image"
 msgstr "Изображение"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:109
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:111
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:106
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:106
 msgid "views"
 msgstr "просмотров"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:114
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:116
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:35
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:111
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:35
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:111
 msgid "Contact seller"
 msgstr "Связаться с продавцом"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:119
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:122
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:117
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:117
 msgid "Share"
 msgstr "Поделиться"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:125
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:128
 msgid "Useful information"
 msgstr "Полезная информация"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:127
-msgid "Avoid scams by acting locally or paying with PayPal"
-msgstr ""
-"Избежать мошенничества, встречаясь с продавцом лично или оплачивая через "
-"PayPal"
-
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:128
-msgid ""
-"Never pay with Western Union, Moneygram or other anonymous payment services"
-msgstr ""
-"Никогда не оплачивать через Western Union, Moneygram или через другие "
-"анонимные платежные системы"
-
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:129
-msgid ""
-"Don't buy or sell outside of your country. Don't accept cashier cheques from "
-"outside your country"
-msgstr ""
-"Не продавайте и не покупайте за пределами своей страны. Не принимайте к "
-"оптате чеки за пределами своей страны"
-
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:130
-msgid ""
-"This site is never involved in any transaction, and does not handle "
-"payments, shipping, guarantee transactions, provide escrow services, or "
-"offer \"buyer protection\" or \"seller certification\""
-msgstr ""
-"Этот сайт не занимается денежными переводами и не обрабатывает платежи, "
-"доставки, гарантированные переводы и не предлагает \"системы защиты\" "
-"покупателя или продавца"
-
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:137
-msgid "Related listings"
-msgstr "Объявления, которыми вы можете заинтересоваться"
-
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:156
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:141
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:126
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:126
 msgid "Comments"
 msgstr "Отзывы"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:163
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:148
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:133
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:133
 msgid "by"
 msgstr " "
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:167
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:152
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:137
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:137
 msgid "Delete your comment"
 msgstr "Удалить ваш отзыв"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:167
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:152
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single-premium.php:26
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single.php:26
+#: C:\PlayAndBay\oc-content\themes\bender/premiums.php:30
 #: C:\PlayAndBay\oc-content\themes\bender/common/head.php:3
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:137
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-premium.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search-premium.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single.php:21
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:121
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/common/head.php:3
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:137
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-premium.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search-premium.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single.php:21
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:121
+#: C:\PlayAndBay\oc-content\themes\isha/common/head.php:3
 msgid "Delete"
 msgstr "Удалить"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:179
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:164
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:147
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:147
 msgid "Leave your comment (spam and offensive messages will be removed)"
 msgstr "Оставьте ваш отзыв (спам и оскорбительные сообщения будут удалены)"
 
-#: C:\PlayAndBay\oc-content\themes\bender/item.php:212
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:197
 msgid "Comment"
 msgstr "Отзыв"
 
+#: C:\PlayAndBay\oc-content\themes\bender/item.php:216
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:173
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:173
+msgid "Related listings"
+msgstr "Объявления, которыми вы можете заинтересоваться"
+
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single-premium.php:26
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single.php:26
+#: C:\PlayAndBay\oc-content\themes\bender/premiums.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-premium.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search-premium.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search.php:26
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single.php:21
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:121
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-premium.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search-premium.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search.php:26
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single.php:21
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:121
 msgid "This action can not be undone. Are you sure you want to continue?"
 msgstr ""
 "Это действие не может быть отменено. Вы уверены, что хотите продолжить?"
 
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single-premium.php:29
 #: C:\PlayAndBay\oc-content\themes\bender/loop-single.php:29
+#: C:\PlayAndBay\oc-content\themes\bender/premiums.php:33
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-premium.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search-premium.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single.php:24
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:124
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-premium.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search-premium.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single.php:24
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:124
 msgid "Activate"
 msgstr "Активировать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/main.php:38
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:610
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:607
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:610
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:607
 msgid "Latest Listings"
 msgstr "Последние объявления"
 
 #: C:\PlayAndBay\oc-content\themes\bender/main.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:613
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:610
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:613
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:610
 msgid "There aren't listings available at this moment"
 msgstr "В настоящий момент нет объявлений"
 
 #: C:\PlayAndBay\oc-content\themes\bender/main.php:45
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:80
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:81
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:38
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:38
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:38
 msgid "List"
 msgstr "Список"
 
 #: C:\PlayAndBay\oc-content\themes\bender/main.php:46
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:81
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:82
 msgid "Grid"
 msgstr "Сетка"
 
-#: C:\PlayAndBay\oc-content\themes\bender/main.php:65
+#: C:\PlayAndBay\oc-content\themes\bender/main.php:66
 msgid "See all listings"
 msgstr "Посмотреть все объявления"
+
+#: C:\PlayAndBay\oc-content\themes\bender/premiums.php:18
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search_gallery.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search_list.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/search_gallery.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/search_list.php:41
+msgid "Sponsored ad"
+msgstr ""
+
+#: C:\PlayAndBay\oc-content\themes\bender/premiums.php:28
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/loop-single-search-premium.php:24
+#: C:\PlayAndBay\oc-content\themes\isha/loop-single-search-premium.php:24
+#, fuzzy
+msgid "Edit premium"
+msgstr "Редактировать "
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:38
 msgid "Your search"
 msgstr "Ваш поиск"
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:51
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:47
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:47
 msgid "Show only"
 msgstr "Показать только"
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:50
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:50
 msgid "listings with pictures"
 msgstr "Объявления с фотографиями"
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:62
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:57
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:57
 msgid "Min"
 msgstr "Мин"
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:64
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:59
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:59
 msgid "Max"
 msgstr "Макс"
 
@@ -631,106 +1111,178 @@ msgid "Apply"
 msgstr "Применить"
 
 #: C:\PlayAndBay\oc-content\themes\bender/search-sidebar.php:89
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search-sidebar.php:82
+#: C:\PlayAndBay\oc-content\themes\isha/search-sidebar.php:82
 msgid "Refine category"
 msgstr "Усовершенствовать каталог"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:55
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:56
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:55
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:55
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:55
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:55
 msgid "Selected"
 msgstr "Выбранное"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:56
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:57
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:56
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:56
 msgid "Nothing selected, input was"
 msgstr "Ничего не выбрано, ввод был"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:71
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:72
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:77
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:77
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:77
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:77
 #, php-format
 msgid "There are no results matching \"%s\""
 msgstr "Нет подходящих результатов \"%s\""
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:75
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:76
 #, php-format
 msgid "%1$d - %2$d of %3$d listings"
 msgstr "%1$d - %2$d of %3$d объявлений"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:78
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:79
 msgid "Show filters"
 msgstr "Показать фильтры"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:85
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:86
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:85
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:85
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:85
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:85
 msgid "Sort by"
 msgstr "Сортировать по"
 
-#: C:\PlayAndBay\oc-content\themes\bender/search.php:157
+#: C:\PlayAndBay\oc-content\themes\bender/search.php:159
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:148
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:152
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:148
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:152
 msgid "Other searches that may interest you"
 msgstr "Другие поиски, которые могут вас заинтересовать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:39
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:39
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:39
 msgid "You do not have any alerts yet"
 msgstr "У вас еще нет оповещений"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:149
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:149
 msgid "Alert"
 msgstr "Оповещение"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:149
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:149
 msgid "This action can't be undone. Are you sure you want to continue?"
 msgstr "Это действие не может был отменено. Вы уверены, что хотите продолжить?"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:149
+#: C:\PlayAndBay\oc-content\themes\isha/user-alerts.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:149
 msgid "Delete this alert"
 msgstr "Удалить это оповещение"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:33
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:38
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:33
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:38
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:33
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:38
 msgid "Change e-mail"
 msgstr "Изменить электронную почту"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:46
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:209
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:212
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:46
 msgid "Current e-mail"
 msgstr "Старая электронная почта"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_email.php:52
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:215
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:218
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_email.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_email.php:52
 msgid "New e-mail"
 msgstr "Новая электронная почта"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:45
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:237
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:240
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:417
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:417
 msgid "Current password"
 msgstr "Старый пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:51
 #: C:\PlayAndBay\oc-content\themes\bender/user-forgot_password.php:39
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:243
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:246
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:51
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-forgot_password.php:39
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:419
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:51
+#: C:\PlayAndBay\oc-content\themes\isha/user-forgot_password.php:39
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:419
 msgid "New password"
 msgstr "Новый пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_password.php:57
 #: C:\PlayAndBay\oc-content\themes\bender/user-forgot_password.php:45
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:249
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:252
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_password.php:57
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-forgot_password.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:420
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_password.php:57
+#: C:\PlayAndBay\oc-content\themes\isha/user-forgot_password.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:420
 msgid "Repeat new password"
 msgstr "Повторить новый пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:50
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:50
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:50
 msgid "Username: this field is required"
 msgstr "Имя пользователя: Это поле обязательно для заполнения"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:75
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:75
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:75
 msgid "The username is available"
 msgstr "Это имя пользователя доступно"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:77
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:77
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:77
 msgid "The username is NOT available"
 msgstr "Это имя пользователя НЕ ДОСТУПНО"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-change_username.php:94
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:186
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:189
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-change_username.php:94
+#: C:\PlayAndBay\oc-content\themes\isha/user-change_username.php:94
 msgid "Username"
 msgstr "Имя пользователя"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-forgot_password.php:30
 #: C:\PlayAndBay\oc-content\themes\bender/user-recover.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-forgot_password.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-recover.php:30
+#: C:\PlayAndBay\oc-content\themes\isha/user-forgot_password.php:30
+#: C:\PlayAndBay\oc-content\themes\isha/user-recover.php:30
 msgid "Recover your password"
 msgstr "Восстановить ваш пароль"
 
@@ -743,168 +1295,252 @@ msgid "No listings have been added yet"
 msgstr "У вас еще нет объявлений"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:30
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:30
 msgid "Access to your account"
 msgstr "Доступ к вашей учетной записи"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:44
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:52
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:44
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:44
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:52
 msgid "Password"
 msgstr "Пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:51
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:51
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:51
 msgid "Remember me"
 msgstr "Запомнить меня"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:54
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:54
 msgid "Log in"
 msgstr "Вход"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-login.php:58
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-login.php:58
+#: C:\PlayAndBay\oc-content\themes\isha/user-login.php:58
 msgid "Forgot password?"
 msgstr "Забыли пароль?"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:52
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:54
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:52
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:52
 msgid "User type"
 msgstr "Тип пользователя"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:58
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:60
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:58
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:58
 msgid "Cell phone"
 msgstr "Мобильный телефон"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:64
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:66
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:64
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:64
 msgid "Phone"
 msgstr "Телефон"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:88
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:90
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:88
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:88
 msgid "City area"
 msgstr "Район города"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:100
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:102
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-profile.php:100
+#: C:\PlayAndBay\oc-content\themes\isha/user-profile.php:100
 msgid "Website"
 msgstr "Вебсайт"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:126
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:129
 #, fuzzy
 msgid "PM Settings"
 msgstr "Параметры темы"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:135
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:138
 msgid "Notify by email every time you get a new personal message"
 msgstr ""
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:138
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:147
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:157
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:141
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:150
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:160
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:363
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:369
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:375
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:382
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:363
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:369
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:375
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:382
 msgid "Always"
 msgstr ""
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:139
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:148
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:158
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:142
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:151
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:161
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:364
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:370
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:376
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:383
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:364
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:370
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:376
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:383
 msgid "Never"
 msgstr ""
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:144
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:147
 msgid "Show a flash message when you have new personal messages"
 msgstr ""
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:154
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:157
 msgid "Save a copy of each personal message in your outbox by default"
 msgstr ""
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:166
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:169
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:387
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:387
 #, fuzzy
 msgid "Save Settings"
 msgstr "Параметры темы"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:178
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:181
 #, fuzzy
 msgid "Change your username"
 msgstr "Изменить имя пользователя"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:201
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:204
 #, fuzzy
 msgid "Change your e-mail"
 msgstr "Изменить электронную почту"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:229
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:232
 #, fuzzy
 msgid "Change your password"
 msgstr "Сменить пароль"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:263
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:265
+#: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:267
 #: C:\PlayAndBay\oc-content\themes\bender/user-sidebar.php:28
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:405
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:401
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:432
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-sidebar.php:28
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:405
+#: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:401
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:432
+#: C:\PlayAndBay\oc-content\themes\isha/user-sidebar.php:28
 msgid "Delete account"
 msgstr "Удалить учетную запись"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:67
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-profile.php:67
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-profile.php:67
 #, php-format
 msgid "<strong>Address:</strong> %1$s"
 msgstr "<strong>Адрес:</strong> %1$s"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:70
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-profile.php:70
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-profile.php:70
 #, php-format
 msgid "<strong>Location:</strong> %1$s"
 msgstr "<strong>Местоположение:</strong> %1$s"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:75
+#: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:76
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-profile.php:75
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-profile.php:75
 msgid "User description"
 msgstr "Описание пользователя"
 
-#: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:80
+#: C:\PlayAndBay\oc-content\themes\bender/user-public-profile.php:81
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-public-profile.php:80
+#: C:\PlayAndBay\oc-content\themes\isha/user-public-profile.php:80
 msgid "Latest listings"
 msgstr "Последние объявления"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-recover.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-recover.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/user-recover.php:45
 msgid "Send me a new password"
 msgstr "Послать мне новый пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:31
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:31
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:31
 msgid "Register an account for free"
 msgstr "Бесплатная регистрация"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:58
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:58
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:58
 msgid "Repeat password"
 msgstr "Повторить пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:62
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:823
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:62
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:823
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:62
 msgid "Passwords don't match"
 msgstr "Пароль не совпадает"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-register.php:69
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-register.php:69
+#: C:\PlayAndBay\oc-content\themes\isha/user-register.php:69
 msgid "Create"
 msgstr "Создать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-sidebar.php:23
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-sidebar.php:23
+#: C:\PlayAndBay\oc-content\themes\isha/user-sidebar.php:23
 msgid "Display menu"
 msgstr "Показать меню"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-sidebar.php:29
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-sidebar.php:29
+#: C:\PlayAndBay\oc-content\themes\isha/user-sidebar.php:29
 msgid "Are you sure you want to delete your account?"
 msgstr "Вы уверены, что хотите удалить вашу учетную запись?"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:10
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:10
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:10
 msgid "Preview"
 msgstr "Предпросмотр"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:17
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:17
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:17
 msgid "Remove logo"
 msgstr "Удалить логотип"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:25
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:25
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:25
 msgid "No logo has been uploaded yet"
 msgstr "Логотип еще не загружен"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:28
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:28
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:28
 msgid "Upload logo"
 msgstr "Загрузить логотип"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:30
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:30
 msgid "The preferred size of the logo is 600x100."
 msgstr "Предпочтительный размер логотипа 600х100"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:32
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:32
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:32
 msgid ""
 "<strong>Note:</strong> Uploading another logo will overwrite the current "
 "logo."
@@ -912,14 +1548,20 @@ msgstr ""
 "<strong>Внимание:</strong> Загрузка другого логотипа перепишет существующий."
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:40
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:40
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:40
 msgid "Logo image (png,gif,jpg)"
 msgstr "Изображение логотипа (png,gif,jpg)"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:46
 msgid "Upload"
 msgstr "Загрузить"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:55
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:55
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:55
 #, php-format
 msgid "The images folder <strong>%s</strong> is not writable on your server"
 msgstr ""
@@ -927,16 +1569,22 @@ msgstr ""
 "сервере"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:56
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:56
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:56
 msgid "Osclass can't upload the logo image from the administration panel."
 msgstr ""
 "Osclass не может загрузить изображение логотипа из административной панели"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:57
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:57
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:57
 msgid "Please make the aforementioned image folder writable."
 msgstr ""
 "Пожалуйста сделайте вышеупомянутую папку изображений доступную для записи"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/header.php:62
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/header.php:62
+#: C:\PlayAndBay\oc-content\themes\isha/admin/header.php:62
 msgid ""
 "To make a directory writable under UNIX execute this command from the shell:"
 msgstr ""
@@ -944,35 +1592,51 @@ msgstr ""
 "терминала"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:14
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:14
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:14
 msgid ""
 "I would like to contribute to the development of Osclass with a donation of"
 msgstr "Я бы хотел помочь разработке Osclass пожертвованием в размере"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:19
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:19
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:19
 msgid "Custom"
 msgstr "Настроить"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:20
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:20
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:20
 msgid "Donate"
 msgstr "Пожертвовать"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:30
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:30
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:30
 msgid "Search placeholder"
 msgstr "Найти местодержатель"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:34
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:34
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:34
 msgid "Show lists as:"
 msgstr "Показать списки как"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:37
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:37
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:37
 msgid "Gallery"
 msgstr "Галерея"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:43
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:43
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:43
 msgid "Footer link"
 msgstr "Ссылка нижнего колонтитула"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:45
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:45
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:45
 msgid ""
 "I want to help Osclass by linking to <a href=\"http://osclass.org/\" target="
 "\"_blank\">osclass.org</a> from my site with the following text:"
@@ -981,6 +1645,8 @@ msgstr ""
 "target=\"_blank\">osclass.org</a> с моего сайта со следующим текстом:"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:46
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:46
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:46
 msgid ""
 "This website is proudly using the <a title=\"Osclass web\" href=\"http://"
 "osclass.org/\">classifieds scripts</a> software <strong>Osclass</strong>"
@@ -989,12 +1655,252 @@ msgstr ""
 "\">classifieds scripts</a> ПО <strong>Osclass</strong>"
 
 #: C:\PlayAndBay\oc-content\themes\bender/admin/settings.php:50
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/admin/settings.php:50
+#: C:\PlayAndBay\oc-content\themes\isha/admin/settings.php:50
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
 #: C:\PlayAndBay\oc-content\themes\bender/common/head.php:4
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/common/head.php:4
+#: C:\PlayAndBay\oc-content\themes\isha/common/head.php:4
 msgid "Cancel"
 msgstr "Отменить"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:70
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:70
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:70
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:70
+#, fuzzy
+msgid "Search Results for :- "
+msgstr "Результаты поиска: %s"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/dashboard.php:81
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/search.php:81
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:93
+#: C:\PlayAndBay\oc-content\themes\isha/dashboard.php:81
+#: C:\PlayAndBay\oc-content\themes\isha/search.php:81
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:93
+#, fuzzy, php-format
+msgid "%1$d to %2$d of <span> %3$d </span> listings"
+msgstr "%1$d - %2$d of %3$d объявлений"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:225
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:225
+msgid "Welcome"
+msgstr "Здравствуйте"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:226
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:226
+msgid ""
+"Today, we find ourselves in a world where your customers are truly "
+"hyperconnected, demanding revolutionary commerce experiences while becoming "
+"more and more challenging to reach. They require everything to be a click "
+"away. Physical store visits must include an interactive component. Purchases "
+"arrive from around the world as fast as they can fly. And so do ideas, "
+"innovations, winners and losers. Competing in this environment requires a "
+"commerce partner that coordinates all methods available into a connected "
+"consumer experience. And no one delivers the entire process – from "
+"engagement to conversion to delivery to retention – like eBay Enterprise. "
+"Our comprehensive approach uncovers unique insights and cross benefits for "
+"clients – whether they utilize one or all our services. Either way, the "
+"process is more seamless. And more profitable. We live in a world where your "
+"customers demand more. We are here to help you deliver."
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:752
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:752
+msgid "Login & Signup"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:758
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:758
+msgid "Log in to Play and Bay"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:765
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:765
+#, fuzzy
+msgid "Enter your Email address"
+msgstr "Ваш адрес электронной почты"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:772
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:772
+#, fuzzy
+msgid "Enter your password"
+msgstr "Сменить пароль"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:801
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:801
+#, fuzzy
+msgid "Enter User Name"
+msgstr "Введите слова, указанные выше"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:809
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:809
+#, fuzzy
+msgid "Enter valid Email Address"
+msgstr "Недопустимый адрес электронной почты"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:816
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:816
+#, fuzzy
+msgid "Enter Password"
+msgstr "Пароль"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:860
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:860
+#, fuzzy
+msgid "Enter your name"
+msgstr "Изменить имя пользователя"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:864
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:864
+#, fuzzy
+msgid "Enter your valid Email"
+msgstr "Изменить электронную почту"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:868
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:868
+msgid "Enter your phone no."
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:872
+#: C:\PlayAndBay\oc-content\themes\isha/functions.php:872
+msgid "Enter your message"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/head.php:41
+#: C:\PlayAndBay\oc-content\themes\isha/head.php:41
+msgid "No file selected"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/head.php:42
+#: C:\PlayAndBay\oc-content\themes\isha/head.php:42
+msgid "Choose File"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:165
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:186
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:165
+#: C:\PlayAndBay\oc-content\themes\isha/header.php:186
+#, fuzzy
+msgid "Publish your ad"
+msgstr "Опубликовать объявление"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:43
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:43
+#, fuzzy
+msgid "To (seller)"
+msgstr "Связаться с продавцом"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:44
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:44
+#, fuzzy
+msgid "Listing"
+msgstr "Объявления"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:55
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:55
+#, fuzzy
+msgid "Send message"
+msgstr "Сообщение"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-post.php:74
+#: C:\PlayAndBay\oc-content\themes\isha/item-post.php:74
+#, fuzzy
+msgid "Photo"
+msgstr "Фотографии"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item.php:161
+#: C:\PlayAndBay\oc-content\themes\isha/item.php:161
+msgid "Submit"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:78
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:78
+#, fuzzy
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:85
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:85
+#, fuzzy
+msgid "My Listings"
+msgstr "Мои объявления"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:189
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:228
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:189
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:228
+msgid "You have no messages"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:201
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:239
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:201
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:239
+msgid "Reply"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:202
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:240
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:202
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:240
+msgid "Quote"
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:207
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:244
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:207
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:244
+#, fuzzy
+msgid "Are you sure you want to delete all selected personal messages?"
+msgstr "Вы уверены, что хотите удалить вашу учетную запись?"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:208
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:208
+msgid "Send PM to the "
+msgstr ""
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:284
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:284
+#, fuzzy
+msgid "You don't have any items yet"
+msgstr "У вас еще нет оповещений"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:424
+#: C:\PlayAndBay\oc-content\themes\isha/user-items.php:424
+#, fuzzy
+msgid "Delete Account"
+msgstr "Удалить учетную запись"
+
+#~ msgid "Avoid scams by acting locally or paying with PayPal"
+#~ msgstr ""
+#~ "Избежать мошенничества, встречаясь с продавцом лично или оплачивая через "
+#~ "PayPal"
+
+#~ msgid ""
+#~ "Never pay with Western Union, Moneygram or other anonymous payment "
+#~ "services"
+#~ msgstr ""
+#~ "Никогда не оплачивать через Western Union, Moneygram или через другие "
+#~ "анонимные платежные системы"
+
+#~ msgid ""
+#~ "Don't buy or sell outside of your country. Don't accept cashier cheques "
+#~ "from outside your country"
+#~ msgstr ""
+#~ "Не продавайте и не покупайте за пределами своей страны. Не принимайте к "
+#~ "оптате чеки за пределами своей страны"
+
+#~ msgid ""
+#~ "This site is never involved in any transaction, and does not handle "
+#~ "payments, shipping, guarantee transactions, provide escrow services, or "
+#~ "offer \"buyer protection\" or \"seller certification\""
+#~ msgstr ""
+#~ "Этот сайт не занимается денежными переводами и не обрабатывает платежи, "
+#~ "доставки, гарантированные переводы и не предлагает \"системы защиты\" "
+#~ "покупателя или продавца"
 
 #~ msgid "bender"
 #~ msgstr "bender"

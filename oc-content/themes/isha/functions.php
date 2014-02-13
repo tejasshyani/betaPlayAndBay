@@ -192,13 +192,13 @@ FUNCTIONS
 			    <div class="instrument service">
             <img src="<?php echo osc_current_web_theme_url('images/services.png')?>" alt="image Here" />
 			<?php }?>
-            <h2><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span></h2>
+            <h2><a class="<?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a></h2>
 			<?php /**/if ( osc_count_subcategories() > 0 ) { ?>
                <ul>
                          <?php while ( osc_has_subcategories() ) { ?>
                              <li>
                              <?php if( osc_category_total_items() > 0 ) { ?><a class="category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
-                             <?php } else { ?><span><?php echo osc_category_name() ; ?> (<?php echo osc_category_total_items() ; ?>)</span></li>
+                             <?php } else { ?><span><?php echo osc_category_name() ; ?></li>
                              <?php } ?>
                          <?php } ?>
                    </ul>
@@ -222,8 +222,8 @@ FUNCTIONS
 		</article>
 	 <article class="welcome_area">
 	<section class="welcome_mid_box wrapper">
-    	<h1><?php _e("Welcome", 'bender') ; ?></h1>
-        <p><?php _e("Today, we find ourselves in a world where your customers are truly hyperconnected, demanding revolutionary commerce experiences while becoming more and more challenging to reach. They require everything to be a click away. Physical store visits must include an interactive component. Purchases arrive from around the world as fast as they can fly. And so do ideas, innovations, winners and losers. Competing in this environment requires a commerce partner that coordinates all methods available into a connected consumer experience. And no one delivers the entire process – from engagement to conversion to delivery to retention – like eBay Enterprise. Our comprehensive approach uncovers unique insights and cross benefits for clients – whether they utilize one or all our services. Either way, the process is more seamless. And more profitable. We live in a world where your customers demand more. We are here to help you deliver.", 'bender') ; ?></p>
+    	<h1><?php _e("Welcome", 'isha') ; ?></h1>
+        <p><?php _e("Today, we find ourselves in a world where your customers are truly hyperconnected, demanding revolutionary commerce experiences while becoming more and more challenging to reach. They require everything to be a click away. Physical store visits must include an interactive component. Purchases arrive from around the world as fast as they can fly. And so do ideas, innovations, winners and losers. Competing in this environment requires a commerce partner that coordinates all methods available into a connected consumer experience. And no one delivers the entire process – from engagement to conversion to delivery to retention – like eBay Enterprise. Our comprehensive approach uncovers unique insights and cross benefits for clients – whether they utilize one or all our services. Either way, the process is more seamless. And more profitable. We live in a world where your customers demand more. We are here to help you deliver.", 'isha') ; ?></p>
    <img src="<?php echo osc_current_web_theme_url('images/man_image.png');?>" alt="" />
      </section>
 </article>
@@ -610,7 +610,7 @@ function product_listing(){ ?>
 			<h1 class="latest"><?php _e('Latest Listings', 'bender') ; ?></h1>
 			<?php if( osc_count_latest_items() == 0) { ?>
 				<div class="clear"></div>
-				<p class="empty"><?php _e("There aren't listings available at this moment", 'bender'); ?></p>
+				<p class="empty"><?php _e("There aren't listings available at this moment", 'isha'); ?></p>
 			<?php } else { ?>
 			<div class="listing">
 			<?php //osc_current_web_theme_path('loop.php'); ?>
@@ -749,27 +749,27 @@ $(document).ready(function(){
 <div id="login_register" class="div-cont"  >
 <article class="login_area">
 	<section class="login_midbox wrapper"> 
-    	<h1 class="login_text"><?php _e('Login & Signup', 'bender'); ?></h1>
+    	<h1 class="login_text"><?php _e('Login & Signup', 'isha'); ?></h1>
             
 		   <aside class="login_areabox">
 		   <form action="<?php echo osc_base_url(true); ?>" method="post" id="login_submit">
             <input type="hidden" name="page" value="login" />
             <input type="hidden" name="action" value="login_post" id="hidden_login"/>
-        	<h1><?php _e('Log in to Play and Bay', 'bender'); ?></h1>
+        	<h1><?php _e('Log in to Play and Bay', 'isha'); ?></h1>
             <ul>
             	<li>
                 	<label>User Name/Email</label>
                      <?php UserForm::email_login_text(); ?>
                 </li>
 					<p class="error" id="emaillogin-error" style="display:none;color: #FF0000;">
-                        <?php _e("Enter your Email address", 'bender'); ?>
+                        <?php _e("Enter your Email address", 'isha'); ?>
                     </p>
             	<li>
                 	<label>Enter Password Here</label>
                     <?php UserForm::password_login_text(); ?>
                 </li>
 				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter your password", 'bender'); ?>
+                        <?php _e("Enter your password", 'isha'); ?>
                     </p>
             	<li>
                 	<a href="#">forgot password ?</a>
@@ -780,7 +780,7 @@ $(document).ready(function(){
         </aside>
         <aside class="login_areabox login_areabox2">
 		 <ul id="error_list"></ul>
-        	<h1>Register for Play and Bay</h1>
+        	<h1><?php _e("Register for Play and Bay", 'isha') ; ?></h1>
 			 <form id="register_ajax" name="register" action="<?php echo osc_base_url(true); ?>" method="post" >
             <input type="hidden" name="page" value="register" />
             <input type="hidden" name="action" value="register_post" />
