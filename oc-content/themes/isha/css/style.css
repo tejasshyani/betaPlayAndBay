@@ -109,7 +109,7 @@ nav.navigation ul li
 	float:left;
 	color:#015685;
 	font-family: 'oswaldlight';
-	font-size:18px;
+	font-size:24px;
 	text-align:center;
 	margin-left:20px;
 }
@@ -183,7 +183,7 @@ nav.navigation2 ul li
 	text-align:center;
 	margin-bottom:10px;
 	font-family: 'oswaldlight';
-	font-size:18px;
+	font-size:20px;
 }
 nav.navigation2 ul li a
 {
@@ -291,7 +291,7 @@ input[type=submit].search_btn:hover
 .instrument h2 a
 {
 	font-family: 'oswaldlight';
-	font-size:18px;
+	font-size:20px;
 	color:#35aad8;
 	padding-top:5px;
 	text-decoration:none;
@@ -495,7 +495,7 @@ color:#FF9973;
 .location h1
 {
 	font-family: 'oswaldlight';
-	font-size:24px;
+	font-size:26px;
 	color:#fff;
 	background:url(../images/location_back.png) repeat-x;
 	padding:6px 18px;
@@ -573,7 +573,7 @@ color:#FF9973;
 {
 	color:#505152;
 	font-family: 'oswaldlight';
-	font-size:30px;
+	font-size:32px;
 	font-weight:normal;
 	padding-bottom:15px;
 }
@@ -1068,7 +1068,7 @@ input.share[type=submit]:hover
 {
 	color: #2C2C2C;
     font-family: 'oswaldlight';
-    font-size: 30px;
+    font-size: 32px;
     font-weight: normal;
     line-height: 30px;
 }
@@ -1098,7 +1098,7 @@ input.share[type=submit]:hover
 {
 	color: #2C2C2C;
     font-family: 'oswaldlight';
-    font-size: 20px;
+    font-size: 22px;
     font-weight: normal;
 	padding:10px 0;
 }
@@ -1333,7 +1333,7 @@ input.apply[type=button]:hover
 h1.result {
     color: #2C2C2C;
     font-family: 'oswaldlight';
-    font-size: 30px;
+    font-size: 32px;
     font-weight: normal;
     line-height: 30px;
     margin-bottom: 10px;
@@ -1577,7 +1577,7 @@ padding:0px;
 	font-size:20px;
     font-family: 'oswaldlight';
 	color:#999;
-	padding:10px 0;
+	padding:12px 0;
 }
 .wishlist p
 {
@@ -1798,7 +1798,7 @@ input.apply[type="submit"] {
 {
 	background:#74AFC5;
 	font-family:'oswaldlight';
-	font-size:24px;
+	font-size:26px;
 	margin-bottom:10px;
 	font-weight:normal;
 	color:#fff;
@@ -2039,7 +2039,7 @@ nav.navigation3 ul li
 	float:left;
 	color:#015685;
 	font-family: 'oswaldlight';
-	font-size:18px;
+	font-size:20px;
 	text-align:center;
 	margin-left:20px;
 }

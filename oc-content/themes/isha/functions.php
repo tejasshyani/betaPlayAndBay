@@ -38,7 +38,7 @@ body{background:none repeat scroll 0 0 #FFFFFF !important;}
  <?php
     define('BENDER_THEME_VERSION', '1.0');
     if( !osc_get_preference('keyword_placeholder', 'bender_theme') ) {
-        osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'bender'), 'bender_theme');
+        osc_set_preference('keyword_placeholder', __('ie. PHP Programmer', 'isha'), 'bender_theme');
     }
     osc_register_script('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.pack.js'), array('jquery'));
     osc_enqueue_style('fancybox', osc_current_web_theme_url('js/fancybox/jquery.fancybox.css'));
@@ -330,26 +330,26 @@ FUNCTIONS
     if( !function_exists('get_breadcrumb_lang') ) {
         function get_breadcrumb_lang() {
             $lang = array();
-            $lang['item_add']               = __('Publish a listing', 'bender');
-            $lang['item_edit']              = __('Edit your listing', 'bender');
-            $lang['item_send_friend']       = __('Send to a friend', 'bender');
-            $lang['item_contact']           = __('Contact publisher', 'bender');
-            $lang['search']                 = __('Search results', 'bender');
-            $lang['search_pattern']         = __('Search results: %s', 'bender');
-            $lang['user_dashboard']         = __('Dashboard', 'bender');
-            $lang['user_dashboard_profile'] = __("%s's profile", 'bender');
-            $lang['user_account']           = __('Account', 'bender');
-            $lang['user_items']             = __('Listings', 'bender');
-            $lang['user_alerts']            = __('Alerts', 'bender');
-            $lang['user_profile']           = __('Update account', 'bender');
-            $lang['user_change_email']      = __('Change email', 'bender');
-            $lang['user_change_username']   = __('Change username', 'bender');
-            $lang['user_change_password']   = __('Change password', 'bender');
-            $lang['login']                  = __('Login', 'bender');
-            $lang['login_recover']          = __('Recover password', 'bender');
-            $lang['login_forgot']           = __('Change password', 'bender');
-            $lang['register']               = __('Create a new account', 'bender');
-            $lang['contact']                = __('Contact', 'bender');
+            $lang['item_add']               = __('Publish a listing', 'isha');
+            $lang['item_edit']              = __('Edit your listing', 'isha');
+            $lang['item_send_friend']       = __('Send to a friend', 'isha');
+            $lang['item_contact']           = __('Contact publisher', 'isha');
+            $lang['search']                 = __('Search results', 'isha');
+            $lang['search_pattern']         = __('Search results: %s', 'isha');
+            $lang['user_dashboard']         = __('Dashboard', 'isha');
+            $lang['user_dashboard_profile'] = __("%s's profile", 'isha');
+            $lang['user_account']           = __('Account', 'isha');
+            $lang['user_items']             = __('Listings', 'isha');
+            $lang['user_alerts']            = __('Alerts', 'isha');
+            $lang['user_profile']           = __('Update account', 'isha');
+            $lang['user_change_email']      = __('Change email', 'isha');
+            $lang['user_change_username']   = __('Change username', 'isha');
+            $lang['user_change_password']   = __('Change password', 'isha');
+            $lang['login']                  = __('Login', 'isha');
+            $lang['login_recover']          = __('Recover password', 'isha');
+            $lang['login_forgot']           = __('Change password', 'isha');
+            $lang['register']               = __('Create a new account', 'isha');
+            $lang['contact']                = __('Contact', 'isha');
             return $lang;
         }
     }
@@ -372,37 +372,37 @@ FUNCTIONS
         function get_user_menu() {
             $options   = array();
             $options[] = array(
-                'name'  => __('Listings', 'bender'),
+                'name'  => __('Listings', 'isha'),
                 'url'   => osc_user_list_items_url(),
                 'class' => 'opt_items'
             );
             $options[] = array(
-                'name' => __('Alerts', 'bender'),
+                'name' => __('Alerts', 'isha'),
                 'url' => osc_user_alerts_url(),
                 'class' => 'opt_alerts'
             );
             $options[] = array(
-                'name'  => __('Account', 'bender'),
+                'name'  => __('Account', 'isha'),
                 'url'   => osc_user_profile_url(),
                 'class' => 'opt_account'
             );
             $options[] = array(
-                'name'  => __('Change email', 'bender'),
+                'name'  => __('Change email', 'isha'),
                 'url'   => osc_change_user_email_url(),
                 'class' => 'opt_change_email'
             );
             $options[] = array(
-                'name'  => __('Change username', 'bender'),
+                'name'  => __('Change username', 'isha'),
                 'url'   => osc_change_user_username_url(),
                 'class' => 'opt_change_username'
             );
             $options[] = array(
-                'name'  => __('Change password', 'bender'),
+                'name'  => __('Change password', 'isha'),
                 'url'   => osc_change_user_password_url(),
                 'class' => 'opt_change_password'
             );
             $options[] = array(
-                'name'  => __('Delete account', 'bender'),
+                'name'  => __('Delete account', 'isha'),
                 'url'   => '#',
                 'class' => 'opt_delete_account'
             );
@@ -460,28 +460,28 @@ FUNCTIONS
                 osc_set_preference('defaultShowAs@all', Params::getParam('defaultShowAs@all'), 'bender_theme');
                 osc_set_preference('defaultShowAs@search', Params::getParam('defaultShowAs@all'));
 
-                osc_add_flash_ok_message(__('Theme settings updated correctly', 'bender'), 'admin');
+                osc_add_flash_ok_message(__('Theme settings updated correctly', 'isha'), 'admin');
                 osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'));
             break;
             case('upload_logo'):
                 $package = Params::getFiles('logo');
                 if( $package['error'] == UPLOAD_ERR_OK ) {
                     if( move_uploaded_file($package['tmp_name'], WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
-                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'bender'), 'admin');
+                        osc_add_flash_ok_message(__('The logo image has been uploaded correctly', 'isha'), 'admin');
                     } else {
-                        osc_add_flash_error_message(__("An error has occurred, please try again", 'bender'), 'admin');
+                        osc_add_flash_error_message(__("An error has occurred, please try again", 'isha'), 'admin');
                     }
                 } else {
-                    osc_add_flash_error_message(__("An error has occurred, please try again", 'bender'), 'admin');
+                    osc_add_flash_error_message(__("An error has occurred, please try again", 'isha'), 'admin');
                 }
                 osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'));
             break;
             case('remove'):
                 if(file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
                     @unlink( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" );
-                    osc_add_flash_ok_message(__('The logo image has been removed', 'bender'), 'admin');
+                    osc_add_flash_ok_message(__('The logo image has been removed', 'isha'), 'admin');
                 } else {
-                    osc_add_flash_error_message(__("Image not found", 'bender'), 'admin');
+                    osc_add_flash_error_message(__("Image not found", 'isha'), 'admin');
                 }
                 osc_redirect_to(osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'));
             break;
@@ -497,8 +497,8 @@ FUNCTIONS
     }
     osc_add_hook('init', 'bender_redirect_user_dashboard', 2);
     osc_add_hook('init_admin', 'theme_bender_actions_admin');
-    osc_admin_menu_appearance(__('Header logo', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'), 'header_bender');
-    osc_admin_menu_appearance(__('Theme settings', 'bender'), osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'), 'settings_bender');
+    osc_admin_menu_appearance(__('Header logo', 'isha'), osc_admin_render_theme_url('oc-content/themes/bender/admin/header.php'), 'header_bender');
+    osc_admin_menu_appearance(__('Theme settings', 'isha'), osc_admin_render_theme_url('oc-content/themes/bender/admin/settings.php'), 'settings_bender');
 /**
 
 TRIGGER FUNCTIONS
@@ -607,7 +607,7 @@ function product_listing(){ ?>
 <div id="listing" class="div-cont" >
 <article class="latest_box">
 		<section class="latest_midbox wrapper">
-			<h1 class="latest"><?php _e('Latest Listings', 'bender') ; ?></h1>
+			<h1 class="latest"><?php _e('Latest Listings', 'isha') ; ?></h1>
 			<?php if( osc_count_latest_items() == 0) { ?>
 				<div class="clear"></div>
 				<p class="empty"><?php _e("There aren't listings available at this moment", 'isha'); ?></p>
@@ -632,7 +632,7 @@ function product_listing(){ ?>
             <?php } ?>
 			<?php if(osc_count_list_regions() > 0 ) { ?>
             <aside class="location">
-            	<h1><?php _e("Location", 'bender') ; ?></h1>
+            	<h1><?php _e("Location", 'isha') ; ?></h1>
 				<ul>
 					<?php while(osc_has_list_regions() ) { ?>
 					<li><a href="<?php echo osc_list_region_url(); ?>"><?php echo osc_list_region_name() ; ?>(<?php echo osc_list_region_items() ; ?>)</a></li>
@@ -798,7 +798,7 @@ $(document).ready(function(){
                    <?php UserForm::name_text(); ?>
                 </li>
 				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter User Name", 'bender'); ?>
+                        <?php _e("Enter User Name", 'isha'); ?>
                     </p>
             	<li>
                 	<label>Email</label>
@@ -806,21 +806,21 @@ $(document).ready(function(){
                     <?php osc_show_recaptcha('register'); ?>
                 </li>
 					<p  class="error" id="email-error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter valid Email Address", 'bender'); ?>
+                        <?php _e("Enter valid Email Address", 'isha'); ?>
                     </p>
             	<li>
                 	<label>Password</label>
                       <?php UserForm::password_text(); ?>
                 </li>
 				<p  class="error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter Password", 'bender'); ?>
+                        <?php _e("Enter Password", 'isha'); ?>
                     </p>
             	<li>
                 	<label>Re-Enter Password</label>
                    <?php UserForm::check_password_text(); ?>
                 </li>
 				<p class="error2" id="password-error" style="display:none; color: #FF0000;">
-                        <?php _e("Passwords don't match", 'bender'); ?>
+                        <?php _e("Passwords don't match", 'isha'); ?>
                     </p>
 					<?php osc_run_hook('user_register_form'); ?>
             	<li>
@@ -850,26 +850,26 @@ function contact_content(){?>
                         <li class="flx-vk-icon"><a href="http://vk.com/lovemarishaprecious" target="_blank"></a></li>
                     </ul>
                 </center> 
-        		<h1 class="latest"><?php _e('Contact us', 'bender'); ?></h1>
+        		<h1 class="latest"><?php _e('Contact us', 'isha'); ?></h1>
 				<form id="contact_form" name="contact_form" action="<?php echo osc_base_url(true); ?>" method="post" >
 				<input type="hidden" value="contact" name="page">
 <input type="hidden" value="contact_post" name="action">
 					<aside class="map_back">
 						 <?php ContactForm::your_name(); ?>
 						 <p  class="error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter your name", 'bender'); ?>
+                        <?php _e("Enter your name", 'isha'); ?>
                     </p>
 						 <?php ContactForm::your_email(); ?>
 						 <p  class="error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter your valid Email", 'bender'); ?>
+                        <?php _e("Enter your valid Email", 'isha'); ?>
                     </p>
 						 <?php ContactForm::your_phone_number(); ?> 
 						 <p  class="error" style="display:none; color: #FF0000;">
-						  <?php _e("Enter your phone no.", 'bender'); ?>
+						  <?php _e("Enter your phone no.", 'isha'); ?>
                     </p>
 						 <?php ContactForm::your_message(); ?>
 						 <p  class="error" style="display:none; color: #FF0000;">
-                        <?php _e("Enter your message", 'bender'); ?>
+                        <?php _e("Enter your message", 'isha'); ?>
                     </p>
 						
 						<input type="submit" class="submit" value="Submit"/>

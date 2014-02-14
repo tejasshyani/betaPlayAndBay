@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bender Theme\n"
-"POT-Creation-Date: 2014-02-12 21:47+0400\n"
-"PO-Revision-Date: 2014-02-12 21:48+0400\n"
+"POT-Creation-Date: 2014-02-13 16:58+0400\n"
+"PO-Revision-Date: 2014-02-13 16:58+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -89,11 +89,13 @@ msgstr "Попишитесь сейчас"
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/contact.php:31
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:853
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:717
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:158
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:179
 #: C:\PlayAndBay\oc-content\themes\isha/contact.php:31
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:853
 #: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:717
 msgid "Contact us"
-msgstr "Свяжитесь с нами"
+msgstr "Связь"
 
 #: C:\PlayAndBay\oc-content\themes\bender/contact.php:40
 #: C:\PlayAndBay\oc-content\themes\bender/item-send-friend.php:44
@@ -202,6 +204,8 @@ msgstr "Выйти"
 #: C:\PlayAndBay\oc-content\themes\bender/item-sidebar.php:54
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:348
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:344
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:161
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:182
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-sidebar.php:66
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:348
 #: C:\PlayAndBay\oc-content\themes\isha/functions_old.php:344
@@ -1364,7 +1368,7 @@ msgstr "Параметры темы"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:138
 msgid "Notify by email every time you get a new personal message"
-msgstr ""
+msgstr "Оповещать по почте личных сообщениях"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:141
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:150
@@ -1378,7 +1382,7 @@ msgstr ""
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:375
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:382
 msgid "Always"
-msgstr ""
+msgstr "Всегда"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:142
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:151
@@ -1392,7 +1396,7 @@ msgstr ""
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:376
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:383
 msgid "Never"
-msgstr ""
+msgstr "Никогда"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-profile.php:147
 msgid "Show a flash message when you have new personal messages"
@@ -1715,7 +1719,7 @@ msgstr ""
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:758
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:758
 msgid "Log in to Play and Bay"
-msgstr ""
+msgstr "Войти в PlayAndBay"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:765
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:765
@@ -1728,6 +1732,11 @@ msgstr "Ваш адрес электронной почты"
 #, fuzzy
 msgid "Enter your password"
 msgstr "Сменить пароль"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:783
+#, fuzzy
+msgid "Register for Play and Bay"
+msgstr "Зарегистрироваться"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:801
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:801
@@ -1762,42 +1771,52 @@ msgstr "Изменить электронную почту"
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:868
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:868
 msgid "Enter your phone no."
-msgstr ""
+msgstr "Введите Ваш номер телефона"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:872
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:872
 msgid "Enter your message"
-msgstr ""
+msgstr "Введите сообщение"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/head.php:41
 #: C:\PlayAndBay\oc-content\themes\isha/head.php:41
 msgid "No file selected"
-msgstr ""
+msgstr "Не выбран файл"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/head.php:42
 #: C:\PlayAndBay\oc-content\themes\isha/head.php:42
 msgid "Choose File"
-msgstr ""
+msgstr "Выбрать файл"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:156
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:175
+msgid "Home"
+msgstr "Главная"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:157
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:178
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:44
+#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:44
+msgid "Listing"
+msgstr "Объявления"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:163
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:184
+msgid "Register"
+msgstr "Регистрация"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:165
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/header.php:186
 #: C:\PlayAndBay\oc-content\themes\isha/header.php:165
 #: C:\PlayAndBay\oc-content\themes\isha/header.php:186
-#, fuzzy
 msgid "Publish your ad"
-msgstr "Опубликовать объявление"
+msgstr "Подать объявление"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:43
 #: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:43
 #, fuzzy
 msgid "To (seller)"
 msgstr "Связаться с продавцом"
-
-#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:44
-#: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:44
-#, fuzzy
-msgid "Listing"
-msgstr "Объявления"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/item-contact.php:55
 #: C:\PlayAndBay\oc-content\themes\isha/item-contact.php:55
@@ -1833,21 +1852,21 @@ msgstr "Мои объявления"
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:189
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:228
 msgid "You have no messages"
-msgstr ""
+msgstr "У Вас не сообщений"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:201
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:239
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:201
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:239
 msgid "Reply"
-msgstr ""
+msgstr "Ответить"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:202
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:240
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:202
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:240
 msgid "Quote"
-msgstr ""
+msgstr "Цитировать"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:207
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:244
@@ -1860,7 +1879,7 @@ msgstr "Вы уверены, что хотите удалить вашу уче�
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:208
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:208
 msgid "Send PM to the "
-msgstr ""
+msgstr "Отправить личное сообщение"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:284
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:284
@@ -1873,6 +1892,9 @@ msgstr "У вас еще нет оповещений"
 #, fuzzy
 msgid "Delete Account"
 msgstr "Удалить учетную запись"
+
+#~ msgid "Listingп"
+#~ msgstr "Объявления"
 
 #~ msgid "Avoid scams by acting locally or paying with PayPal"
 #~ msgstr ""
