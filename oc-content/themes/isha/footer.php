@@ -20,7 +20,7 @@
      */
 ?>
 <footer>
-	<p>&copy; Copyright 2012-2013, All Rights Reseverd,www.playandbay.com</p>
+	<p>&copy; Copyright 2012-2013, All Rights Reserved, playandbay.com</p>
 </footer>
  <div class="chose-langu">
 	 <a class="search-btn" href="javascript:void(0)"></a>

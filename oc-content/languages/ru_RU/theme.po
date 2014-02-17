@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Bender Theme\n"
-"POT-Creation-Date: 2014-02-15 11:32+0400\n"
-"PO-Revision-Date: 2014-02-15 11:34+0400\n"
+"POT-Creation-Date: 2014-02-17 14:52+0400\n"
+"PO-Revision-Date: 2014-02-17 14:53+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -354,6 +354,7 @@ msgstr "Аккаунт"
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions.php:375
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:338
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/functions_old.php:371
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:43
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-alerts.php:53
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:156
 #: C:\PlayAndBay\oc-content\themes\isha/functions.php:342
@@ -1296,10 +1297,12 @@ msgid "Recover your password"
 msgstr "Восстановить ваш пароль"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-items.php:41
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:45
 msgid "My listings"
 msgstr "Мои объявления"
 
 #: C:\PlayAndBay\oc-content\themes\bender/user-items.php:43
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:46
 msgid "No listings have been added yet"
 msgstr "У вас еще нет объявлений"
 
@@ -1876,10 +1879,15 @@ msgstr "Фотографии"
 msgid "Submit"
 msgstr ""
 
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:40
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:78
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:78
 msgid "My Account"
 msgstr "Мой аккаунт"
+
+#: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/page-dashboard.php:43
+msgid "Your Selected Listings"
+msgstr "Выбранные Вами объявления"
 
 #: C:\PlayAndBay\betaPlayandBay\oc-content\themes\isha/user-items.php:85
 #: C:\PlayAndBay\oc-content\themes\isha/user-items.php:85
