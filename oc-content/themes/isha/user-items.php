@@ -31,7 +31,7 @@
 
     osc_add_filter('meta_title_filter','custom_meta_title');
     function custom_meta_title($data){
-        return __('Alerts', 'bender');;
+        return __('Alerts', 'isha');;
     }
 	$osc_user = osc_user();
 	
@@ -75,22 +75,22 @@ $( ".account_box ul li" ).click(function() {
 <section class="wrapper result_outer account_outer">
     
 <section class="account_box">
-    	<h1 class="result"><?php _e('My Account', 'bender') ; ?></h1>
+    	<h1 class="result"><?php _e('My Account', 'isha') ; ?></h1>
         <ul>
         	<li>
                 <a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/listing_icon.png')?>">
-			    <h2>Listings<span>Your Selected Listings</span></h2> 
+			    <h2><?php _e('Listings', 'isha') ; ?><span><?php _e('Your Selected Listings', 'isha') ; ?></span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist" style="display: none;">
-                	<h1><?php _e('My Listings', 'bender') ; ?></h1>
+                	<h1><?php _e('My Listings', 'isha') ; ?></h1>
 					 <?php if(osc_count_items() == 0) { ?>
-                    <p>No listings have been added yet</p>
+                    <p><?php _e('No listings have been added yet', 'isha') ; ?></p>
 					<?php } else {
 					while(osc_has_items()) {
 					 $search_number = bender_search_number();
 					 
 				echo '<p>';
-                printf(__('%1$d to %2$d of <span> %3$d </span> listings', 'bender'), $search_number['from'], $search_number['to'], $search_number['of']);
+                printf(__('%1$d to %2$d of <span> %3$d </span> listings', 'isha'), $search_number['from'], $search_number['to'], $search_number['of']);
 				echo '</p>';
 					?>
 					
@@ -116,12 +116,12 @@ $( ".account_box ul li" ).click(function() {
 					<div class="clear"></div>
 					<?php if($admin){ ?>
                     <span class="admin-options">
-                        <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'bender'); ?></a>
+                        <a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'isha'); ?></a>
                         <span>|</span>
-                        <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', 'bender')); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'bender'); ?></a>
+                        <a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', 'isha')); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'isha'); ?></a>
                         <?php if(osc_item_is_inactive()) {?>
                         <span>|</span>
-                        <a href="<?php echo osc_item_activate_url();?>" ><?php _e('Activate', 'bender'); ?></a>
+                        <a href="<?php echo osc_item_activate_url();?>" ><?php _e('Activate', 'isha'); ?></a>
                         <?php } ?>
                     </span>
                 <?php } ?>
@@ -134,26 +134,26 @@ $( ".account_box ul li" ).click(function() {
 			
             <li>
             	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/alert.png')?>">
-				<h2>Alert<span>Your Important Alerts</span></h2> 
+				<h2><?php _e('Alert', 'isha') ; ?><span><?php _e('Your Important Alerts', 'isha') ; ?></span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                  <div class="wishlist" style="display: none;">
-                	<h1><?php _e('Alerts', 'bender') ; ?></h1>
+                	<h1><?php _e('Alerts', 'isha') ; ?></h1>
 					<?php if(osc_count_alerts() <= 0) { ?>
-                    <p>You do not have any alerts yet.</p>
+                    <p><?php _e('You do not have any alerts yet.', 'isha') ; ?></p>
 					<?php } else { ?>
 					    <?php
     $i = 1;
     while(osc_has_alerts()) { ?>
         <div class="userItem" >
             <div class="title-has-actions">
-                <h3><?php _e('Alert', 'bender'); ?> <?php echo $i; ?></h3> <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'benderw')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url(); ?>"><?php _e('Delete this alert', 'bender'); ?></a><div class="clear"></div></div>
+                <h3><?php _e('Alert', 'isha'); ?> <?php echo $i; ?></h3> <a onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can\'t be undone. Are you sure you want to continue?', 'benderw')); ?>');" href="<?php echo osc_user_unsubscribe_alert_url(); ?>"><?php _e('Delete this alert', 'isha'); ?></a><div class="clear"></div></div>
             <div>
             <?php while(osc_has_items()) {
                 bender_draw_item();
             } ?>
             <?php if(osc_count_items() == 0) { ?>
                     <br />
-                    0 <?php _e('Listings', 'bender'); ?>
+                    0 <?php _e('Listings', 'isha'); ?>
             <?php } ?>
             </div>
         </div>
@@ -171,16 +171,16 @@ $( ".account_box ul li" ).click(function() {
              $recipCount = count($recipPMs);
 			?>
             	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/inbox.png')?>">
-				<h2>Inbox (<?php echo $recipCount;?>)<span>Your Incoming Messages</span></h2> 
+				<h2><?php _e('Inbox', 'isha'); ?> (<?php echo $recipCount;?>)<span><?php _e('Your Incoming Messages', 'isha'); ?></span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist inbox" style="display: none;">
                 	<table cellspacing="0" cellpadding="0">
                     	<tbody><tr>
                         	<th><input type="checkbox"></th>
-                            <th>Date</th>
-                            <th>Subject</th>
-                            <th>From</th>
-							<th>Action</th>
+                            <th><?php _e('Date', 'isha'); ?></th>
+                            <th><?php _e('Subject', 'isha'); ?></th>
+                            <th><?php _e('From', 'isha'); ?></th>
+							<th><?php _e('Action', 'isha'); ?></th>
                         </tr>
 						 <?php if($recipCount == 0) { ?>
                   <tr class="odd">
@@ -209,15 +209,15 @@ $( ".account_box ul li" ).click(function() {
                 </div>
             </li>
             <li>
-            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/outbox.png')?>"><h2>Outbox<span>Your Outgoing Messages</span></h2> <img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
+            	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/outbox.png')?>"><h2><?php _e('Outbox', 'osclass_pm'); ?><span><?php _e('Your Outgoing Messages', 'isha'); ?></span></h2> <img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist inbox" style="display: none;">
                 	<table cellspacing="0" cellpadding="0">
                     	<tbody><tr>
                         	<th><input type="checkbox"></th>
-                            <th>Date</th>
-                            <th>Subject</th>
-                            <th>Sent To</th>
-							<th>Action</th>
+                            <th><?php _e('Date', 'osclass_pm'); ?></th>
+                            <th><?php _e('Subject', 'osclass_pm'); ?></th>
+                            <th><?php _e('Sent To', 'osclass_pm'); ?></th>
+							<th><?php _e('Action', 'osclass_pm'); ?></th>
                         </tr>
 						<?php $recipPMs = ModelPM::newInstance()->getSenderMessages(osc_logged_user_id(), 1, 'pm_id', 'DESC');
                         $recipCount = count($recipPMs);
@@ -276,7 +276,7 @@ $( ".account_box ul li" ).click(function() {
         
 ?>
             	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/wishlist.png')?>">
-				<h2>Watchlist<span>Your Selected Watchlist</span></h2> 
+				<h2><?php _e('Watchlist', 'isha') ; ?><span><?php _e('Your Selected Watchlist', 'isha') ; ?></span></h2> 
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 
                 <div class="wishlist" style="display: none;">
@@ -319,10 +319,10 @@ $( ".account_box ul li" ).click(function() {
             </li>
             <li>
             	<a href="javascript:void(0)"><img class="icon" alt="" src="<?php echo osc_current_web_theme_url('images/account.png')?>">
-				<h2>Account<span>View Full Account</span></h2>
+				<h2><?php _e('Settings', 'isha') ; ?><span><?php _e('View Full Account', 'isha') ; ?></span></h2>
 				<img class="plus" alt="" src="<?php echo osc_current_web_theme_url('images/plus_dropdown.png')?>"></a>
                 <div class="wishlist account" style="display: block;">
-                	<h1>Update account</h1>
+                	<h1><?php _e('Update account', 'isha') ; ?></h1>
 					<?php  
 					$osc_user = osc_user();
 					?>
@@ -330,18 +330,18 @@ $( ".account_box ul li" ).click(function() {
 					           <input type="hidden" name="page" value="user" />
                                <input type="hidden" name="action" value="profile_post" />
                 	<ul>
-                    	<li><label>Name</label><?php UserForm::name_text(osc_logged_user_name()); ?></li>
-                    	<li><label>User Type</label> <?php UserForm::is_company_select(osc_user()); ?></li>
-                    	<li><label>Cell Phone</label><?php UserForm::mobile_text(osc_user()); ?></li>
-                    	<li><label>Phone</label><?php UserForm::phone_land_text(osc_user()); ?></li>
-                        <li><label>Country</label><?php UserForm::country_select(osc_get_countries(), osc_user()); ?></li>
-                        <li><label>Region</label> <?php UserForm::region_select(osc_get_regions(), osc_user()); ?></li>
-                        <li><label>City</label>  <?php UserForm::city_select(osc_get_cities(), osc_user()); ?></li>
-                    	<li><label>City Area</label> <?php UserForm::city_area_text(osc_user()); ?></li>
-                    	<li><label>Address</label><?php UserForm::address_text(osc_user()); ?></li>
-                    	<li><label>Website</label><?php UserForm::website_text(osc_user()); ?></li>
-                    	<li><label>Description</label> <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?></li>
-                        <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
+                    	<li><label><?php _e('Name', 'isha') ; ?></label><?php UserForm::name_text(osc_logged_user_name()); ?></li>
+                    	<li><label><?php _e('User Type', 'isha') ; ?></label> <?php UserForm::is_company_select(osc_user()); ?></li>
+                    	<li><label><?php _e('Cell Phone', 'isha') ; ?></label><?php UserForm::mobile_text(osc_user()); ?></li>
+                    	<li><label><?php _e('Phone', 'isha') ; ?></label><?php UserForm::phone_land_text(osc_user()); ?></li>
+                        <li><label><?php _e('Country', 'isha') ; ?></label><?php UserForm::country_select(osc_get_countries(), osc_user()); ?></li>
+                        <li><label><?php _e('Region', 'isha') ; ?></label> <?php UserForm::region_select(osc_get_regions(), osc_user()); ?></li>
+                        <li><label><?php _e('City', 'isha') ; ?></label>  <?php UserForm::city_select(osc_get_cities(), osc_user()); ?></li>
+                    	<li><label><?php _e('City Area', 'isha') ; ?></label> <?php UserForm::city_area_text(osc_user()); ?></li>
+                    	<li><label><?php _e('Address', 'isha') ; ?></label><?php UserForm::address_text(osc_user()); ?></li>
+                    	<li><label><?php _e('Website', 'isha') ; ?></label><?php UserForm::website_text(osc_user()); ?></li>
+                    	<li><label><?php _e('Description', 'isha') ; ?></label> <?php UserForm::info_textarea('s_info', osc_locale_code(), @$osc_user['locale'][osc_locale_code()]['s_info']); ?></li>
+                        <li> <button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'isha');?></button></li>
 						
 						 <?php //osc_run_hook('user_form'); ?>
 						 <?php osc_run_hook('user_form', osc_user()); ?>
@@ -351,85 +351,85 @@ $( ".account_box ul li" ).click(function() {
             if(osc_is_web_user_logged_in()){
             $userSettings = ModelPM::newInstance()->getUserPmSettings(osc_logged_user_id());
             ?>
-                    <h1>PM Settings</h1>
+                    <h1><?php _e('PM Settings', 'isha') ; ?></h1>
 					 <form action="<?php echo osc_base_url() . 'oc-content/plugins/osclass_pm/user-proc.php'; ?>" method="POST">
 					  <input type="hidden" name="page" value="custom" />
       <input type="hidden" name="file" value="osclass_pm/user-proc.php" />
       <input type="hidden" name="option" value="userSettings" />
       <input type="hidden" name="user_id" value="<?php echo osc_logged_user_id(); ?>" />
                 	<ul class="pm">
-                    	<li><label>Notify by email every time you get a new personal message?</label>
+                    	<li><label><?php _e('Notify by email every time you get a new personal message', 'isha') ; ?>?</label>
                         	 <select name="emailAlert">
                   <option value="1" <?php if($userSettings['send_email'] == 1) { echo 'selected';}?>><?php _e('Always','osclass_pm'); ?></option>
                   <option value="0" <?php if($userSettings['send_email'] == 0) { echo 'selected';}?>><?php _e('Never','osclass_pm'); ?></option>
                </select>
                         </li>
-                    	<li><label>Show a flash message when you have new personal messages?</label>
+                    	<li><label><?php _e('Show a flash message when you have new personal messages', 'isha') ; ?>?</label>
                         	 <select name="flashAlert">
                   <option value="1" <?php if($userSettings['flash_alert'] == 1) { echo 'selected';}?>><?php _e('Always','osclass_pm'); ?></option>
                   <option value="0" <?php if($userSettings['flash_alert'] == 0) { echo 'selected';}?>><?php _e('Never','osclass_pm'); ?></option>
                </select>
                         </li>
-                    	<li><label>Notify by email every time you get a new personal message?</label>
+                    	<li><label><?php _e('Notify by email every time you get a new personal message', 'isha') ; ?>?</label>
                         	<select name="saveSent">
                   <option value="1" <?php if($userSettings['save_sent'] == 1) { echo 'selected';}?>><?php _e('Always','osclass_pm'); ?></option>
                   <option value="0" <?php if($userSettings['save_sent'] == 0) { echo 'selected';}?>><?php _e('Never','osclass_pm'); ?></option>
                </select>
                         </li>
 						 <?php if( pmSent() ) { ?>
-						 <li><label>Save a copy of each personal message in your outbox by default?</label>
+						 <li><label><?php _e('Save a copy of each personal message in your outbox by default', 'isha') ; ?>?</label>
                         	<select name="saveSent">
                   <option value="1" <?php if($userSettings['save_sent'] == 1) { echo 'selected';}?>><?php _e('Always','osclass_pm'); ?></option>
                   <option value="0" <?php if($userSettings['save_sent'] == 0) { echo 'selected';}?>><?php _e('Never','osclass_pm'); ?></option>
                </select>
                         </li>
 						 <?php } ?>
-                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Save Settings", 'bender');?></button>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Save Settings", 'isha');?></button>
 						</li>
                     </ul>
 					 </form>
 					<?php } ?>
 					  <form action="<?php echo osc_base_url(true); ?>" method="post">
-                    <h1>Change your Username</h1>
+                    <h1><?php _e('Change your Username', 'isha') ; ?></h1>
 					 <input type="hidden" name="page" value="user" />
             <input type="hidden" name="action" value="change_username_post" />
                 	<ul>
-                    	<li><label>User Name</label><input type="text" name="s_username" id="s_username" value="" /></li>
-						<li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
+                    	<li><label><?php _e('User Name', 'isha') ; ?></label><input type="text" name="s_username" id="s_username" value="" /></li>
+						<li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'isha');?></button></li>
                       </ul>
 					</form>
-					<h1>Change your Email</h1>
+					<h1><?php _e('Change your Email', 'isha') ; ?></h1>
 					 <form action="<?php echo osc_base_url(true); ?>" method="post">
 					 <input type="hidden" name="page" value="user" />
             <input type="hidden" name="action" value="change_email_post" />
                 	<ul>
-                    	<li><label>Current Email</label><?php echo osc_logged_user_email(); ?></li>
-                    	<li><label>New Email*</label><input type="text" name="new_email" id="new_email" value="" /></li>
+                    	<li><label><?php _e('Current Email', 'isha') ; ?></label><?php echo osc_logged_user_email(); ?></li>
+                    	<li><label><?php _e('New Email*', 'isha') ; ?></label><input type="text" name="new_email" id="new_email" value="" /></li>
                     	
-                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'isha');?></button></li>
                     </ul>
 					</form>
-					<h1>Change your Password</h1>
+					<h1><?php _e('Change your Password', 'isha') ; ?></h1>
 					 <form action="<?php echo osc_base_url(true); ?>" method="post">
 					  <input type="hidden" name="page" value="user" />
             <input type="hidden" name="action" value="change_password_post" />
                 	<ul>
-					    <li><label class="control-label" for="password"><?php _e('Current password', 'bender'); ?> *</label>
+					    <li><label class="control-label" for="password"><?php _e('Current password', 'isha'); ?> *</label>
                 <input type="password" name="password" id="password" value="" /></li>
-                    	<li> <label class="control-label" for="new_password"><?php _e('New password', 'bender'); ?> *</label><input type="password" name="new_password" id="new_password" value="" /></li>
-                    	<li> <label class="control-label" for="new_password2"><?php _e('Repeat new password', 'bender'); ?> *</label><input type="password" name="new_password2" id="new_password2" value="" /></li>
-                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'bender');?></button></li>
+                    	<li> <label class="control-label" for="new_password"><?php _e('New password', 'isha'); ?> *</label><input type="password" name="new_password" id="new_password" value="" /></li>
+                    	<li> <label class="control-label" for="new_password2"><?php _e('Repeat new password', 'isha'); ?> *</label><input type="password" name="new_password2" id="new_password2" value="" /></li>
+                        <li><button type="submit" class="Update apply ui-button ui-button-middle ui-button-main"><?php _e("Update", 'isha');?></button></li>
                     </ul>
 					</form>
-                    <h1><?php _e('Delete Account', 'bender') ; ?></h1>
+                    <h1><?php _e('Delete Account', 'isha') ; ?></h1>
                     <?php /*$options = array();
-      $options[] = array('name'  => __('Delete account', 'bender'),
+      $options[] = array('name'  => __('Delete account', 'isha'),
                          'url'   => '#',
                          'class' => 'opt_delete_account');
       $options = osc_apply_filter('user_menu_filter', $options);
       echo '<ul><li class="' . $options[0]['class'] . '" ><a href="' . $options[0]['url'] . '" >' . $options[0]['name'] . '</a></li></ul>';   */                         
 ?>
-<input id="dialog-delete-account" class="delete_account subscribe" title="Delete Account" onclick="return confirm('Are you sure you want to delete your account?');" value="<?php _e('Delete account', 'bender'); ?>"/>
+<input id="dialog-delete-account" class="delete_account subscribe" title="Delete Account" onclick="return confirm('Are you sure you want to delete your account?');" value="<?php _e('Delete account', 'isha'); ?>"/>
                     <div class="clear"></div>
                 </div>
             </li> 

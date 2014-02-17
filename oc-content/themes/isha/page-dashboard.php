@@ -29,7 +29,7 @@
     }
     osc_add_filter('meta_title_filter','custom_meta_title');
     function custom_meta_title($data){
-        return __('Alerts', 'isha');;
+        return __('Alerts', 'bender');;
     }
     osc_current_web_theme_path('header.php') ;
     $osc_user = osc_user();
@@ -37,13 +37,13 @@
 <div class="page"><section class="wrapper result_outer account_outer">
     
     <section class="account_box">
-    	<h1 class="result"><?php _e('My Account', 'isha'); ?></h1>
+    	<h1 class="result">My Account</h1>
         <ul>
         	<li>
-            	<a href="#"><img class="icon" alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/listing_icon.png"><h2><?php _e('Listings', 'isha'); ?><span><?php _e('Your Selected Listings', 'isha'); ?></span></h2> <img class="plus" alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/plus_dropdown.png"></a>
+            	<a href="#"><img class="icon" alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/listing_icon.png"><h2>Listings<span>Your Selected Listings</span></h2> <img class="plus" alt="" src="http://localhost/osclass.3.2.2/oc-content/themes/spain/images/plus_dropdown.png"></a>
                 <div class="wishlist">
-                	<h1><?php _e('My listings', 'isha'); ?></h1>
-                    <p><?php _e('No listings have been added yet', 'isha'); ?></p>
+                	<h1>My listings</h1>
+                    <p>No listings have been added yet</p>
                 </div>
             </li>
             <li>
