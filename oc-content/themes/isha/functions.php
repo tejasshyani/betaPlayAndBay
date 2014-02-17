@@ -223,7 +223,7 @@ FUNCTIONS
 	 <article class="welcome_area">
 	<section class="welcome_mid_box wrapper">
     	<h1><?php _e("Welcome", 'isha') ; ?></h1>
-        <p><?php _e("Today, we find ourselves in a world where your customers are truly hyperconnected, demanding revolutionary commerce experiences while becoming more and more challenging to reach. They require everything to be a click away. Physical store visits must include an interactive component. Purchases arrive from around the world as fast as they can fly. And so do ideas, innovations, winners and losers. Competing in this environment requires a commerce partner that coordinates all methods available into a connected consumer experience. And no one delivers the entire process – from engagement to conversion to delivery to retention – like eBay Enterprise. Our comprehensive approach uncovers unique insights and cross benefits for clients – whether they utilize one or all our services. Either way, the process is more seamless. And more profitable. We live in a world where your customers demand more. We are here to help you deliver.", 'isha') ; ?></p>
+        <p><?php _e("Today, we find ourselves in a world where people demand revolutionary commerce experiences while becoming more and more challenging to reach. They require increasing there experience with musical equipment working without huge financial costs. In additional to this people want to easily find everything they want, get valuable advices and all this in a click away. This portal is the best choice for musicans and music lovers from around the world. We will help you to sell your musical goods fast, give you expert advise in equipment choose, arrange safe shipping and safe deal. Our comprehensive approach uncovers unique insights and cross benefits for clients – whether they utilize one or all our services. Either way, the process is more seamless, and more profitable. We are here to help you.", 'isha') ; ?></p>
    <img src="<?php echo osc_current_web_theme_url('images/man_image.png');?>" alt="" />
      </section>
 </article>
@@ -758,22 +758,22 @@ $(document).ready(function(){
         	<h1><?php _e('Log in to Play and Bay', 'isha'); ?></h1>
             <ul>
             	<li>
-                	<label>User Name/Email</label>
+                	<label><?php _e("User Name/Email", 'isha'); ?></label>
                      <?php UserForm::email_login_text(); ?>
                 </li>
 					<p class="error" id="emaillogin-error" style="display:none;color: #FF0000;">
                         <?php _e("Enter your Email address", 'isha'); ?>
                     </p>
             	<li>
-                	<label>Enter Password Here</label>
+                	<label><?php _e("Enter Password Here", 'isha'); ?></label>
                     <?php UserForm::password_login_text(); ?>
                 </li>
 				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
                         <?php _e("Enter your password", 'isha'); ?>
                     </p>
             	<li>
-                	<a href="#">forgot password ?</a>
-                    <input type="submit" value="Login" />
+                	<a href="<?php echo osc_recover_user_password_url(); ?>"><?php _e("forgot password?", 'isha'); ?></a>
+                    <input type="submit" value="<?php _e("Login", 'isha'); ?>" />
                 </li>
             </ul>
 			</form>
@@ -794,14 +794,14 @@ $(document).ready(function(){
                     <input type="text" placeholder="" value="" />
                 </li>-->
 				<li>
-                	<label>User Name</label>
+                	<label><?php _e("User Name", 'isha') ; ?></label>
                    <?php UserForm::name_text(); ?>
                 </li>
 				<p  class="error" id="user-error" style="display:none; color: #FF0000;">
                         <?php _e("Enter User Name", 'isha'); ?>
                     </p>
             	<li>
-                	<label>Email</label>
+                	<label><?php _e("Email", 'isha') ; ?></label>
                     <?php UserForm::email_text(); ?>
                     <?php osc_show_recaptcha('register'); ?>
                 </li>
@@ -809,14 +809,14 @@ $(document).ready(function(){
                         <?php _e("Enter valid Email Address", 'isha'); ?>
                     </p>
             	<li>
-                	<label>Password</label>
+                	<label><?php _e("Password", 'isha') ; ?></label>
                       <?php UserForm::password_text(); ?>
                 </li>
 				<p  class="error" style="display:none; color: #FF0000;">
                         <?php _e("Enter Password", 'isha'); ?>
                     </p>
             	<li>
-                	<label>Re-Enter Password</label>
+                	<label><?php _e("Re-Enter Password", 'isha') ; ?></label>
                    <?php UserForm::check_password_text(); ?>
                 </li>
 				<p class="error2" id="password-error" style="display:none; color: #FF0000;">
@@ -824,7 +824,7 @@ $(document).ready(function(){
                     </p>
 					<?php osc_run_hook('user_register_form'); ?>
             	<li>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="<?php _e("Register", 'isha'); ?>" />
                 </li>
             </ul>
 			<?php //UserForm::js_validation(); ?>
@@ -872,18 +872,17 @@ function contact_content(){?>
                         <?php _e("Enter your message", 'isha'); ?>
                     </p>
 						
-						<input type="submit" class="submit" value="Submit"/>
+						<input type="submit" class="submit" value="<?php _e("Send", 'isha'); ?>"/>
 					</aside>
 					<?php osc_run_hook('contact_form'); ?>
 					<?php osc_run_hook('admin_contact_form'); ?>
 				</form>
                 <aside class="contact_text">
-                	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. <br /><br />
+                	<p><?php _e("Please feel free to contact us at any time in any convenient way for you. We will answer any of your questions and resolve any problems related to us.", 'isha'); ?><br /><br />
 
-						<span>Email:</span> info@playandbay.com<br />
-                        <span>Phone:</span> 80808000<br />
-                        <span>Fax:</span> +91 8582485425<br />
-                        <span>Website:</span> www.playandbay.com
+						<span><?php _e("Email", 'isha'); ?>:</span> administrator@playandbay.com<br />
+                        <span><?php _e("Phone", 'isha'); ?>:</span> +7(916)6621382<br />
+                        <span><?php _e("Website", 'isha'); ?>:</span> www.playandbay.com
                     </p>
                 </aside>
                 <div class="clear"></div>

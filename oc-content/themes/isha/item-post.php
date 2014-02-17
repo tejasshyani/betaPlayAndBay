@@ -37,7 +37,7 @@ osc_add_hook('header','bender_nofollow_construct');
 <section class="wrapper result_outer account_outer">
   
  <article class="after_loginarea">
- 	<h1 class="publish"><?php _e('Publish a listing', 'bender'); ?></h1>
+ 	<h1 class="publish"><?php _e('Publish a listing', 'isha'); ?></h1>
 	 <form name="item" action="<?php echo osc_base_url(true);?>" method="post" enctype="multipart/form-data" id="item-post">
      <input type="hidden" name="action" value="<?php echo $action; ?>" />
                     <input type="hidden" name="page" value="item" />
@@ -45,24 +45,24 @@ osc_add_hook('header','bender_nofollow_construct');
                         <input type="hidden" name="id" value="<?php echo osc_item_id();?>" />
                         <input type="hidden" name="secret" value="<?php echo osc_item_secret();?>" />
                     <?php } ?>
-	<h1><?php _e('General Information', 'bender'); ?></h1>
+	<h1><?php _e('General Information', 'isha'); ?></h1>
     <div class="inner_area">
     	<ul> 
         	<li>
-            	<label><?php _e('Category', 'bender'); ?></label>
-                <?php ItemForm::category_select(null, null, __('Select a category', 'bender')); ?>
+            	<label><?php _e('Category', 'isha'); ?></label>
+                <?php ItemForm::category_select(null, null, __('Select a category', 'isha')); ?>
             </li>
             <li>
-            	<label for="title[<?php echo osc_locale_code(); ?>]"><?php _e('Title', 'bender'); ?></label>
+            	<label for="title[<?php echo osc_locale_code(); ?>]"><?php _e('Title', 'isha'); ?></label>
                 <?php ItemForm::title_input('title',osc_locale_code(), osc_esc_html( bender_item_title() )); ?>
             </li>
             <li>
-            	<label for="description[<?php echo osc_locale_code(); ?>]"><?php _e('Description', 'bender'); ?></label>
+            	<label for="description[<?php echo osc_locale_code(); ?>]"><?php _e('Description', 'isha'); ?></label>
                  <?php ItemForm::description_textarea('description',osc_locale_code(), osc_esc_html( bender_item_description() )); ?>
            	</li>
 			<?php if( osc_price_enabled_at_items() ) { ?>
             <li>
-            	<label for="price"><?php _e('Price', 'bender'); ?></label>
+            	<label for="price"><?php _e('Price', 'isha'); ?></label>
                  <?php ItemForm::price_input_text(); ?>
                                 <?php ItemForm::currency_select(); ?>
             </li>
@@ -71,17 +71,17 @@ osc_add_hook('header','bender_nofollow_construct');
     
     </div>
 	<?php if( osc_images_enabled_at_items() ) { ?>
- 	<h1><?php _e('Photo', 'bender'); ?></h1>
+ 	<h1><?php _e('Photo', 'isha'); ?></h1>
     <div class="inner_area">
     	<ul>
         	<li>
-            	<label  for="photos[]"><?php _e('Photos', 'bender'); ?></label>
+            	<label  for="photos[]"><?php _e('Photos', 'isha'); ?></label>
                 
 				<div id="photos">
                 	  <?php ItemForm::photos(); ?>
                 </div>
                
-                <a href="#" onclick="addNewPhoto(); return false;"><?php _e('Add new photo', 'bender'); ?></a>
+                <a href="#" onclick="addNewPhoto(); return false;"><?php _e('Add new photo', 'isha'); ?></a>
                 <div class="clear"></div>
             </li>
             
@@ -89,48 +89,48 @@ osc_add_hook('header','bender_nofollow_construct');
     
     </div>
 	<?php }?>
-    <h1><?php _e('Listing Location', 'bender'); ?></h1>
+    <h1><?php _e('Listing Location', 'isha'); ?></h1>
     <div class="inner_area">
     	<ul>
         	<li>
-            	<label  for="country"><?php _e('Country', 'bender'); ?></label>
+            	<label  for="country"><?php _e('Country', 'isha'); ?></label>
                 <?php ItemForm::country_select(osc_get_countries(), osc_user()); ?>
             </li>
             <li>
-            	<label  for="region"><?php _e('Region', 'bender'); ?></label>
+            	<label  for="region"><?php _e('Region', 'isha'); ?></label>
                 <?php ItemForm::region_text(osc_user()); ?>
             </li>
             <li>
-            	<label  for="city"><?php _e('City', 'bender'); ?></label>
+            	<label  for="city"><?php _e('City', 'isha'); ?></label>
                <?php ItemForm::city_text(osc_user()); ?>
             </li>
             <li>
-            	<label for="cityArea"><?php _e('City Area', 'bender'); ?></label>
+            	<label for="cityArea"><?php _e('City Area', 'isha'); ?></label>
                 <?php ItemForm::city_area_text(osc_user()); ?>
             </li>
             <li>
-            	<label for="address"><?php _e('Address', 'bender'); ?></label>
+            	<label for="address"><?php _e('Address', 'isha'); ?></label>
                  <?php ItemForm::address_text(osc_user()); ?>
             </li>
         
         </ul>
     </div>
 	 <?php if(!osc_is_web_user_logged_in() ) { ?>
-	 <h1><?php _e("Seller's information", 'bender'); ?></h1>
+	 <h1><?php _e("Seller's information", 'isha'); ?></h1>
 	 
 	    <div class="inner_area">
     	<ul>
         	<li>
-            	<label for="contactName"><?php _e('Name', 'bender'); ?></label>
+            	<label for="contactName"><?php _e('Name', 'isha'); ?></label>
                 <?php ItemForm::contact_name_text(); ?>
             </li>
             <li>
-            	<label for="contactEmail"><?php _e('E-mail', 'bender'); ?></label>
+            	<label for="contactEmail"><?php _e('E-mail', 'isha'); ?></label>
                 <?php ItemForm::contact_email_text(); ?>
             </li>
             <li>
             	<?php ItemForm::show_email_checkbox(); ?> 
-				<label for="showEmail"><?php _e('Show e-mail on the listing page', 'bender'); ?></label>
+				<label for="showEmail"><?php _e('Show e-mail on the listing page', 'isha'); ?></label>
             </li>
           
         </ul>
@@ -146,8 +146,8 @@ osc_add_hook('header','bender_nofollow_construct');
 						 <ul>
 						 <li>
 						   <button type="submit" class="publish_new_btn ui-button ui-button-middle ui-button-main">
-						   <?php if($edit) { _e("Update", 'bender'); } 
-						   else { _e("Publish", 'bender'); } ?></button>
+						   <?php if($edit) { _e("Update", 'isha'); } 
+						   else { _e("Publish", 'isha'); } ?></button>
 						   </li>
 						   </ul> 
 						   </div>
