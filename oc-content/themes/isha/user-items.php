@@ -110,6 +110,7 @@ $( ".account_box ul li" ).click(function() {
                 		<h1><?php echo osc_item_title() ; ?>(<?php echo osc_item_category() ; ?>)</h1>
                         <h3><?php echo osc_item_city(); //osc_item()['s_city'];?> - (<?php echo osc_item_region(); ?>) - <?php echo osc_format_date(osc_item_pub_date()); ?>.</h3>
                         <p><?php echo osc_highlight( strip_tags( osc_item_description()) ,250) ; ?></p>
+						<a href="<?php echo osc_item_edit_url(); ?>" rel="nofollow"><?php _e('Edit item', 'isha'); ?></a><a class="delete" onclick="javascript:return confirm('<?php echo osc_esc_js(__('This action can not be undone. Are you sure you want to continue?', 'isha')); ?>')" href="<?php echo osc_item_delete_url();?>" ><?php _e('Delete', 'isha'); ?></a>
                 </div>
                 <div class="clear"></div>
         
